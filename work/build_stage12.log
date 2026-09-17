@@ -1,0 +1,98 @@
+Compile xbox_kernel
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_WSAGetLastError(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130359
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420BB8)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_WSACreateEvent(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130369
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420BC0)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_WSACloseEvent(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130379
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420BC8)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_WSASetEvent(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130389
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420BD0)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetCreateKey(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130405
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C00)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetRegisterKey(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130421
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C10)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetConnect(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130435
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C48)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetGetConnectStatus(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130449
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C58)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetDnsLookup(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130467
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C68)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetDnsRelease(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130481
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C80)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetQosLookup(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130537
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420C90)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetQosServiceLookup(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130562
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420CF8)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetQosRelease(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130576
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420D10)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetGetTitleXnAddr(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130590
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420D20)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NetDll_XNetGetEthernetLinkStatus(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:130602
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82420D30)
+
+lld-link: error: undefined symbol: void __cdecl __imp__XamSessionCreateHandle(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:131231
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82421120)
+
+lld-link: error: undefined symbol: void __cdecl __imp__XamSessionRefObjByHandle(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:131247
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82421120)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:131375
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_824212B0)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:131478
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82421350)
+>>> referenced 7 more times
+
+lld-link: error: undefined symbol: void __cdecl __imp__XamUserGetXUID(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:136184
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82423230)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:152478
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_825AECE0)
+
+lld-link: error: undefined symbol: void __cdecl __imp__XNetLogonGetMachineID(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:136193
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_82423230)
+
+lld-link: error: undefined symbol: void __cdecl __imp__NtCreateEvent(struct PPCContext &__restrict, unsigned char *)
+>>> referenced by C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\ppc_graphics_init_min.cpp:152339
+>>>               C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-visual\ppc_graphics_init_min.obj:(__declspec(dllimport) _sub_825AE968)
+
+lld-link: error: too many errors emitted, stopping now (use /errorlimit:0 to see all errors)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+Traceback (most recent call last):
+  File "C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build_incremental.py", line 14, in <module>
+    subprocess.run([compiler,*flags,*[str(obj/(n+'.obj')) for n in names],'-o',str(p/'graphics_init_test.exe')],cwd=p,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe', '-std=c++17', '-O0', '-g', '-mavx', '-msse4.1', '-include', 'stdio.h', '-include', 'Windows.h', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\graphics_init_test.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\ppc_graphics_init_min.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_kernel.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_memory.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_mm.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_mmio.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_probe.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_rtl.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_vd.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_xconfig.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xbox_virtual_memory.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-visual\\xenos_cp.obj', '-o', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\graphics_init_test.exe']' returned non-zero exit status 1.

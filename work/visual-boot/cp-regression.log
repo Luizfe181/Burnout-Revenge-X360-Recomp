@@ -1,0 +1,39 @@
+[GPU INIT] ring=00001000 bytes=00000010
+[GPU WB] address=00002000 block_log2=0
+[GPU SUBMIT] RPTR=00000000 WPTR=00000003 ring=00001000
+[GPU PACKET] depth=0 addr=00001000 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001004 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001008 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001000 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001004 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001008 header=80000000 type=2 opcode=00 count=0 data=
+[GPU CONSUMED] RPTR=00000003 writeback=00002000
+[GPU SUBMIT] RPTR=00000003 WPTR=00000001 ring=00001000
+[GPU PACKET] depth=0 addr=0000100C header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001010 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=0000100C header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001010 header=80000000 type=2 opcode=00 count=0 data=
+[GPU CONSUMED] RPTR=00000001 writeback=00002000
+[TEST PASS] ring wrap and big-endian RPTR writeback
+[GPU STOP] unknown/unimplemented PM4 opcode RPTR=00000001
+[GPU STOP] packet_address=00001004
+[GPU INIT] ring=00001000 bytes=00000010
+[GPU WB] address=00002000 block_log2=0
+[GPU SUBMIT] RPTR=00000000 WPTR=00000003 ring=00001000
+[GPU PACKET] depth=0 addr=00001000 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001004 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001008 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001000 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001004 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001008 header=80000000 type=2 opcode=00 count=0 data=
+[GPU CONSUMED] RPTR=00000003 writeback=00002000
+[GPU SUBMIT] RPTR=00000003 WPTR=00000001 ring=00001000
+[GPU PACKET] depth=0 addr=0000100C header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001010 header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=0000100C header=80000000 type=2 opcode=00 count=0 data=
+[GPU PACKET] depth=0 addr=00001010 header=80000000 type=2 opcode=00 count=0 data=
+[GPU CONSUMED] RPTR=00000001 writeback=00002000
+[GPU SUBMIT] RPTR=00000001 WPTR=00000003 ring=00001000
+[GPU PACKET] depth=0 addr=00001004 header=C0007F00 type=3 opcode=7F count=1 data= 00000000
+[GPU PACKET] depth=0 addr=00001004 header=C0007F00 type=3 opcode=7F count=1 data= 00000000
+[TEST] writeback_at_stop=1

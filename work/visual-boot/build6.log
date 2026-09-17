@@ -1,0 +1,5 @@
+Compile graphics_init_test
+Compile xbox_kernel
+Compile xbox_probe
+Compile xbox_vd
+Compile xenos_cp

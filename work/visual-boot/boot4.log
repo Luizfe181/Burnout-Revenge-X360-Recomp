@@ -1,0 +1,102 @@
+=== Burnout Revenge graphics_init_test ===
+base = 000002482BCB0000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 4607 mappings
+[RtlInitializeCriticalSection] guest=0x70006000
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+
+r13/KPCR        = 0x70000000
+current thread  = 0x70001000
+thread id       = 0x00000001
+graphics object = 0x71000000
+config          = 0x71010000
+stack           = 0x720FF000
+flags           = 0x00000000
+
+global SYSTEM @8200079C = 0x70003000
+global USER   @820007A0 = 0x70002000
+[BOOT] entering real XEX _xstart at 825B0500
+[INDIRECT] call target=0x825B0500 LR=0x00000000
+[NtAllocateVirtualMemory] base*=0x00000000 size*=0x00100000 type=0x60002000 protect=0x00000004 r7=0x00000000
+  RESERVE guest=0x30000000 size=0x100000
+[NtAllocateVirtualMemory] base*=0x30000000 size*=0x00010000 type=0x60001000 protect=0x00000004 r7=0x00000000
+  COMMIT guest=0x30000000 host=000002485BCB0000 size=0x10000
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlInitializeCriticalSection] guest=0x30000610
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEA8
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEC4
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEE0
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEFC
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF18
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF34
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF50
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF6C
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF88
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFA4
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFC0
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFDC
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFF8
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3E014
+[INDIRECT] returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] call target=0x825A5118 LR=0x825A53DC
+[KeTlsAlloc] slot=0 KPCR=70000000
+[INDIRECT] returned target=0x825A5118 caller=0x825A53DC
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] call target=0x825C75DC LR=0x825A5414
+[INDIRECT] returned target=0x825C75DC caller=0x825A5414
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] call target=0x8259DEA0 LR=0x825B4D18
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] returned target=0x8259DEA0 caller=0x825B4D18
+[INDIRECT] call target=0x825AAAD8 LR=0x825B4D18
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] returned target=0x825AAAD8 caller=0x825B4D18
+[INDIRECT] call target=0x8259BAB8 LR=0x825B4C18
+[INDIRECT] returned target=0x8259BAB8 caller=0x825B4C18
+[INDIRECT] call target=0x825A6298 LR=0x825B4C54
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] returned target=0x825A6298 caller=0x825B4C54
+[INDIRECT] call target=0x825AB348 LR=0x825B4C54
+[INDIRECT] returned target=0x825AB348 caller=0x825B4C54
+[INDIRECT] call target=0x825AA218 LR=0x825B4CA0
+[BOOT IMPORT STOP] __imp__KeQuerySystemTime
+[PPC STATE] LR=825AA24C CTR=825AA218 r1=720FED10 r3=720FED60 r4=00000000 r29=00000000 r30=825E08D8 r31=825E0014

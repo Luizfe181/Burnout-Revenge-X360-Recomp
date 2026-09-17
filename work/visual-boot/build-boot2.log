@@ -1,0 +1,6 @@
+Compile graphics_init_test.cpp
+Compile xbox_kernel.cpp
+Compile ppc_recomp.81.cpp
+Compile mapping.cpp
+Compile import_probes.cpp
+BOOT BUILD OK

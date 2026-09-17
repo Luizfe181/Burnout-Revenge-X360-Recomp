@@ -1,0 +1,198 @@
+--- 
++++ 
+@@ -16284,29 +16284,9 @@
+ 	ctx.r11.u64 = PPC_LOAD_U32(ctx.r28.u32 + ctx.r30.u32);
+ 	// mtctr r11
+ 	ctx.ctr.u64 = ctx.r11.u64;
+-	// bctrl
+-	printf(
+-		"[CF38] indirect #1: r30=%u slot=0x%08X target=0x%08X r4=0x%08X\n",
+-		ctx.r30.u32,
+-		ctx.r28.u32 + ctx.r30.u32,
+-		ctx.ctr.u32,
+-		ctx.r4.u32);
+-
++	// bctrl 
+ 	ctx.lr = 0x8238CF98;
+-
+-	printf(
+-		"[CF38] lookup target=0x%08X host_func=%p\n",
+-		ctx.ctr.u32,
+-		(void*)PPC_LOOKUP_FUNC(base, ctx.ctr.u32));
+-
+ 	PPC_CALL_INDIRECT_FUNC(ctx.ctr.u32);
+-
+-	printf(
+-		"[CF98] indirect #1 RETORNOU: r30=%u target=0x%08X r3=0x%08X\n",
+-		ctx.r30.u32,
+-		ctx.ctr.u32,
+-		ctx.r3.u32);
+-
+ 	// addi r30,r30,4
+ 	ctx.r30.s64 = ctx.r30.s64 + 4;
+ 	// addi r29,r29,12
+@@ -16678,49 +16658,9 @@
+ 	// bl 0x823908b0
+ 	ctx.lr = 0x8238D228;
+ 	sub_823908B0(ctx, base);
+-	printf(
+-    "[D228] voltou de 908B0: r1=0x%08X r29=0x%08X lr=0x%08llX\n",
+-    ctx.r1.u32,
+-    ctx.r29.u32,
+-    (unsigned long long)ctx.lr);
+-
+-	printf(
+-		"[D228] proximo LOAD_U8 endereco guest=0x%08X\n",
+-    ctx.r29.u32 + 10433);
+ 	// lbz r11,10433(r29)
+ 	ctx.r11.u64 = PPC_LOAD_U8(ctx.r29.u32 + 10433);
+-
+-	printf(
+-		"[D228] LOAD_U8 OK: r11=0x%02X\n",
+-		ctx.r11.u8);
+-
+ 	// li r3,1
+-	ctx.r3.s64 = 1;
+-	MEMORY_BASIC_INFORMATION mbi{};
+-	void* d228_host = base + (ctx.r29.u32 + 10433);
+-
+-	SIZE_T d228_q = VirtualQuery(
+-		d228_host,
+-		&mbi,
+-		sizeof(mbi));
+-
+-	printf(
+-		"[D228] VirtualQuery ret=%llu host=%p "
+-		"BaseAddress=%p RegionSize=0x%llX State=0x%08X Protect=0x%08X Type=0x%08X\n",
+-		(unsigned long long)d228_q,
+-		d228_host,
+-		mbi.BaseAddress,
+-		(unsigned long long)mbi.RegionSize,
+-		(unsigned)mbi.State,
+-		(unsigned)mbi.Protect,
+-		(unsigned)mbi.Type);
+-	ctx.r11.u64 = PPC_LOAD_U8(ctx.r29.u32 + 10433);
+-	// li r3,1
+-	printf(
+-    "[D228] antes STORE_U8: addr=0x%08X valor=0x%02X\n",
+-    ctx.r29.u32 + 10433,
+-    ctx.r11.u8);
+-	printf("[D228] STORE_U8 OK\n");
+ 	ctx.r3.s64 = 1;
+ 	// ori r11,r11,32
+ 	ctx.r11.u64 = ctx.r11.u64 | 32;
+@@ -16730,15 +16670,7 @@
+ 	// addi r1,r1,208
+ 	ctx.r1.s64 = ctx.r1.s64 + 208;
+ 	// b 0x8259bb34
+-	printf(
+-        "[D238] antes restgprlr_23: r1=0x%08X lr=0x%08llX\n",
+-        ctx.r1.u32,
+-        (unsigned long long)ctx.lr);
+ 	__restgprlr_23(ctx, base);
+-	 printf(
+-        "[D238] restgprlr_23 OK: r1=0x%08X lr=0x%08llX\n",
+-        ctx.r1.u32,
+-        (unsigned long long)ctx.lr);
+ 	return;
+ }
+ 
+@@ -17037,30 +16969,15 @@
+ 	// bl 0x8238d088
+ 	ctx.lr = 0x8238D4FC;
+ 	sub_8238D088(ctx, base);
+-	printf(
+-    "[D4FC] voltou de D088: r3=0x%08X (%d) r1=0x%08X lr=0x%08llX\n",
+-    ctx.r3.u32,
+-    ctx.r3.s32,
+-    ctx.r1.u32,
+-    (unsigned long long)ctx.lr);
+ 	// cmpwi r3,0
+ 	ctx.cr0.compare<int32_t>(ctx.r3.s32, 0, ctx.xer);
+ 	// beq 0x8238d47c
+ 	if (ctx.cr0.eq) goto loc_8238D47C;
+ 	// mr r3,r31
+ 	ctx.r3.u64 = ctx.r31.u64;
+-	printf(
+-    "[D4FC] chamando CF38: r31=0x%08X r3=0x%08X\n",
+-    ctx.r31.u32,
+-    ctx.r3.u32);
+ 	// bl 0x8238cf38
+ 	ctx.lr = 0x8238D50C;
+ 	sub_8238CF38(ctx, base);
+-	printf(
+-    "[D50C] CF38 RETORNOU: r3=0x%08X r1=0x%08X lr=0x%08llX\n",
+-    ctx.r3.u32,
+-    ctx.r1.u32,
+-    (unsigned long long)ctx.lr);
+ 	// lis r4,-20096
+ 	ctx.r4.s64 = -1317011456;
+ 	// li r3,0
+@@ -18674,32 +18591,11 @@
+ 	// bl 0x825c746c
+ 	ctx.lr = 0x8238EC10;
+ 	__imp__VdCallGraphicsNotificationRoutines(ctx, base);
+-
+-	printf(
+-		"[EBA8] voltou do Vd: r1=0x%08X lr=0x%08X\n",
+-		ctx.r1.u32,
+-		ctx.lr);
+-
++	// addi r1,r1,240
+ 	ctx.r1.s64 = ctx.r1.s64 + 240;
+-
+-	printf(
+-		"[EBA8] antes restgprlr_29: r1=0x%08X lr=0x%08X "
+-		"mem[-4]=0x%08X mem[-8]=0x%08X\n",
+-		ctx.r1.u32,
+-		ctx.lr,
+-		PPC_LOAD_U32(ctx.r1.u32 - 4),
+-		PPC_LOAD_U32(ctx.r1.u32 - 8));
+-
++	// b 0x8259bb4c
+ 	__restgprlr_29(ctx, base);
+-
+-	printf(
+-		"[EBA8] restgprlr_29 terminou: r1=0x%08X lr=0x%08X\n",
+-		ctx.r1.u32,
+-		ctx.lr);
+-
+ 	return;
+-
+-
+ }
+ 
+ // --------------------------------------------------------
+@@ -18796,31 +18692,13 @@
+ 	// bl 0x82390838
+ 	ctx.lr = 0x823908CC;
+ 	sub_82390838(ctx, base);
+-
+-	printf(
+-		"[908B0] voltou de 90838: r1=0x%08X lr=0x%08llX\n",
+-		ctx.r1.u32,
+-		(unsigned long long)ctx.lr);
+-
+ 	// addi r1,r1,144
+ 	ctx.r1.s64 = ctx.r1.s64 + 144;
+-
+-	printf(
+-		"[908B0] apos +144: r1=0x%08X endereco LR=0x%08X\n",
+-		ctx.r1.u32,
+-		ctx.r1.u32 - 8);
+-
+ 	// lwz r12,-8(r1)
+ 	ctx.r12.u64 = PPC_LOAD_U32(ctx.r1.u32 + -8);
+-
+-	printf(
+-		"[908B0] LR salvo lido = 0x%08X\n",
+-		ctx.r12.u32);
+-
+ 	// mtlr r12
+ 	ctx.lr = ctx.r12.u64;
+-
+-	// blr
++	// blr 
+ 	return;
+ }
+ 

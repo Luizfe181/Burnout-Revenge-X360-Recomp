@@ -1,0 +1,9 @@
+{
+  "extract_ppc_slice.py": "9f2332a47c5692fc28fb87b2562b534d90f5c49fd0cebc029a4a36df69c690c2",
+  "graphics_slice.json": null,
+  "graphics_dispatch.h": null,
+  "graphics_lookup.h": null,
+  "graphics_init_test.cpp": "f6b2a92202128e716cb1f0f1880caa4c21a7dceb910ac034d56507d7b60f98e9",
+  "ppc_graphics_init_min.cpp": "df6f6f1b8129ccd116d2e3ef8e94dd88ef36121463e4fe17bb2540bc0b393a1e",
+  "xbox_mmio.cpp": "c1ee34abc47678e2a794ee5012cc1734f7fb099ea620bb4374f2afdf12d83d14"
+}

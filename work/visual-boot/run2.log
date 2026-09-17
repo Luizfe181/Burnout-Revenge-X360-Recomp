@@ -1,0 +1,1430 @@
+=== Burnout Revenge graphics_init_test ===
+base = 000001B420580000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 309 mappings
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+
+r13/KPCR        = 0x70000000
+current thread  = 0x70001000
+thread id       = 0x00000001
+graphics object = 0x71000000
+config          = 0x71010000
+stack           = 0x720FF000
+flags           = 0x00000000
+
+global SYSTEM @8200079C = 0x70003000
+global USER   @820007A0 = 0x70002000
+
+heap antes @82D4809C = 0x00000000
+Inicializando heap...
+[NtAllocateVirtualMemory] base*=0x00000000 size*=0x00100000 type=0x60002000 protect=0x00000004 r7=0x00000000
+  RESERVE guest=0x30000000 size=0x100000
+[NtAllocateVirtualMemory] base*=0x30000000 size*=0x00010000 type=0x60001000 protect=0x00000004 r7=0x00000000
+  COMMIT guest=0x30000000 host=000001B450580000 size=0x10000
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlInitializeCriticalSection] guest=0x30000610
+heap depois @82D4809C = 0x30000000 r3=0x00000001
+heap +20   = 0x00040002
+heap +24   = 0x00000000
+heap +1408 = 0x30000610
+[HARNESS] teste heap 30002FC1 host=000001B450582FC1 valor=0x00
+[MmAllocatePhysicalMemoryEx] guest=0x10000000 size=0x10000 align=0x1000 flags=0x00000404
+[MmAllocatePhysicalMemoryEx] guest=0x10010000 size=0x72C000 align=0x1000 flags=0x20000404
+[XGetVideoMode] out=0x720FEC90 -> 1280x720
+[RtlInitializeCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExGetXConfigSetting] category=3 setting=10 buffer=0x30004410 size=4 required=0x720FEB60
+  -> XCONFIG_USER_VIDEO_FLAGS = 0x00040000
+[RtlInitializeCriticalSection] guest=0x30003DE0
+[VdInitializeEngines] r3=0x09710000 callback=0x8238CE28 arg=0x00000000 pfp=0x00000000 me=0x00000000
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExRegisterTitleTerminateNotification] registration=0x82699B50 create=1 routine=0x8238CE48 priority=0x6E800000
+[VdSetGraphicsInterruptCallback] callback=0x82381BC8 context=0x30000700
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x00000000
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073C000 size=0x60 align=0x1000 flags=0x00000004
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073D000 size=0x20 align=0x1000 flags=0x00000204
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073E000 size=0x12C0 align=0x1000 flags=0x00000404
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[MmGetPhysicalAddress] guest=0x10000000
+[GPU INIT] ring=10000000 bytes=00010000
+[VdInitializeRingBuffer] physical=0x10000000 sizeArg=13
+[GPU WB] address=1073C03C block_log2=7
+[VdEnableRingBufferRPtrWriteBack] address=0x1073C03C
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x1073C008
+[KiApcNormalRoutineNop] r3=0x720FEA20 r4=0x00000013
+[ExCreateThread] handle=0x00001000 id=2 stack=0x8000 startup=0x00000000 start=0x8238E168 context=0x300032AC flags=0x04000080 (NAO EXECUTADA)
+[KeSetBasePriorityThread] thread=0x00001000 priority=17
+[Xenos MMIO READ32] reg=0x3C00 -> 0x00000000
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[VdQueryVideoMode] out=0x720FEA90 -> 1280x720 60Hz
+[VdCallGraphicsNotificationRoutines] type=1 args=0x720FE950 scale 1280x720 -> 1280x720
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] call target=0x8237B758 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B758 caller=0x8238CF98
+[INDIRECT] call target=0x8237B7E0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B7E0 caller=0x8238CF98
+[INDIRECT] call target=0x8237B7A8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B7A8 caller=0x8238CF98
+[INDIRECT] call target=0x8237B0A0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B0A0 caller=0x8238CF98
+[INDIRECT] call target=0x8237B068 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B068 caller=0x8238CF98
+[INDIRECT] call target=0x8237B120 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B120 caller=0x8238CF98
+[INDIRECT] call target=0x8237B4F0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B4F0 caller=0x8238CF98
+[INDIRECT] call target=0x8237B638 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B638 caller=0x8238CF98
+[INDIRECT] call target=0x8237B258 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B258 caller=0x8238CF98
+[INDIRECT] call target=0x8237B2F0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B2F0 caller=0x8238CF98
+[INDIRECT] call target=0x8237B1C0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B1C0 caller=0x8238CF98
+[INDIRECT] call target=0x8237B400 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B400 caller=0x8238CF98
+[INDIRECT] call target=0x8237B478 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B478 caller=0x8238CF98
+[INDIRECT] call target=0x8237B388 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B388 caller=0x8238CF98
+[INDIRECT] call target=0x8237B0D8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B0D8 caller=0x8238CF98
+[INDIRECT] call target=0x8237B590 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B590 caller=0x8238CF98
+[INDIRECT] call target=0x8237B600 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B600 caller=0x8238CF98
+[INDIRECT] call target=0x8237B828 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B828 caller=0x8238CF98
+[INDIRECT] call target=0x8237B878 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B878 caller=0x8238CF98
+[INDIRECT] call target=0x8237B8F8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B8F8 caller=0x8238CF98
+[INDIRECT] call target=0x8237B940 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B940 caller=0x8238CF98
+[INDIRECT] call target=0x8237B988 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B988 caller=0x8238CF98
+[INDIRECT] call target=0x8237B8C0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B8C0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BAC0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BAC0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BAE8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BAE8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BB10 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BB10 caller=0x8238CF98
+[INDIRECT] call target=0x8237B9F8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B9F8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BA40 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BA40 caller=0x8238CF98
+[INDIRECT] call target=0x8237BA88 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BA88 caller=0x8238CF98
+[INDIRECT] call target=0x8237B9C0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237B9C0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BB38 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BB38 caller=0x8238CF98
+[INDIRECT] call target=0x8237BB60 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BB60 caller=0x8238CF98
+[INDIRECT] call target=0x8237BB88 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BB88 caller=0x8238CF98
+[INDIRECT] call target=0x8237BBB0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BBB0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BEF8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BEF8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BF50 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BF50 caller=0x8238CF98
+[INDIRECT] call target=0x8237BEE8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BEE8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BFA0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BFA0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BD60 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BD60 caller=0x8238CF98
+[INDIRECT] call target=0x8237BD98 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BD98 caller=0x8238CF98
+[INDIRECT] call target=0x8237DDC0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237DDC0 caller=0x8238CF98
+[INDIRECT] call target=0x8237BBF8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BBF8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BCB8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BCB8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BDC8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BDC8 caller=0x8238CF98
+[INDIRECT] call target=0x8237BE10 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BE10 caller=0x8238CF98
+[INDIRECT] call target=0x8237BE58 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BE58 caller=0x8238CF98
+[INDIRECT] call target=0x8237BEA0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BEA0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C380 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C380 caller=0x8238CF98
+[INDIRECT] call target=0x8237C740 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C740 caller=0x8238CF98
+[INDIRECT] call target=0x8237C6E0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C6E0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C710 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C710 caller=0x8238CF98
+[INDIRECT] call target=0x8237BFF0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237BFF0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C020 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C020 caller=0x8238CF98
+[INDIRECT] call target=0x8237C050 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C050 caller=0x8238CF98
+[INDIRECT] call target=0x8237C080 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C080 caller=0x8238CF98
+[INDIRECT] call target=0x8237C0B0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C0B0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C0E0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C0E0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C110 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C110 caller=0x8238CF98
+[INDIRECT] call target=0x8237C140 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C140 caller=0x8238CF98
+[INDIRECT] call target=0x8237C168 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C168 caller=0x8238CF98
+[INDIRECT] call target=0x8237C198 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C198 caller=0x8238CF98
+[INDIRECT] call target=0x8237C1C8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C1C8 caller=0x8238CF98
+[INDIRECT] call target=0x8237C1F8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C1F8 caller=0x8238CF98
+[INDIRECT] call target=0x8237C228 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C228 caller=0x8238CF98
+[INDIRECT] call target=0x8237C258 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C258 caller=0x8238CF98
+[INDIRECT] call target=0x8237C288 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C288 caller=0x8238CF98
+[INDIRECT] call target=0x8237C2B8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C2B8 caller=0x8238CF98
+[INDIRECT] call target=0x8237C3A0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C3A0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C400 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C400 caller=0x8238CF98
+[INDIRECT] call target=0x8237C4B8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C4B8 caller=0x8238CF98
+[INDIRECT] call target=0x8237C570 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C570 caller=0x8238CF98
+[INDIRECT] call target=0x8237C628 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C628 caller=0x8238CF98
+[INDIRECT] call target=0x8237C770 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C770 caller=0x8238CF98
+[INDIRECT] call target=0x8237C7A8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C7A8 caller=0x8238CF98
+[INDIRECT] call target=0x8237C7E0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C7E0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C808 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C808 caller=0x8238CF98
+[INDIRECT] call target=0x8237C840 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C840 caller=0x8238CF98
+[INDIRECT] call target=0x8237C880 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C880 caller=0x8238CF98
+[INDIRECT] call target=0x8237C8B0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C8B0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C8E0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C8E0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C910 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C910 caller=0x8238CF98
+[INDIRECT] call target=0x8237C940 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C940 caller=0x8238CF98
+[INDIRECT] call target=0x8237C978 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C978 caller=0x8238CF98
+[INDIRECT] call target=0x8237C9B0 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C9B0 caller=0x8238CF98
+[INDIRECT] call target=0x8237C9E8 LR=0x8238CF98
+[INDIRECT] returned target=0x8237C9E8 caller=0x8238CF98
+[INDIRECT] call target=0x8237CA10 LR=0x8238CF98
+[INDIRECT] returned target=0x8237CA10 caller=0x8238CF98
+[INDIRECT] call target=0x8237CA20 LR=0x8238CF98
+[INDIRECT] returned target=0x8237CA20 caller=0x8238CF98
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D180 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D180 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D1D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D1D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D220 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D220 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D110 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D110 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CBD0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CBD0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA40 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CA40 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CD60 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CD60 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CF70 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CF70 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D010 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D010 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CE50 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CE50 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CCC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CCC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CB38 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CB38 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CDB8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CDB8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D090 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D090 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D270 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D270 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CEC8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237CEC8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D2C8 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D2C8 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D320 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D320 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D378 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D378 caller=0x8238CFFC
+[INDIRECT] call target=0x8237D3D0 LR=0x8238CFFC
+[INDIRECT] returned target=0x8237D3D0 caller=0x8238CFFC
+[INDIRECT] call target=0x8237CA10 LR=0x8238D060
+[INDIRECT] returned target=0x8237CA10 caller=0x8238D060
+[INDIRECT] call target=0x82381F30 LR=0x82382188
+[INDIRECT] returned target=0x82381F30 caller=0x82382188
+[INDIRECT] call target=0x82381F30 LR=0x82382188
+[INDIRECT] returned target=0x82381F30 caller=0x82382188
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[INDIRECT] call target=0x82381F30 LR=0x82382188
+[INDIRECT] returned target=0x82381F30 caller=0x82382188
+[INDIRECT] call target=0x82381F30 LR=0x82382188
+[INDIRECT] returned target=0x82381F30 caller=0x82382188
+[GPU SUBMIT] RPTR=00000000 WPTR=00000016 ring=10000000
+[GPU PACKET] depth=0 addr=10000000 header=C0114800 type=3 opcode=48 count=18 data= 000003FF 00000000 00000000 00000000 00000080 00000100 00000180 00000200 00000280 00000300 00000380 00010800 00000007 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=0 addr=1000004C header=C0013F00 type=3 opcode=3F count=2 data= 10049680 0000000B
+[GPU PACKET] depth=1 addr=10049680 header=00000A31 type=0 opcode=0A count=1 data= 01000000
+[GPU PACKET] depth=1 addr=10049688 header=00010A2F type=0 opcode=0A count=2 data= 0072C000 10010000
+[GPU PACKET] depth=1 addr=10049694 header=C0043C00 type=3 opcode=3C count=5 data= 00000003 00000A31 00000000 80000000 00000008
+[GPU PACKET] depth=0 addr=10000000 header=C0114800 type=3 opcode=48 count=18 data= 000003FF 00000000 00000000 00000000 00000080 00000100 00000180 00000200 00000280 00000300 00000380 00010800 00000007 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=0 addr=1000004C header=C0013F00 type=3 opcode=3F count=2 data= 10049680 0000000B
+[GPU PACKET] depth=1 addr=10049680 header=00000A31 type=0 opcode=0A count=1 data= 01000000
+[GPU REG] index=0A31 value=01000000
+[GPU PACKET] depth=1 addr=10049688 header=00010A2F type=0 opcode=0A count=2 data= 0072C000 10010000
+[GPU REG] index=0A2F value=0072C000
+[GPU REG] index=0A30 value=10010000
+[GPU PACKET] depth=1 addr=10049694 header=C0043C00 type=3 opcode=3C count=5 data= 00000003 00000A31 00000000 80000000 00000008
+[GPU COHERENT] base=10010000 size=0072C000 status=01000000
+[GPU CONSUMED] RPTR=00000016 writeback=1073C03C
+[GPU SUBMIT] RPTR=00000016 WPTR=00000019 ring=10000000
+[GPU PACKET] depth=0 addr=10000058 header=C0013F00 type=3 opcode=3F count=2 data= 10010000 00000159
+[GPU PACKET] depth=1 addr=10010000 header=00000D02 type=0 opcode=0D count=1 data= 00010800
+[GPU PACKET] depth=1 addr=10010008 header=00030A02 type=0 opcode=0A count=4 data= C0100000 07F00000 C0000000 00100000
+[GPU PACKET] depth=1 addr=1001001C header=000001DD type=0 opcode=01 count=1 data= 1073D000
+[GPU PACKET] depth=1 addr=10010024 header=000001DC type=0 opcode=01 count=1 data= 00020033
+[GPU PACKET] depth=1 addr=1001002C header=000005C8 type=0 opcode=05 count=1 data= 00020000
+[GPU PACKET] depth=1 addr=10010034 header=00000D04 type=0 opcode=0D count=1 data= 00000000
+[GPU PACKET] depth=1 addr=1001003C header=C0025800 type=3 opcode=58 count=3 data= 00000003 C0000102 7F100000
+[GPU PACKET] depth=1 addr=1001004C header=00000D01 type=0 opcode=0D count=1 data= 04000000
+[GPU PACKET] depth=1 addr=10010054 header=C0022100 type=3 opcode=21 count=3 data= 00000081 FFFFFFFF 80010000
+[GPU PACKET] depth=1 addr=10010064 header=C0022100 type=3 opcode=21 count=3 data= 00000082 FFFFFFFF 00000000
+[GPU PACKET] depth=1 addr=10010074 header=00000C85 type=0 opcode=0C count=1 data= 0000000F
+[GPU PACKET] depth=1 addr=1001007C header=0000057C type=0 opcode=05 count=1 data= 0BADF00D
+[GPU PACKET] depth=1 addr=10010084 header=00022080 type=0 opcode=20 count=3 data= 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010094 header=000005C8 type=0 opcode=05 count=1 data= 00020000
+[GPU PACKET] depth=1 addr=1001009C header=00000F01 type=0 opcode=0F count=1 data= 0000200E
+[GPU PACKET] depth=1 addr=100100A4 header=000005C8 type=0 opcode=05 count=1 data= 00020000
+[GPU PACKET] depth=1 addr=100100AC header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100B4 header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100BC header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100C4 header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100CC header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100D4 header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100DC header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100E4 header=00000D00 type=0 opcode=0D count=1 data= 00040401
+[GPU PACKET] depth=1 addr=100100EC header=00000D00 type=0 opcode=0D count=1 data= 00040400
+[GPU PACKET] depth=1 addr=100100F4 header=000F2000 type=0 opcode=20 count=16 data= 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 20002000
+[GPU PACKET] depth=1 addr=10010138 header=00142100 type=0 opcode=21 count=21 data= 00FFFFFF 00000000 00000000 0000FFFF 00000000 3F800000 3F800000 3F800000 3F800000 00000000 00000000 00000000 00FFFF00 00FFFF00 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010190 header=00042180 type=0 opcode=21 count=5 data= 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=100101A8 header=000B2200 type=0 opcode=22 count=12 data= 00700734 00010001 87000007 00000000 00080000 00018006 0000043F 00000000 00000004 00010001 00010001 00010001
+[GPU PACKET] depth=1 addr=100101DC header=00072380 type=0 opcode=23 count=8 data= 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010200 header=00142280 type=0 opcode=22 count=21 data= 00080008 04000010 00000008 00000000 00000000 00000001 3F800000 3F800000 0000000E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010258 header=00252300 type=0 opcode=23 count=38 data= 00000000 00000000 00000004 40000000 3F800000 40000000 3F800000 000FF000 000FF100 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 0000FFFF 00000000 00000000 00000000 0000000E 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000002 00000000
+[GPU PACKET] depth=1 addr=100102F4 header=C01C2B00 type=3 opcode=2B count=29 data= 00000000 0000001B 30052003 00001200 C4000000 00001005 00001200 C2000000 00001006 10071200 22000000 30081000 00393A88 00000007 00080000 40263688 00000300 C80F8000 00000000 C2000000 C80F803E 00000000 C2010100 C8000000 00000000 02000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=1001036C header=C00A2B00 type=3 opcode=2B count=11 data= 00000001 00000009 00000000 1001C400 22000000 C80F8000 00000000 C2000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=1001039C header=00012180 type=0 opcode=21 count=2 data= 1001000E 00000000
+[GPU PACKET] depth=1 addr=100103A8 header=00022100 type=0 opcode=21 count=3 data= 0000FFFF 00000000 00000000
+[GPU PACKET] depth=1 addr=100103B8 header=00022204 type=0 opcode=22 count=3 data= 00010000 00010000 00000300
+[GPU PACKET] depth=1 addr=100103C8 header=00002312 type=0 opcode=23 count=1 data= 0000FFFF
+[GPU PACKET] depth=1 addr=100103D0 header=C0015000 type=3 opcode=50 count=2 data= FFFFFFFF 00000000
+[GPU PACKET] depth=1 addr=100103DC header=00002200 type=0 opcode=22 count=1 data= 00000000
+[GPU PACKET] depth=1 addr=100103E4 header=00002203 type=0 opcode=22 count=1 data= 00000000
+[GPU PACKET] depth=1 addr=100103EC header=00002208 type=0 opcode=22 count=1 data= 00000004
+[GPU PACKET] depth=1 addr=100103F4 header=00002104 type=0 opcode=21 count=1 data= 00000000
+[GPU PACKET] depth=1 addr=100103FC header=00002280 type=0 opcode=22 count=1 data= 00080008
+[GPU PACKET] depth=1 addr=10010404 header=00002302 type=0 opcode=23 count=1 data= 00000004
+[GPU PACKET] depth=1 addr=1001040C header=00022080 type=0 opcode=20 count=3 data= 00000000 00000000 00100010
+[GPU PACKET] depth=1 addr=1001041C header=00054800 type=0 opcode=48 count=6 data= 10049637 1000001E 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010438 header=00025000 type=0 opcode=50 count=3 data= 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010448 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010450 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010458 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010460 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010468 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010470 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010478 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010480 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010488 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010490 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010498 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104A0 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104A8 header=00054800 type=0 opcode=48 count=6 data= 10049653 1000001E 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=100104C4 header=00025000 type=0 opcode=50 count=3 data= 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=100104D4 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104DC header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104E4 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104EC header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104F4 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=100104FC header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010504 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=1001050C header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010514 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=1001051C header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010524 header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=1001052C header=C0003600 type=3 opcode=36 count=1 data= 00010081
+[GPU PACKET] depth=1 addr=10010534 header=00022080 type=0 opcode=20 count=3 data= 00000000 00000000 00000000
+[GPU PACKET] depth=1 addr=10010544 header=C0025800 type=3 opcode=58 count=3 data= 00000003 1073C006 10010540
+[GPU PACKET] depth=1 addr=10010554 header=C0025800 type=3 opcode=58 count=3 data= 00000003 1073C002 00000003
+[GPU PACKET] depth=0 addr=10000058 header=C0013F00 type=3 opcode=3F count=2 data= 10010000 00000159
+[GPU PACKET] depth=1 addr=10010000 header=00000D02 type=0 opcode=0D count=1 data= 00010800
+[GPU REG] index=0D02 value=00010800
+[GPU STOP] unimplemented register semantics RPTR=00000016
+[GPU STOP] packet_address=10010000
+[PPC STATE] LR=823822B4 CTR=82381F30 r1=720FE8C0 r3=00000000 r4=00000016 r29=00000019 r30=720FE9C8 r31=10010000

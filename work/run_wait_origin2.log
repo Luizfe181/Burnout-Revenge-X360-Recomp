@@ -1,0 +1,186 @@
+=== Burnout Revenge graphics_init_test ===
+base = 0000019A594A0000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 5490 mappings
+[RtlInitializeCriticalSection] guest=0x70006000
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+
+r13/KPCR        = 0x70000000
+current thread  = 0x70001000
+thread id       = 0x00000001
+graphics object = 0x71000000
+config          = 0x71010000
+stack           = 0x720FF000
+flags           = 0x00000000
+
+global SYSTEM @8200079C = 0x70003000
+global USER   @820007A0 = 0x70002000
+
+heap antes @82D4809C = 0x00000000
+Inicializando heap...
+[NtAllocateVirtualMemory] base*=0x00000000 size*=0x00100000 type=0x60002000 protect=0x00000004 r7=0x00000000
+  RESERVE guest=0x30000000 size=0x100000
+[NtAllocateVirtualMemory] base*=0x30000000 size*=0x00010000 type=0x60001000 protect=0x00000004 r7=0x00000000
+  COMMIT guest=0x30000000 host=0000019A894A0000 size=0x10000
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlInitializeCriticalSection] guest=0x30000610
+heap depois @82D4809C = 0x30000000 r3=0x00000001
+heap +20   = 0x00040002
+heap +24   = 0x00000000
+heap +1408 = 0x30000610
+[HARNESS] teste heap 30002FC1 host=0000019A894A2FC1 valor=0x00
+[MmAllocatePhysicalMemoryEx] guest=0x10000000 size=0x10000 align=0x1000 flags=0x00000404
+[MmAllocatePhysicalMemoryEx] guest=0x10010000 size=0x72C000 align=0x1000 flags=0x20000404
+[XGetVideoMode] out=720FEC90 bytes=48 1280x720 progressive 60Hz
+[RtlInitializeCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExGetXConfigSetting] category=3 setting=10 buffer=0x30004410 size=4 required=0x720FEB60
+  -> XCONFIG_USER_VIDEO_FLAGS = 0x00040000
+[RtlInitializeCriticalSection] guest=0x30003DE0
+[VdInitializeEngines] r3=0x09710000 callback=0x8238CE28 arg=0x00000000 pfp=0x00000000 me=0x00000000
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExRegisterTitleTerminateNotification] registration=0x82699B50 create=1 routine=0x8238CE48 priority=0x6E800000
+[VdSetGraphicsInterruptCallback] callback=0x82381BC8 context=0x30000700
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x00000000
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073C000 size=0x60 align=0x1000 flags=0x00000004
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073D000 size=0x20 align=0x1000 flags=0x00000204
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x1073E000 size=0x12C0 align=0x1000 flags=0x00000404
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[MmGetPhysicalAddress] guest=0x10000000
+[GPU INIT] ring=10000000 bytes=00010000
+[VdInitializeRingBuffer] physical=0x10000000 sizeArg=13
+[GPU WB] address=1073C03C block_log2=7
+[VdEnableRingBufferRPtrWriteBack] address=0x1073C03C
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x1073C008
+[KiApcNormalRoutineNop] r3=0x720FEA20 r4=0x00000013
+[THREAD CREATED] id=2 handle=00020000 object=70100018 startup=00000000 worker=8238E168 argument=300032AC suspended=0 stack=[73001000,73009000)
+[THREAD PRIORITY] id=2 increment=17 previous=0
+[Xenos MMIO READ32] reg=0x3C00 -> 0x00000000
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[VdQueryVideoMode] out=720FEA90 bytes=48 1280x720 progressive 60Hz
+[VdCallGraphicsNotificationRoutines] type=1 args=0x720FE950 scale 1280x720 -> 1280x720
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x823EE808 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B758 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B758 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B7E0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B7E0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B7A8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B7A8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B0A0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B0A0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B068 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B068 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B120 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B120 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B4F0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B4F0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B638 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B638 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B258 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B258 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B2F0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B2F0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B1C0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B1C0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B400 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B400 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B478 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B478 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B388 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B388 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B0D8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B0D8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B590 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B590 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B600 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B600 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B828 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B828 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B878 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B878 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B8F8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B8F8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B940 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B940 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B988 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B988 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B8C0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B8C0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BAC0 LR=0x8238CF98
+[THREAD START] id=2 startup=00000000 worker=8238E168 KPCR=70101000 TLS=70102000 SP=73008F00 LR=00000000 r3=300032AC r4=00000000
+[INDIRECT] tid=2 call target=0x8238E168 LR=0x00000000
+[INDIRECT] tid=1 returned target=0x8237BAC0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BAE8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BAE8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BB10 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BB10 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B9F8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B9F8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BA40 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BA40 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BA88 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BA88 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237B9C0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237B9C0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BB38 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BB38 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BB60 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BB60 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BB88 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BB88 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BBB0 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BBB0 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BEF8 LR=0x8238CF98
+[WAIT STOP] unknown guest object=300032CC thread=2 r4=00000003 r5=00000001 r6=00000000 r7=73008EB0 LR=8238E21C
+[INDIRECT] tid=1 returned target=0x8237BEF8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BF50 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BF50 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BEE8 LR=0x8238CF98
+[INDIRECT] tid=1 returned target=0x8237BEE8 caller=0x8238CF98
+[INDIRECT] tid=1 call target=0x8237BFA0 LR=0x8238CF98
+[WAIT DUMP] object-0x20=300032AC: 30002FC4 00000002 7F100000 00000000 7F100000 7F108000 C0000102 7F000100 00000000 00000000 300032D4 300032D4 70100018 00000002 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[THREAD STATE] id=2 entry=8238E168 startup=00000000 active_indirect=8238E168
+[PPC STATE] LR=8238E21C CTR=00000000 r1=73008E60 r3=300032CC r4=00000003 r29=73008EB0 r30=00000000 r31=00000000
+[INDIRECT] tid=1 returned target=0x8237BFA0 caller=0x8238CF98

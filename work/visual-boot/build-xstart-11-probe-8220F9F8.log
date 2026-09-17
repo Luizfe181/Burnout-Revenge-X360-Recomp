@@ -1,0 +1,16 @@
+Compile graphics_init_test.cpp
+In file included from C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\graphics_init_test.cpp:99:
+C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\graphics_lookup.h:141:39: warning: 'getenv' is deprecated: This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  141 |     static const bool full_trace=std::getenv("BURNOUT_TRACE_INDIRECT")!=nullptr;
+      |                                       ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:1183:20: note: 'getenv' has been explicitly marked deprecated here
+ 1183 |     _Check_return_ _CRT_INSECURE_DEPRECATE(_dupenv_s)
+      |                    ^
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:358:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  358 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:348:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  348 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+1 warning generated.
+BOOT BUILD OK

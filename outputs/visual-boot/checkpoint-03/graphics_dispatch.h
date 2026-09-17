@@ -1,0 +1,17 @@
+#pragma once
+#include "ppc_recomp_shared.h"
+
+// Included only by the graphics slice. Other harnesses keep their dispatch ABI.
+struct PPCContext;
+void BurnoutCallIndirect(PPCContext& ctx, unsigned char* base, unsigned int target);
+#undef PPC_CALL_INDIRECT_FUNC
+#define PPC_CALL_INDIRECT_FUNC(x) BurnoutCallIndirect(ctx, base, (unsigned int)(x))
+
+extern "C" void BurnoutPpcMmStoreU32(unsigned char* base, unsigned int address, unsigned int value);
+#undef PPC_MM_STORE_U32
+#define PPC_MM_STORE_U32(x, y) BurnoutPpcMmStoreU32(base, (unsigned int)(x), (unsigned int)(y))
+
+extern "C" unsigned long long BurnoutReadTimebase();
+// Intrinsic headers are already included above. Only generated PPC reads use
+// this override; their timebase must agree with KeQueryPerformanceFrequency.
+#define __rdtsc() BurnoutReadTimebase()

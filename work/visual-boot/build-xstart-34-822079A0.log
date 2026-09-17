@@ -1,0 +1,10 @@
+Compile ppc_recomp.8.cpp
+Compile ppc_recomp.9.cpp
+Compile ppc_recomp.24.cpp
+Compile ppc_recomp.25.cpp
+Compile ppc_recomp.33.cpp
+Compile ppc_recomp.34.cpp
+Compile ppc_recomp.35.cpp
+Compile ppc_recomp.36.cpp
+Compile mapping.cpp
+BOOT BUILD OK

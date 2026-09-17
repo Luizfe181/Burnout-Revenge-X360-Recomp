@@ -1,0 +1,614 @@
+=== Burnout Revenge graphics_init_test ===
+base = 0000025D4A7D0000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 5490 mappings
+[RtlInitializeCriticalSection] guest=0x70006000
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+
+r13/KPCR        = 0x70000000
+current thread  = 0x70001000
+thread id       = 0x00000001
+graphics object = 0x71000000
+config          = 0x71010000
+stack           = 0x720FF000
+flags           = 0x00000000
+
+global SYSTEM @8200079C = 0x70003000
+global USER   @820007A0 = 0x70002000
+[BOOT] entering real XEX _xstart at 825B0500
+[INDIRECT] tid=1 call target=0x825B0500 LR=0x00000000
+[NtAllocateVirtualMemory] base*=0x00000000 size*=0x00100000 type=0x60002000 protect=0x00000004 r7=0x00000000
+  RESERVE guest=0x30000000 size=0x100000
+[NtAllocateVirtualMemory] base*=0x30000000 size*=0x00010000 type=0x60001000 protect=0x00000004 r7=0x00000000
+  COMMIT guest=0x30000000 host=0000025D7A7D0000 size=0x10000
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlInitializeCriticalSection] guest=0x30000610
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEA8
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEC4
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEE0
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DEFC
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF18
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF34
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF50
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF6C
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DF88
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFA4
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFC0
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFDC
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3DFF8
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825AD0A8 LR=0x825AD120
+[RtlInitializeCriticalSection] guest=0x82D3E014
+[INDIRECT] tid=1 returned target=0x825AD0A8 caller=0x825AD120
+[INDIRECT] tid=1 call target=0x825A5118 LR=0x825A53DC
+[KeTlsAlloc] slot=0 KPCR=70000000
+[INDIRECT] tid=1 returned target=0x825A5118 caller=0x825A53DC
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] tid=1 call target=0x825C75DC LR=0x825A5414
+[INDIRECT] tid=1 returned target=0x825C75DC caller=0x825A5414
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=1 call target=0x8259DEA0 LR=0x825B4D18
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] tid=1 returned target=0x8259DEA0 caller=0x825B4D18
+[INDIRECT] tid=1 call target=0x825AAAD8 LR=0x825B4D18
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] tid=1 returned target=0x825AAAD8 caller=0x825B4D18
+[INDIRECT] tid=1 call target=0x8259BAB8 LR=0x825B4C18
+[INDIRECT] tid=1 returned target=0x8259BAB8 caller=0x825B4C18
+[INDIRECT] tid=1 call target=0x825A6298 LR=0x825B4C54
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[INDIRECT] tid=1 returned target=0x825A6298 caller=0x825B4C54
+[INDIRECT] tid=1 call target=0x825AB348 LR=0x825B4C54
+[INDIRECT] tid=1 returned target=0x825AB348 caller=0x825B4C54
+[INDIRECT] tid=1 call target=0x825AA218 LR=0x825B4CA0
+[KeQuerySystemTime] ticks=134340475843476180 destination=720FED60
+[INDIRECT] tid=1 returned target=0x825AA218 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825AA218 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825AA218 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C66A0 LR=0x825B4CA0
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[INDIRECT] tid=1 returned target=0x825C66A0 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0510 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0510 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0530 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0530 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0550 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0550 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0570 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0570 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0590 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0590 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C05B0 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C05B0 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C05C8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C05C8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C05E8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C05E8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0608 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0608 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0628 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0628 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0648 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0648 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0668 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0668 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0688 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0688 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C06A8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C06A8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C06C8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C06C8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C06E8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C06E8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0708 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0708 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0728 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0728 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0748 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0748 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0768 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0768 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0788 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0788 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C07A8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C07A8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C07C8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C07C8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C07E8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C07E8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0808 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0808 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0828 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0828 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0848 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0848 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0868 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0868 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0888 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0888 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C08A8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C08A8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C08C8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C08C8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C08E8 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C08E8 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0908 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0908 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0928 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0928 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0940 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0940 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0960 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0960 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C0980 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C0980 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C09A0 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C09A0 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x825C09C0 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C09C0 caller=0x825B4CA0
+[RtlInitializeCriticalSection] guest=0x8284BAA4
+[RtlEnterCriticalSection] guest=0x8284BAA4
+[RtlLeaveCriticalSection] guest=0x8284BAA4
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x10000000 size=0x6000 align=0x1000 flags=0x00000004
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x10006000 size=0x78000 align=0x1000 flags=0x00000004
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x82A49810
+[RtlEnterCriticalSection] guest=0x82A49810
+[RtlLeaveCriticalSection] guest=0x82A49810
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[KeGetCurrentProcessType] -> 1 (USER)
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x82A555A0
+[RtlEnterCriticalSection] guest=0x82A555A0
+[RtlLeaveCriticalSection] guest=0x82A555A0
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x82A5387C
+[RtlEnterCriticalSection] guest=0x82A5387C
+[RtlLeaveCriticalSection] guest=0x82A5387C
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x8229FDA8 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8229FDA8 caller=0x82097250
+[INDIRECT] tid=1 call target=0x825C60D0 LR=0x825B4CA0
+[INDIRECT] tid=1 returned target=0x825C60D0 caller=0x825B4CA0
+[INDIRECT] tid=1 call target=0x8212BB98 LR=0x82097250
+[INDIRECT] tid=1 returned target=0x8212BB98 caller=0x82097250
+[RtlInitializeCriticalSection] guest=0x82698088
+[RtlEnterCriticalSection] guest=0x82698088
+[RtlLeaveCriticalSection] guest=0x82698088
+[RtlEnterCriticalSection] guest=0x82698088
+[RtlLeaveCriticalSection] guest=0x82698088
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x826980B8
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x82D2B378
+[RtlEnterCriticalSection] guest=0x82D2B378
+[RtlLeaveCriticalSection] guest=0x82D2B378
+[RtlInitializeCriticalSection] guest=0x82D2B890
+[RtlEnterCriticalSection] guest=0x82D2B890
+[RtlLeaveCriticalSection] guest=0x82D2B890
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x826AE294
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x826AE2B4
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlInitializeCriticalSection] guest=0x826AE6FC
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[XexCheckExecutablePrivilege] bit=10 flags=00000204 result=0
+[KeEnableFpuExceptions] disabled; MXCSR=00001FA0
+[KeEnableFpuExceptions] disabled; MXCSR=00001FA0
+[KeTlsAlloc] slot=1 KPCR=70000000
+[RtlInitializeCriticalSection] guest=0x82D3E210
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[OBJECT] semaphore handle=00020000
+[ObReferenceObjectByHandle] handle=00020000 guest=70100018 references=1
+[THREAD CREATED] id=2 handle=00020004 object=70101018 startup=825B5358 worker=825B7820 argument=82D3E180 suspended=1 stack=[73001000,73041000)
+[ObReferenceObjectByHandle] handle=00020004 guest=70101018 references=1
+[THREAD AFFINITY] id=2 logical_cpu=1 previous=0
+[THREAD RESUME] id=2 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[THREAD START] id=2 startup=825B5358 worker=825B7820 KPCR=70102000 TLS=70103000 SP=73040F00 LR=00000000 r3=825B7820 r4=82D3E180
+[INDIRECT] tid=2 call target=0x825B5358 LR=0x00000000
+[OBJECT] semaphore handle=00020008
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=2 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=2 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=2 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=2 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=2 call target=0x825B7820 LR=0x825B5394
+[ObReferenceObjectByHandle] handle=00020008 guest=70104018 references=1
+[THREAD YIELD] id=2 count=1 LR=825B5138
+[THREAD CREATED] id=3 handle=0002000C object=70105018 startup=825B5358 worker=825B7820 argument=82D3E198 suspended=1 stack=[73043000,73083000)
+[ObReferenceObjectByHandle] handle=0002000C guest=70105018 references=1
+[THREAD AFFINITY] id=3 logical_cpu=2 previous=0
+[THREAD RESUME] id=3 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[THREAD START] id=3 startup=825B5358 worker=825B7820 KPCR=70106000 TLS=70107000 SP=73082F00 LR=00000000 r3=825B7820 r4=82D3E198
+[INDIRECT] tid=3 call target=0x825B5358 LR=0x00000000
+[OBJECT] semaphore handle=00020010
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=3 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=3 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=3 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=3 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=3 call target=0x825B7820 LR=0x825B5394
+[THREAD YIELD] id=3 count=1 LR=825B5138
+[ObReferenceObjectByHandle] handle=00020010 guest=70108018 references=1
+[THREAD CREATED] id=4 handle=00020014 object=70109018 startup=825B5358 worker=825B7820 argument=82D3E1B0 suspended=1 stack=[73085000,730C5000)
+[ObReferenceObjectByHandle] handle=00020014 guest=70109018 references=1
+[THREAD AFFINITY] id=4 logical_cpu=3 previous=0
+[THREAD RESUME] id=4 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[THREAD START] id=4 startup=825B5358 worker=825B7820 KPCR=7010A000 TLS=7010B000 SP=730C4F00 LR=00000000 r3=825B7820 r4=82D3E1B0
+[INDIRECT] tid=4 call target=0x825B5358 LR=0x00000000
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=4 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=4 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=4 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=4 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=4 call target=0x825B7820 LR=0x825B5394
+[THREAD YIELD] id=4 count=1 LR=825B5138
+[OBJECT] semaphore handle=00020018
+[ObReferenceObjectByHandle] handle=00020018 guest=7010C018 references=1
+[THREAD CREATED] id=5 handle=0002001C object=7010D018 startup=825B5358 worker=825B7820 argument=82D3E1C8 suspended=1 stack=[730C7000,73107000)
+[ObReferenceObjectByHandle] handle=0002001C guest=7010D018 references=1
+[THREAD AFFINITY] id=5 logical_cpu=4 previous=0
+[THREAD RESUME] id=5 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[THREAD START] id=5 startup=825B5358 worker=825B7820 KPCR=7010E000 TLS=7010F000 SP=73106F00 LR=00000000 r3=825B7820 r4=82D3E1C8
+[INDIRECT] tid=5 call target=0x825B5358 LR=0x00000000
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=5 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=5 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=5 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=5 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=5 call target=0x825B7820 LR=0x825B5394
+[THREAD YIELD] id=5 count=1 LR=825B5138
+[OBJECT] semaphore handle=00020020
+[ObReferenceObjectByHandle] handle=00020020 guest=70110018 references=1
+[THREAD CREATED] id=6 handle=00020024 object=70111018 startup=825B5358 worker=825B7820 argument=82D3E1E0 suspended=1 stack=[73109000,73149000)
+[ObReferenceObjectByHandle] handle=00020024 guest=70111018 references=1
+[THREAD AFFINITY] id=6 logical_cpu=5 previous=0
+[THREAD RESUME] id=6 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[NtCreateSemaphore] out=720FEB20 attrs=00000000 count=0 limit=4096
+[OBJECT] semaphore handle=00020028
+[ObReferenceObjectByHandle] handle=00020028 guest=70114018 references=1
+[THREAD CREATED] id=7 handle=0002002C object=70115018 startup=825B5358 worker=825B7820 argument=82D3E1F8 suspended=1 stack=[7314B000,7318B000)
+[RtlNtStatusToDosError] status=C000000D error=87
+[THREAD RESUME] id=7 worker=825B7820 previous=1 remaining=0 caller_LR=825AEE14
+[KeQueryPerformanceFrequency] 50000000 Hz LR=825AF900
+[RtlEnterCriticalSection] guest=0x82D3DF50
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlLeaveCriticalSection] guest=0x82D3DF50
+[RtlEnterCriticalSection] guest=0x82D3E210
+[RtlLeaveCriticalSection] guest=0x82D3E210
+[THREAD MAIN REGISTERED] id=1 object=70001000 KPCR=70000000 stack=[72000000,72100000)
+[NtDuplicateObject] source=FFFFFFFE duplicate=00020030 object=70001000
+[THREAD WAIT] id=5 object=7010C018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[THREAD WAIT] id=2 object=70100018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[MmAllocatePhysicalMemoryEx] guest=0x1007E000 size=0xA80A000 align=0x1000 flags=0x00000004
+[THREAD START] id=7 startup=825B5358 worker=825B7820 KPCR=70116000 TLS=70117000 SP=7318AF00 LR=00000000 r3=825B7820 r4=82D3E1F8
+[INDIRECT] tid=7 call target=0x825B5358 LR=0x00000000
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=7 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=7 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=7 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=7 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=7 call target=0x825B7820 LR=0x825B5394
+[THREAD WAIT] id=7 object=70114018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[THREAD WAIT] id=4 object=70108018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[THREAD WAIT] id=3 object=70104018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[MmAllocatePhysicalMemoryEx] guest=0x1A888000 size=0xD918000 align=0x1000 flags=0x00000004
+[THREAD START] id=6 startup=825B5358 worker=825B7820 KPCR=70112000 TLS=70113000 SP=73148F00 LR=00000000 r3=825B7820 r4=82D3E1E0
+[INDIRECT] tid=6 call target=0x825B5358 LR=0x00000000
+[XGetVideoMode] out=720FECD0 bytes=48 1280x720 progressive 60Hz
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=6 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=6 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=6 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=6 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=6 call target=0x825B7820 LR=0x825B5394
+[THREAD WAIT] id=6 object=70110018 kind=0 reason=3 alertable=0 timeout_ms=4294967295 LR=825B7898
+[KeQueryPerformanceFrequency] 50000000 Hz LR=825AF900
+[KeQueryPerformanceFrequency] 50000000 Hz LR=825AF900
+[NtCreateTimer] out=720FEC00 attrs=00000000 type=0
+[OBJECT] timer handle=00020034 object=70118018 type=0
+[THREAD CREATED] id=8 handle=00020038 object=70119018 startup=825B5358 worker=824239E8 argument=720FEBF0 suspended=1 stack=[7318D000,731CD000)
+[ObReferenceObjectByHandle] handle=00020038 guest=70119018 references=1
+[THREAD PRIORITY] id=8 increment=16 previous=0
+[THREAD RESUME] id=8 worker=824239E8 previous=1 remaining=0 caller_LR=825AEE14
+[THREAD DELAY] id=1 interval_100ns=-10000 alertable=1 LR=825B5138
+[THREAD START] id=8 startup=825B5358 worker=824239E8 KPCR=7011A000 TLS=7011B000 SP=731CCF00 LR=00000000 r3=824239E8 r4=720FEBF0
+[INDIRECT] tid=8 call target=0x825B5358 LR=0x00000000
+[RtlEnterCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=8 call target=0x825AB250 LR=0x825B44F0
+[INDIRECT] tid=8 call target=0x823EE808 LR=0x825AB280
+[INDIRECT] tid=8 returned target=0x823EE808 caller=0x825AB280
+[INDIRECT] tid=8 returned target=0x825AB250 caller=0x825B44F0
+[RtlLeaveCriticalSection] guest=0x826AFCB8
+[INDIRECT] tid=8 call target=0x824239E8 LR=0x825B5394
+[INDIRECT] tid=8 call target=0x82424040 LR=0x82423A18
+[THREAD WAIT] id=8 object=70118018 kind=2 reason=3 alertable=0 timeout_ms=4294967295 LR=825B4B28
+[THREAD DELAY COMPLETE] id=1
+[NtSetTimerEx] handle=00020034 object=70118018 type=0 due=-100000 routine=00000000 unk_one=1 context=00000000 resume=0 period_ms=0 unk_zero=0
+[XGetVideoMode] out=720FECC0 bytes=48 1280x720 progressive 60Hz
+[MmAllocatePhysicalMemoryEx] guest=0x281A0000 size=0x10000 align=0x1000 flags=0x00000404
+[MmAllocatePhysicalMemoryEx] guest=0x281B0000 size=0x72C000 align=0x1000 flags=0x20000404
+[XGetVideoMode] out=720FE900 bytes=48 1280x720 progressive 60Hz
+[RtlEnterCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[RtlEnterCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x30000610
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[KeGetCurrentProcessType] -> 1 (USER)
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExGetXConfigSetting] category=3 setting=10 buffer=0x30005410 size=4 required=0x720FE7D0
+  -> XCONFIG_USER_VIDEO_FLAGS = 0x00040000
+[RtlInitializeCriticalSection] guest=0x30004DE0
+[VdInitializeEngines] r3=0x09710000 callback=0x8238CE28 arg=0x00000000 pfp=0x00000000 me=0x00000000
+[KeGetCurrentProcessType] -> 1 (USER)
+[ExRegisterTitleTerminateNotification] registration=0x82699B50 create=1 routine=0x8238CE48 priority=0x6E800000
+[VdSetGraphicsInterruptCallback] callback=0x82381BC8 context=0x30001700
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x00000000
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x288DC000 size=0x60 align=0x1000 flags=0x00000004
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x288DD000 size=0x20 align=0x1000 flags=0x00000204
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[RtlEnterCriticalSection] guest=0x82A52D34
+[MmAllocatePhysicalMemoryEx] guest=0x288DE000 size=0x12C0 align=0x1000 flags=0x00000404
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[MmGetPhysicalAddress] guest=0x281A0000 -> physical=0x281A0000 LR=8238335C
+[GPU INIT] ring=281A0000 bytes=00010000
+[VdInitializeRingBuffer] physical=0x281A0000 sizeArg=13 LR=82383364
+[GPU WB] address=088DC03C block_log2=7
+[VdEnableRingBufferRPtrWriteBack] address=0x088DC03C block_log2=7 LR=8238339C
+[VdSetSystemCommandBufferGpuIdentifierAddress] address=0x288DC008
+[KiApcNormalRoutineNop] r3=0x720FE690 r4=0x00000013
+[THREAD CREATED] id=9 handle=0002003C object=7011C018 startup=00000000 worker=8238E168 argument=300042AC suspended=0 stack=[731CF000,731D7000)
+[THREAD PRIORITY] id=9 increment=17 previous=0
+[Xenos MMIO READ32] reg=0x3C00 -> 0x00000000
+[Xenos MMIO READ32] reg=0x3C04 -> 0x0000000E
+[THREAD START] id=9 startup=00000000 worker=8238E168 KPCR=7011D000 TLS=7011E000 SP=731D6F00 LR=00000000 r3=300042AC r4=00000000
+[INDIRECT] tid=9 call target=0x8238E168 LR=0x00000000
+[VdQueryVideoMode] out=720FE700 bytes=48 1280x720 progressive 60Hz
+[OBJECT] embedded event object=300042CC type=0 mode=notification state=0
+[THREAD WAIT] id=9 object=300042CC kind=1 reason=3 alertable=0 timeout_ms=30 LR=8238E21C
+[VdCallGraphicsNotificationRoutines] type=1 args=0x720FE5C0 scale 1280x720 -> 1280x720
+[RtlEnterCriticalSection] guest=0x82A52D34
+[RtlLeaveCriticalSection] guest=0x82A52D34
+[Xenos MMIO WRITE32] CP_RB_WPTR value=0x00000016
+[THREAD STATE] id=1 entry=825B0500 startup=00000000 active_indirect=825B0500
+[PPC STATE] LR=823822B4 CTR=82381F30 r1=720FE5B0 r3=00000000 r4=00000013 r29=00000016 r30=720FE6B8 r31=081E9680
+[GPU SUBMIT] RPTR=00000000 WPTR=00000016 ring=281A0000 bytes=00010000 ring_host=0000025D72970000 query=1 state=0x1000 protect=0x4
+[GPU PACKET] depth=0 addr=281A0000 header=C0114800 type=3 opcode=48 count=18 data= 000003FF 00000000 00000000 00000000 00000080 00000100 00000180 00000200 00000280 00000300 00000380 00010800 00000007 00000000 00000000 00000000 00000000 00000000
+[GPU PACKET] depth=0 addr=281A004C header=C0013F00 type=3 opcode=3F count=2 data= 081E9680 0000000B
+[GPU IB] parent=281A004C raw=0x081E9680 translated=0x081E9680 length=11 raw_state=0x2000 raw_protect=0x0 high_alias=0x281E9680 alias_state=0x1000 alias_protect=0x4
+[GPU STOP] GPU read from invalid/uncommitted memory RPTR=00000000
+[GPU STOP] packet_address=281A004C submitted_WPTR=00000016 writeback_address=088DC03C ring=281A0000 read_address=081E9680 ring_bytes=00010000 host=0000025D7297004C query=1 state=0x1000 protect=0x4 region_base=0000025D72970000 region_size=7602176
+[THREAD STATE] id=1 entry=825B0500 startup=00000000 active_indirect=825B0500
+[PPC STATE] LR=823822B4 CTR=82381F30 r1=720FE5B0 r3=00000000 r4=00000013 r29=00000016 r30=720FE6B8 r31=081E9680

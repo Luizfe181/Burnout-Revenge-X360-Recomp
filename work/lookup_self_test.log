@@ -1,0 +1,9 @@
+=== Burnout Revenge graphics_init_test ===
+base = 0000023F2AB10000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 309 mappings
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+[INDIRECT] call target=0x823EE808 LR=0x8238CF98
+[INDIRECT] returned target=0x823EE808 caller=0x8238CF98
+[LOOKUP TEST] All mappings round-trip; real 823EE808 preserves context.

@@ -1,0 +1,7 @@
+=== Burnout Revenge graphics_init_test ===
+base = 000001EF7C7A0000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 309 mappings
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+[LOOKUP] Missing target=0x82090000 LR=0x00000000; include its real implementation in the slice

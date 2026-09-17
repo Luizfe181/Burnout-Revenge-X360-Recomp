@@ -1,0 +1,339 @@
+--- a/extract_ppc_slice.py
++++ b/extract_ppc_slice.py
+@@ -1,4 +1,6 @@
+ import re
++import json
++import struct
+ from pathlib import Path
+ 
+ ROOTS = [
+@@ -196,9 +198,33 @@
+ # __imp__sub_XXXXXXXX.
+ # ------------------------------------------------------------
+ 
++# Indirect targets cannot be inferred from a register-based bctrl alone.
++# Describe verified image tables or observed targets in a separate manifest.
++manifest = json.loads((HERE / "graphics_slice.json").read_text(encoding="utf-8"))
++mapping_text = (HERE / "ppc_func_mapping.cpp").read_text(encoding="utf-8")
++mapping_entries = [(int(a, 16), n) for a, n in re.findall(
++    r"\{\s*0x([0-9A-Fa-f]+),\s*([A-Za-z_][A-Za-z0-9_]*)\s*\}", mapping_text)]
++address_to_name = dict(mapping_entries)
++image = (HERE / manifest["image"]).read_bytes()
++image_base = int(manifest["image_base"], 0)
++indirect_roots = set(manifest.get("extra_roots", []))
++for table in manifest["function_tables"]:
++    start = int(table["address"], 0) - image_base
++    for index in range(table["count"]):
++        offset = start + index * table["stride"] + table["target_offset"]
++        if offset < 0 or offset + 4 > len(image):
++            raise RuntimeError(f"Table outside image: {table['name']}")
++        address = struct.unpack_from(">I", image, offset)[0]
++        if address not in address_to_name:
++            raise RuntimeError(f"Unknown callback 0x{address:08X} in {table['name']}[{index}]")
++        indirect_roots.add(address_to_name[address])
++for symbol in indirect_roots:
++    if symbol not in aliases and symbol not in implementations:
++        raise RuntimeError(f"Missing indirect implementation: {symbol}")
++
+ selected_impl = set()
+ selected_alias = set()
+-queue = list(ROOTS)
++queue = list(ROOTS) + sorted(indirect_roots)
+ 
+ external = set()
+ 
+@@ -277,6 +303,7 @@
+ # ------------------------------------------------------------
+ 
+ with OUTPUT.open("w", encoding="utf-8", newline="\n") as out:
++    out.write('#include "graphics_dispatch.h"\n')
+     out.write('#include "ppc_recomp_shared.h"\n\n')
+ 
+     out.write("// ========================================================\n")
+@@ -310,6 +337,15 @@
+         out.write(info["prefix"])
+         out.write(info["body"])
+         out.write("\n\n")
++
++
++    # Emit only mappings backed by the selected definitions. The full generated
++    # mapping would require linking every PPC translation unit.
++    out.write("PPCFuncMapping PPCFuncMappings[] = {\n")
++    for address, symbol in mapping_entries:
++        if symbol in selected_alias or symbol in selected_impl:
++            out.write(f"    {{ 0x{address:08X}, {symbol} }},\n")
++    out.write("    { 0, nullptr }\n};\n")
+ 
+ 
+ print()
+@@ -342,4 +378,4 @@
+ 
+ for name in sorted(external):
+     if name not in selected_impl and name not in selected_alias:
+-        print(f"  {name}")+        print(f"  {name}")
+--- a/graphics_slice.json
++++ b/graphics_slice.json
+@@ -0,0 +1,26 @@
++{
++  "image": "../Burnout4_External.pe",
++  "image_base": "0x82000000",
++  "extra_roots": [
++    "sub_82381F30"
++  ],
++  "function_tables": [
++    {
++      "name": "CF38 first loop (r29 - 4)",
++      "address": "0x82699330",
++      "count": 97,
++      "stride": 12,
++      "target_offset": 4
++    },
++    {
++      "name": "CF38 second loop (r29 - 4)",
++      "address": "0x826997C0",
++      "count": 20,
++      "stride": 12,
++      "target_offset": 4
++    }
++  ],
++  "extra_root_reasons": {
++    "sub_82381F30": "sub_8238D410 stores lis 0x8238 + addi 0x1F30 at graphics+13636; sub_82382138 calls it at LR 0x82382188."
++  }
++}
+--- a/graphics_dispatch.h
++++ b/graphics_dispatch.h
+@@ -0,0 +1,9 @@
++#pragma once
++
++// Included only by the graphics slice. Other harnesses keep their dispatch ABI.
++struct PPCContext;
++void BurnoutCallIndirect(PPCContext& ctx, unsigned char* base, unsigned int target);
++#define PPC_CALL_INDIRECT_FUNC(x) BurnoutCallIndirect(ctx, base, (unsigned int)(x))
++
++extern "C" void BurnoutPpcMmStoreU32(unsigned char* base, unsigned int address, unsigned int value);
++#define PPC_MM_STORE_U32(x, y) BurnoutPpcMmStoreU32(base, (unsigned int)(x), (unsigned int)(y))
+--- a/graphics_lookup.h
++++ b/graphics_lookup.h
+@@ -0,0 +1,92 @@
++#pragma once
++
++static uint8_t* diagnosticBase = nullptr;
++static PPCContext* diagnosticContext = nullptr;
++static LONG WINAPI ReportGraphicsException(EXCEPTION_POINTERS* exception)
++{
++    const auto* record = exception->ExceptionRecord;
++    if (record->ExceptionCode != EXCEPTION_ACCESS_VIOLATION)
++        return EXCEPTION_CONTINUE_SEARCH;
++    const auto module = reinterpret_cast<uintptr_t>(GetModuleHandleW(nullptr));
++    std::fprintf(stderr, "[AV] RIP=0x%llX module_offset=0x%llX operation=%llu address=0x%llX guest_offset=0x%llX\n",
++        exception->ContextRecord->Rip, exception->ContextRecord->Rip - module,
++        static_cast<unsigned long long>(record->ExceptionInformation[0]),
++        static_cast<unsigned long long>(record->ExceptionInformation[1]),
++        static_cast<unsigned long long>(record->ExceptionInformation[1] - reinterpret_cast<uintptr_t>(diagnosticBase)));
++    if (diagnosticContext)
++    {
++        const auto& c = *diagnosticContext;
++        std::fprintf(stderr, "[AV] PPC LR=%08llX CTR=%08X r1=%08X r3=%08X r4=%08X r11=%08X r29=%08X r30=%08X r31=%08X\n",
++            c.lr, c.ctr.u32, c.r1.u32, c.r3.u32, c.r4.u32, c.r11.u32, c.r29.u32, c.r30.u32, c.r31.u32);
++    }
++    std::fflush(stderr);
++    return EXCEPTION_CONTINUE_SEARCH;
++}
++
++// Host pointer table prescribed by XenonRecomp, not guest big-endian data.
++static constexpr uint64_t LOOKUP_BEGIN = PPC_IMAGE_BASE + PPC_IMAGE_SIZE;
++static constexpr uint64_t LOOKUP_SIZE = PPC_CODE_SIZE * 2ull;
++static_assert(sizeof(PPCFunc*) == 8, "Lookup layout requires a 64-bit host");
++static_assert((PPC_CODE_SIZE & 3) == 0, "PPC instructions must be aligned");
++static_assert(LOOKUP_BEGIN + LOOKUP_SIZE <= GUEST_SIZE, "Lookup outside reservation");
++
++static bool InitializeGraphicsLookup(uint8_t* base)
++{
++    MEMORY_BASIC_INFORMATION before{};
++    VirtualQuery(base + LOOKUP_BEGIN + (0x823EE808ull - PPC_CODE_BASE) * 2,
++                 &before, sizeof(before));
++    std::printf("[LOOKUP] 823EE808 slot before commit: State=0x%lX Protect=0x%lX\n",
++                before.State, before.Protect);
++    if (!commit_guest(base, static_cast<uint32_t>(LOOKUP_BEGIN), LOOKUP_SIZE))
++        return false;
++    std::memset(base + LOOKUP_BEGIN, 0, LOOKUP_SIZE);
++    size_t count = 0;
++    for (auto* m = PPCFuncMappings; m->guest; ++m)
++    {
++        if (m->guest < PPC_CODE_BASE || m->guest >= PPC_CODE_BASE + PPC_CODE_SIZE ||
++            ((m->guest - PPC_CODE_BASE) & 3) || !m->host)
++        {
++            std::fprintf(stderr, "[LOOKUP] Invalid mapping: 0x%llX\n",
++                         static_cast<unsigned long long>(m->guest));
++            return false;
++        }
++        auto& slot = PPC_LOOKUP_FUNC(base, m->guest);
++        if (slot && slot != m->host)
++        {
++            std::fprintf(stderr, "[LOOKUP] Conflicting mapping: 0x%llX\n",
++                         static_cast<unsigned long long>(m->guest));
++            return false;
++        }
++        slot = m->host;
++        ++count;
++    }
++    std::printf("[LOOKUP] committed [0x%llX,0x%llX), %zu mappings\n",
++                LOOKUP_BEGIN, LOOKUP_BEGIN + LOOKUP_SIZE, count);
++    if (PPC_LOOKUP_FUNC(base, 0x823EE808u) != &sub_823EE808)
++    {
++        std::fprintf(stderr, "[LOOKUP] Required callback 823EE808 mapping mismatch\n");
++        return false;
++    }
++    return true;
++}
++
++void BurnoutCallIndirect(PPCContext& ctx, unsigned char* base, unsigned int target)
++{
++    if (target < PPC_CODE_BASE || target >= PPC_CODE_BASE + PPC_CODE_SIZE || (target & 3))
++    {
++        std::fprintf(stderr, "[LOOKUP] Invalid target=0x%08X LR=0x%08llX\n", target, ctx.lr);
++        std::exit(3);
++    }
++    PPCFunc* function = PPC_LOOKUP_FUNC(base, target);
++    if (!function)
++    {
++        std::fprintf(stderr,
++            "[LOOKUP] Missing target=0x%08X LR=0x%08llX; include its real implementation in the slice\n",
++            target, ctx.lr);
++        std::exit(3);
++    }
++    const auto caller = ctx.lr;
++    std::printf("[INDIRECT] call target=0x%08X LR=0x%08llX\n", target, caller);
++    function(ctx, base);
++    std::printf("[INDIRECT] returned target=0x%08X caller=0x%08llX\n", target, caller);
++}
+--- a/graphics_init_test.cpp
++++ b/graphics_init_test.cpp
+@@ -35,6 +35,8 @@
+ 
+ static constexpr uint32_t HEAP_GLOBAL_ADDR =
+     0x82D4809C;
++
++static constexpr uint32_t DEBUG_MONITOR_DATA_ADDR = 0x70005000;
+ 
+ 
+ static bool commit_guest(
+@@ -93,8 +95,11 @@
+ }
+ 
+ 
+-int main()
++#include "graphics_lookup.h"
++
++int main(int argc, char** argv)
+ {
++    std::setvbuf(stdout, nullptr, _IONBF, 0);
+     std::printf(
+         "=== Burnout Revenge graphics_init_test ===\n");
+ 
+@@ -186,6 +191,59 @@
+     if (!load_image(base))
+         return 1;
+ 
++    if (!InitializeGraphicsLookup(base))
++        return 1;
++
++    // xboxkrnl ordinal 0x59 is an exported pointer variable, not a function.
++    // Import slot -> address of variable -> null (no debug monitor attached).
++    // See Xenia xboxkrnl_module.cc, KeDebugMonitorData registration.
++    if (PPC_LOAD_U32(0x820007CC) != 0x00010059)
++    {
++        std::fprintf(stderr, "Unexpected KeDebugMonitorData import descriptor\n");
++        return 1;
++    }
++    if (!commit_guest(base, DEBUG_MONITOR_DATA_ADDR, 0x1000)) return 1;
++    PPC_STORE_U32(DEBUG_MONITOR_DATA_ADDR, 0);
++    PPC_STORE_U32(0x820007CC, DEBUG_MONITOR_DATA_ADDR);
++    std::printf("[IMPORT] KeDebugMonitorData slot=820007CC variable=%08X value=0\n",
++                DEBUG_MONITOR_DATA_ADDR);
++
++    if (argc == 2 && std::strcmp(argv[1], "--lookup-self-test") == 0)
++    {
++        PPCContext test{};
++        test.r3.u64 = 0x123456789ABCDEF0ull;
++        test.lr = 0x8238CF98;
++        unsigned char saved[sizeof(test)];
++        std::memcpy(saved, &test, sizeof(test));
++        BurnoutCallIndirect(test, base, 0x823EE808u);
++        if (std::memcmp(saved, &test, sizeof(test))) return 4;
++        for (auto* m = PPCFuncMappings; m->guest; ++m)
++            if (PPC_LOOKUP_FUNC(base, m->guest) != m->host) return 4;
++        std::printf("[LOOKUP TEST] All mappings round-trip; real 823EE808 preserves context.\n");
++        VirtualFree(base, 0, MEM_RELEASE);
++        return 0;
++    }
++    if (argc == 2 && std::strcmp(argv[1], "--lookup-missing-test") == 0)
++    {
++        PPCContext test{};
++        for (uint64_t address = PPC_CODE_BASE; address < PPC_CODE_BASE + PPC_CODE_SIZE; address += 4)
++            if (!PPC_LOOKUP_FUNC(base, address))
++                BurnoutCallIndirect(test, base, static_cast<uint32_t>(address));
++        return 4;
++    }
++    if (argc == 2 && std::strcmp(argv[1], "--lookup-invalid-test") == 0)
++    {
++        PPCContext test{};
++        BurnoutCallIndirect(test, base, 0);
++        return 4;
++    }
++    if (argc == 2 && std::strcmp(argv[1], "--lookup-unaligned-test") == 0)
++    {
++        PPCContext test{};
++        BurnoutCallIndirect(test, base, 0x823EE809);
++        return 4;
++    }
++
+ 
+     // --------------------------------------------------------
+     // Zera as estruturas temporarias.
+@@ -318,6 +376,10 @@
+     // --------------------------------------------------------
+ 
+     PPCContext ctx{};
++
++    diagnosticBase = base;
++    diagnosticContext = &ctx;
++    AddVectoredExceptionHandler(1, ReportGraphicsException);
+ 
+     ctx.r13.u64 =
+         KPCR_ADDR;
+@@ -526,4 +588,4 @@
+         MEM_RELEASE);
+ 
+     return 0;
+-}+}
+--- a/xbox_mmio.cpp
++++ b/xbox_mmio.cpp
+@@ -1,6 +1,22 @@
+ #include <cstdint>
+ #include <cstdio>
+ #include <cstdlib>
++
++extern "C" void BurnoutPpcMmStoreU32(uint8_t* base, uint32_t address, uint32_t value)
++{
++    if (address >= 0x7FC80000u && address < 0x7FC90000u)
++    {
++        const char* name = address == 0x7FC80714u ? "CP_RB_WPTR" : "UNKNOWN";
++        std::fprintf(stderr,
++            "[Xenos MMIO WRITE32] %s address=0x%08X value=0x%08X: "
++            "UNIMPLEMENTED command processor; submission NOT consumed\n",
++            name, address, value);
++        std::fflush(stderr);
++        std::exit(5);
++    }
++    // Recompiler may conservatively mark RAM stores near an eieio as MMIO.
++    *reinterpret_cast<volatile uint32_t*>(base + address) = __builtin_bswap32(value);
++}
+ 
+ extern "C" uint32_t BurnoutPpcLoadU32(
+     uint8_t* base,
+@@ -39,4 +55,4 @@
+     // RAM normal do guest, big-endian.
+     return __builtin_bswap32(
+         *reinterpret_cast<volatile uint32_t*>(base + address));
+-}+}

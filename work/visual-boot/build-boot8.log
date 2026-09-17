@@ -1,0 +1,4 @@
+Compile xbox_kernel.cpp
+Compile xenos_cp.cpp
+Compile import_probes.cpp
+BOOT BUILD OK

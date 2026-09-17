@@ -1,0 +1,10 @@
+=== Burnout Revenge graphics_init_test ===
+base = 000001DEAB7D0000
+Imagem carregada: 14286848 bytes
+[LOOKUP] 823EE808 slot before commit: State=0x2000 Protect=0x0
+[LOOKUP] committed [0x82DA0000,0x8383AFD0), 5459 mappings
+[RtlInitializeCriticalSection] guest=0x70006000
+[IMPORT] KeDebugMonitorData slot=820007CC variable=70005000 value=0
+[XGetVideoMode] out=720FFF00 bytes=48 1280x720 progressive 60Hz
+[VdQueryVideoMode] out=720FFF00 bytes=48 1280x720 progressive 60Hz
+[VIDEO TEST PASS] both APIs write 48 bytes and preserve saved-register canaries

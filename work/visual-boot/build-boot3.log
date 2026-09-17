@@ -1,0 +1,22 @@
+Compile ppc_recomp.0.cpp
+Compile ppc_recomp.9.cpp
+Compile ppc_recomp.10.cpp
+Compile ppc_recomp.14.cpp
+Compile ppc_recomp.15.cpp
+Compile ppc_recomp.26.cpp
+Compile ppc_recomp.29.cpp
+Compile ppc_recomp.35.cpp
+Compile ppc_recomp.36.cpp
+Compile ppc_recomp.37.cpp
+Compile ppc_recomp.41.cpp
+Compile ppc_recomp.42.cpp
+Compile ppc_recomp.56.cpp
+Compile ppc_recomp.59.cpp
+Compile ppc_recomp.80.cpp
+Compile ppc_recomp.82.cpp
+Compile ppc_recomp.84.cpp
+Compile ppc_recomp.85.cpp
+Compile ppc_recomp.86.cpp
+Compile ppc_recomp.87.cpp
+Compile mapping.cpp
+BOOT BUILD OK

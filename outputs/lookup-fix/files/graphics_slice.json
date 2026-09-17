@@ -1,0 +1,26 @@
+{
+  "image": "../Burnout4_External.pe",
+  "image_base": "0x82000000",
+  "extra_roots": [
+    "sub_82381F30"
+  ],
+  "function_tables": [
+    {
+      "name": "CF38 first loop (r29 - 4)",
+      "address": "0x82699330",
+      "count": 97,
+      "stride": 12,
+      "target_offset": 4
+    },
+    {
+      "name": "CF38 second loop (r29 - 4)",
+      "address": "0x826997C0",
+      "count": 20,
+      "stride": 12,
+      "target_offset": 4
+    }
+  ],
+  "extra_root_reasons": {
+    "sub_82381F30": "sub_8238D410 stores lis 0x8238 + addi 0x1F30 at graphics+13636; sub_82382138 calls it at LR 0x82382188."
+  }
+}

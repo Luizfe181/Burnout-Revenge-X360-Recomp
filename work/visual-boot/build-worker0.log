@@ -1,0 +1,33 @@
+Compile xbox_kernel.cpp
+Compile graphics_init_test.cpp
+C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:302:15: error: expected unqualified-id
+  302 |     size=std::max(0x4000u,(size+0xfff)&~0xfffu);
+      |               ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\shared\minwindef.h:193:29: note: expanded from macro 'max'
+  193 | #define max(a,b)            (((a) > (b)) ? (a) : (b))
+      |                             ^
+1 error generated.
+Compile xbox_memory.cpp
+Traceback (most recent call last):
+  File "C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build_boot.py", line 18, in <module>
+    objs=list(pool.map(compile,sources))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\Miniconda3\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\Miniconda3\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\Miniconda3\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\Miniconda3\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\luizf\Miniconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build_boot.py", line 15, in compile
+    subprocess.run([compiler,*flags,'-c',str(src),'-o',str(dst)],cwd=p,check=True)
+  File "C:\Users\luizf\Miniconda3\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe', '-std=c++17', '-O0', '-g', '-mavx', '-msse4.1', '-include', 'stdio.h', '-include', 'Windows.h', '-I', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc', '-c', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\xbox_kernel.cpp', '-o', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_kernel.cpp.obj']' returned non-zero exit status 1.

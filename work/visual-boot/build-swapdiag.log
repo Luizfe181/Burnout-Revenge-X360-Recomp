@@ -1,0 +1,215 @@
+Compile graphics_init_test.cpp
+Compile xbox_kernel.cpp
+In file included from C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\graphics_init_test.cpp:98:
+C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\graphics_lookup.h:101:39: warning: 'getenv' is deprecated: This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Wdeprecated-declarations]
+  101 |     static const bool full_trace=std::getenv("BURNOUT_TRACE_INDIRECT")!=nullptr;
+      |                                       ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h:1183:20: note: 'getenv' has been explicitly marked deprecated here
+ 1183 |     _Check_return_ _CRT_INSECURE_DEPRECATE(_dupenv_s)
+      |                    ^
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:358:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+  358 |         #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+      |                                                       ^
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:348:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+  348 | #define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+      |                                               ^
+1 warning generated.
+Compile xbox_memory.cpp
+Compile xbox_mm.cpp
+Compile xbox_mmio.cpp
+Compile xbox_probe.cpp
+Compile xbox_rtl.cpp
+Compile xbox_vd.cpp
+Compile xbox_xconfig.cpp
+Compile xbox_virtual_memory.cpp
+Compile xenos_cp.cpp
+Compile ppc_recomp.0.cpp
+Compile ppc_recomp.1.cpp
+Compile ppc_recomp.2.cpp
+Compile ppc_recomp.3.cpp
+Compile ppc_recomp.4.cpp
+Compile ppc_recomp.5.cpp
+Compile ppc_recomp.6.cpp
+Compile ppc_recomp.7.cpp
+Compile ppc_recomp.8.cpp
+Compile ppc_recomp.9.cpp
+Compile ppc_recomp.10.cpp
+Compile ppc_recomp.11.cpp
+Compile ppc_recomp.12.cpp
+Compile ppc_recomp.13.cpp
+Compile ppc_recomp.14.cpp
+Compile ppc_recomp.15.cpp
+Compile ppc_recomp.16.cpp
+Compile ppc_recomp.17.cpp
+Compile ppc_recomp.18.cpp
+Compile ppc_recomp.19.cpp
+Compile ppc_recomp.21.cpp
+Compile ppc_recomp.22.cpp
+Compile ppc_recomp.23.cpp
+Compile ppc_recomp.24.cpp
+Compile ppc_recomp.25.cpp
+Compile ppc_recomp.26.cpp
+Compile ppc_recomp.27.cpp
+Compile ppc_recomp.28.cpp
+Compile ppc_recomp.29.cpp
+Compile ppc_recomp.30.cpp
+Compile ppc_recomp.31.cpp
+Compile ppc_recomp.32.cpp
+Compile ppc_recomp.33.cpp
+Compile ppc_recomp.34.cpp
+Compile ppc_recomp.35.cpp
+Compile ppc_recomp.36.cpp
+Compile ppc_recomp.37.cpp
+Compile ppc_recomp.38.cpp
+Compile ppc_recomp.39.cpp
+Compile ppc_recomp.40.cpp
+Compile ppc_recomp.41.cpp
+Compile ppc_recomp.42.cpp
+Compile ppc_recomp.43.cpp
+Compile ppc_recomp.44.cpp
+Compile ppc_recomp.45.cpp
+Compile ppc_recomp.46.cpp
+Compile ppc_recomp.47.cpp
+Compile ppc_recomp.48.cpp
+Compile ppc_recomp.49.cpp
+Compile ppc_recomp.50.cpp
+Compile ppc_recomp.51.cpp
+Compile ppc_recomp.52.cpp
+Compile ppc_recomp.54.cpp
+Compile ppc_recomp.55.cpp
+Compile ppc_recomp.56.cpp
+Compile ppc_recomp.57.cpp
+Compile ppc_recomp.58.cpp
+Compile ppc_recomp.59.cpp
+Compile ppc_recomp.60.cpp
+Compile ppc_recomp.61.cpp
+Compile ppc_recomp.62.cpp
+Compile ppc_recomp.63.cpp
+Compile ppc_recomp.64.cpp
+Compile ppc_recomp.65.cpp
+Compile ppc_recomp.66.cpp
+Compile ppc_recomp.70.cpp
+Compile ppc_recomp.75.cpp
+Compile ppc_recomp.76.cpp
+Compile ppc_recomp.77.cpp
+Compile ppc_recomp.78.cpp
+Compile ppc_recomp.79.cpp
+Compile ppc_recomp.80.cpp
+Compile ppc_recomp.81.cpp
+Compile ppc_recomp.82.cpp
+Compile ppc_recomp.83.cpp
+Compile ppc_recomp.84.cpp
+Compile ppc_recomp.85.cpp
+Compile ppc_recomp.86.cpp
+Compile ppc_recomp.87.cpp
+Compile ppc_recomp.88.cpp
+Compile mapping.cpp
+Compile import_probes.cpp
+lld-link: error: duplicate symbol: void __cdecl __imp__KeLockL2(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_vd.cpp:270
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_vd.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__KeUnlockL2(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_vd.cpp:275
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_vd.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_WSACloseEvent(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:33
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_WSACreateEvent(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:34
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_WSAGetLastError(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:35
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_WSASetEvent(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:36
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetConnect(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:37
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetCreateKey(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:38
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetDnsLookup(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:39
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetDnsRelease(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:40
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetGetConnectStatus(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:41
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetGetEthernetLinkStatus(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:42
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetGetTitleXnAddr(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:43
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetQosRelease(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:45
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetQosServiceLookup(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:46
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_XNetRegisterKey(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:47
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_accept(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:13
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_closesocket(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:14
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_connect(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:15
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: duplicate symbol: void __cdecl __imp__NetDll_getpeername(struct PPCContext &__restrict, unsigned char *)
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:16
+>>>            C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\xbox_kernel.cpp.obj
+>>> defined at C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build-boot\import_probes.cpp.obj
+
+lld-link: error: too many errors emitted, stopping now (use /errorlimit:0 to see all errors)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+Traceback (most recent call last):
+  File "C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\build_boot.py", line 19, in <module>
+    subprocess.run([compiler,*flags,*map(str,objs),'-o',str(p/'burnout_boot_test.exe')],cwd=p,check=True)
+  File "C:\Users\luizf\Miniconda3\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe', '-std=c++17', '-O0', '-g', '-mavx', '-msse4.1', '-include', 'stdio.h', '-include', 'Windows.h', '-I', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\graphics_init_test.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_kernel.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_memory.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_mm.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_mmio.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_probe.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_rtl.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_vd.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_xconfig.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xbox_virtual_memory.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\xenos_cp.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.0.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.1.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.2.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.3.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.4.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.5.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.6.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.7.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.8.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.9.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.10.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.11.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.12.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.13.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.14.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.15.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.16.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.17.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.18.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.19.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.21.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.22.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.23.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.24.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.25.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.26.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.27.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.28.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.29.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.30.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.31.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.32.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.33.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.34.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.35.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.36.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.37.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.38.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.39.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.40.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.41.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.42.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.43.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.44.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.45.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.46.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.47.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.48.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.49.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.50.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.51.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.52.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.54.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.55.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.56.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.57.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.58.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.59.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.60.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.61.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.62.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.63.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.64.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.65.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.66.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.70.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.75.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.76.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.77.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.78.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.79.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.80.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.81.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.82.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.83.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.84.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.85.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.86.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.87.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\ppc_recomp.88.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\mapping.cpp.obj', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\build-boot\\import_probes.cpp.obj', '-o', 'C:\\Users\\luizf\\Documents\\Codex\\2026-09-15\\estou-fazendo-uma-recompila-o-est\\work\\ppc\\burnout_boot_test.exe']' returned non-zero exit status 1.

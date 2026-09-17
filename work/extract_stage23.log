@@ -1,0 +1,2808 @@
+Arquivos PPC encontrados: 90
+Implementacoes encontradas: 22985
+Weak aliases encontrados:   22985
+
+=== RESULTADO ===
+Roots:                sub_82150520, sub_825B4D40
+Implementacoes:       1337
+Aliases:              1337
+Arquivo:              ppc_graphics_init_min.cpp
+
+Implementacoes selecionadas:
+  __imp____restfpr_21              ppc_recomp.80.cpp
+  __imp____restfpr_24              ppc_recomp.80.cpp
+  __imp____restfpr_28              ppc_recomp.80.cpp
+  __imp____restgprlr_14            ppc_recomp.79.cpp
+  __imp____restgprlr_17            ppc_recomp.79.cpp
+  __imp____restgprlr_18            ppc_recomp.80.cpp
+  __imp____restgprlr_19            ppc_recomp.80.cpp
+  __imp____restgprlr_20            ppc_recomp.80.cpp
+  __imp____restgprlr_21            ppc_recomp.80.cpp
+  __imp____restgprlr_22            ppc_recomp.80.cpp
+  __imp____restgprlr_23            ppc_recomp.80.cpp
+  __imp____restgprlr_24            ppc_recomp.80.cpp
+  __imp____restgprlr_25            ppc_recomp.80.cpp
+  __imp____restgprlr_26            ppc_recomp.80.cpp
+  __imp____restgprlr_27            ppc_recomp.80.cpp
+  __imp____restgprlr_28            ppc_recomp.80.cpp
+  __imp____restgprlr_29            ppc_recomp.80.cpp
+  __imp____savefpr_21              ppc_recomp.80.cpp
+  __imp____savefpr_24              ppc_recomp.80.cpp
+  __imp____savefpr_28              ppc_recomp.80.cpp
+  __imp____savegprlr_14            ppc_recomp.79.cpp
+  __imp____savegprlr_17            ppc_recomp.79.cpp
+  __imp____savegprlr_18            ppc_recomp.79.cpp
+  __imp____savegprlr_19            ppc_recomp.79.cpp
+  __imp____savegprlr_20            ppc_recomp.79.cpp
+  __imp____savegprlr_21            ppc_recomp.79.cpp
+  __imp____savegprlr_22            ppc_recomp.79.cpp
+  __imp____savegprlr_23            ppc_recomp.79.cpp
+  __imp____savegprlr_24            ppc_recomp.79.cpp
+  __imp____savegprlr_25            ppc_recomp.79.cpp
+  __imp____savegprlr_26            ppc_recomp.79.cpp
+  __imp____savegprlr_27            ppc_recomp.79.cpp
+  __imp____savegprlr_28            ppc_recomp.79.cpp
+  __imp____savegprlr_29            ppc_recomp.79.cpp
+  __imp__sub_8209FEF8              ppc_recomp.1.cpp
+  __imp__sub_820A0150              ppc_recomp.1.cpp
+  __imp__sub_820A03A8              ppc_recomp.1.cpp
+  __imp__sub_820A03C0              ppc_recomp.1.cpp
+  __imp__sub_820A0898              ppc_recomp.1.cpp
+  __imp__sub_820A08B0              ppc_recomp.1.cpp
+  __imp__sub_820A08C8              ppc_recomp.1.cpp
+  __imp__sub_820A08E0              ppc_recomp.1.cpp
+  __imp__sub_820A0C68              ppc_recomp.1.cpp
+  __imp__sub_820A0C80              ppc_recomp.1.cpp
+  __imp__sub_820A0C98              ppc_recomp.1.cpp
+  __imp__sub_820A0CB0              ppc_recomp.1.cpp
+  __imp__sub_820A0CC8              ppc_recomp.1.cpp
+  __imp__sub_820A0CE0              ppc_recomp.1.cpp
+  __imp__sub_820A1998              ppc_recomp.1.cpp
+  __imp__sub_820A19B0              ppc_recomp.1.cpp
+  __imp__sub_820A19C8              ppc_recomp.1.cpp
+  __imp__sub_820A19E0              ppc_recomp.1.cpp
+  __imp__sub_820A19F8              ppc_recomp.1.cpp
+  __imp__sub_820A1A10              ppc_recomp.1.cpp
+  __imp__sub_820A2208              ppc_recomp.1.cpp
+  __imp__sub_820A2220              ppc_recomp.1.cpp
+  __imp__sub_820A24E8              ppc_recomp.1.cpp
+  __imp__sub_820A2500              ppc_recomp.1.cpp
+  __imp__sub_820A2518              ppc_recomp.1.cpp
+  __imp__sub_820A2530              ppc_recomp.1.cpp
+  __imp__sub_820A2BE8              ppc_recomp.1.cpp
+  __imp__sub_820A2C00              ppc_recomp.1.cpp
+  __imp__sub_820A2C18              ppc_recomp.1.cpp
+  __imp__sub_820A2C30              ppc_recomp.1.cpp
+  __imp__sub_820A3588              ppc_recomp.1.cpp
+  __imp__sub_820A3798              ppc_recomp.1.cpp
+  __imp__sub_82106C90              ppc_recomp.7.cpp
+  __imp__sub_82108398              ppc_recomp.8.cpp
+  __imp__sub_82108764              ppc_recomp.8.cpp
+  __imp__sub_8210B298              ppc_recomp.8.cpp
+  __imp__sub_8210CF48              ppc_recomp.8.cpp
+  __imp__sub_8210D228              ppc_recomp.8.cpp
+  __imp__sub_8210D3F0              ppc_recomp.8.cpp
+  __imp__sub_8210D520              ppc_recomp.8.cpp
+  __imp__sub_82144C28              ppc_recomp.13.cpp
+  __imp__sub_82150520              ppc_recomp.13.cpp
+  __imp__sub_82150748              ppc_recomp.13.cpp
+  __imp__sub_82151410              ppc_recomp.13.cpp
+  __imp__sub_821514D8              ppc_recomp.13.cpp
+  __imp__sub_82151C18              ppc_recomp.13.cpp
+  __imp__sub_8215AD08              ppc_recomp.15.cpp
+  __imp__sub_8215B068              ppc_recomp.15.cpp
+  __imp__sub_8215B298              ppc_recomp.15.cpp
+  __imp__sub_8215B408              ppc_recomp.15.cpp
+  __imp__sub_8215B480              ppc_recomp.15.cpp
+  __imp__sub_8215B4F8              ppc_recomp.15.cpp
+  __imp__sub_8215B570              ppc_recomp.15.cpp
+  __imp__sub_8215C250              ppc_recomp.15.cpp
+  __imp__sub_8216B788              ppc_recomp.15.cpp
+  __imp__sub_821732C0              ppc_recomp.15.cpp
+  __imp__sub_82173590              ppc_recomp.15.cpp
+  __imp__sub_82174B70              ppc_recomp.16.cpp
+  __imp__sub_8217CC40              ppc_recomp.16.cpp
+  __imp__sub_8217E958              ppc_recomp.16.cpp
+  __imp__sub_821F8968              ppc_recomp.24.cpp
+  __imp__sub_821F8B50              ppc_recomp.24.cpp
+  __imp__sub_821FE818              ppc_recomp.24.cpp
+  __imp__sub_82219930              ppc_recomp.26.cpp
+  __imp__sub_822199A8              ppc_recomp.26.cpp
+  __imp__sub_822D4DC0              ppc_recomp.37.cpp
+  __imp__sub_823471C8              ppc_recomp.41.cpp
+  __imp__sub_82347808              ppc_recomp.41.cpp
+  __imp__sub_823478D8              ppc_recomp.41.cpp
+  __imp__sub_823478E8              ppc_recomp.41.cpp
+  __imp__sub_82347900              ppc_recomp.41.cpp
+  __imp__sub_8234A610              ppc_recomp.42.cpp
+  __imp__sub_8234A758              ppc_recomp.42.cpp
+  __imp__sub_8234A7E8              ppc_recomp.42.cpp
+  __imp__sub_8234A850              ppc_recomp.42.cpp
+  __imp__sub_8234A8A8              ppc_recomp.42.cpp
+  __imp__sub_8234A9A0              ppc_recomp.42.cpp
+  __imp__sub_8234AAC0              ppc_recomp.42.cpp
+  __imp__sub_8234AB00              ppc_recomp.42.cpp
+  __imp__sub_8234ABC0              ppc_recomp.42.cpp
+  __imp__sub_8234ABF8              ppc_recomp.42.cpp
+  __imp__sub_8234AC50              ppc_recomp.42.cpp
+  __imp__sub_8234ACA8              ppc_recomp.42.cpp
+  __imp__sub_8234ACB0              ppc_recomp.42.cpp
+  __imp__sub_8234ACC0              ppc_recomp.42.cpp
+  __imp__sub_8234B5F8              ppc_recomp.42.cpp
+  __imp__sub_8234B678              ppc_recomp.42.cpp
+  __imp__sub_8234D6B0              ppc_recomp.42.cpp
+  __imp__sub_82351938              ppc_recomp.43.cpp
+  __imp__sub_82351970              ppc_recomp.43.cpp
+  __imp__sub_82353A10              ppc_recomp.43.cpp
+  __imp__sub_82353B80              ppc_recomp.43.cpp
+  __imp__sub_82353BA8              ppc_recomp.43.cpp
+  __imp__sub_82353C30              ppc_recomp.43.cpp
+  __imp__sub_82353C38              ppc_recomp.43.cpp
+  __imp__sub_82355D30              ppc_recomp.43.cpp
+  __imp__sub_82356300              ppc_recomp.43.cpp
+  __imp__sub_8235A818              ppc_recomp.44.cpp
+  __imp__sub_8235FEB8              ppc_recomp.44.cpp
+  __imp__sub_82360128              ppc_recomp.44.cpp
+  __imp__sub_82362368              ppc_recomp.44.cpp
+  __imp__sub_82362430              ppc_recomp.44.cpp
+  __imp__sub_82362500              ppc_recomp.44.cpp
+  __imp__sub_82362680              ppc_recomp.44.cpp
+  __imp__sub_82363CE8              ppc_recomp.45.cpp
+  __imp__sub_82364708              ppc_recomp.45.cpp
+  __imp__sub_82364768              ppc_recomp.45.cpp
+  __imp__sub_823647D0              ppc_recomp.45.cpp
+  __imp__sub_82364A18              ppc_recomp.45.cpp
+  __imp__sub_82364AC0              ppc_recomp.45.cpp
+  __imp__sub_823656F8              ppc_recomp.45.cpp
+  __imp__sub_82365768              ppc_recomp.45.cpp
+  __imp__sub_82365A40              ppc_recomp.45.cpp
+  __imp__sub_82365C40              ppc_recomp.45.cpp
+  __imp__sub_823665A0              ppc_recomp.45.cpp
+  __imp__sub_82366600              ppc_recomp.45.cpp
+  __imp__sub_82366620              ppc_recomp.45.cpp
+  __imp__sub_82366680              ppc_recomp.45.cpp
+  __imp__sub_82366AC0              ppc_recomp.45.cpp
+  __imp__sub_82366BF8              ppc_recomp.45.cpp
+  __imp__sub_82366CF8              ppc_recomp.45.cpp
+  __imp__sub_82366E08              ppc_recomp.45.cpp
+  __imp__sub_82366EA8              ppc_recomp.45.cpp
+  __imp__sub_82366F78              ppc_recomp.45.cpp
+  __imp__sub_82367F90              ppc_recomp.46.cpp
+  __imp__sub_82368710              ppc_recomp.46.cpp
+  __imp__sub_82369448              ppc_recomp.46.cpp
+  __imp__sub_823695F8              ppc_recomp.46.cpp
+  __imp__sub_8236A5C8              ppc_recomp.46.cpp
+  __imp__sub_8236B190              ppc_recomp.46.cpp
+  __imp__sub_8236B5D8              ppc_recomp.46.cpp
+  __imp__sub_8236BE50              ppc_recomp.46.cpp
+  __imp__sub_8236C008              ppc_recomp.46.cpp
+  __imp__sub_8236C278              ppc_recomp.46.cpp
+  __imp__sub_8236C450              ppc_recomp.46.cpp
+  __imp__sub_8236C500              ppc_recomp.46.cpp
+  __imp__sub_8236C5B0              ppc_recomp.46.cpp
+  __imp__sub_8236CB00              ppc_recomp.46.cpp
+  __imp__sub_8236CBC0              ppc_recomp.46.cpp
+  __imp__sub_8236CD08              ppc_recomp.46.cpp
+  __imp__sub_8236D030              ppc_recomp.46.cpp
+  __imp__sub_8236D108              ppc_recomp.46.cpp
+  __imp__sub_8236D1D0              ppc_recomp.46.cpp
+  __imp__sub_8236D2D8              ppc_recomp.46.cpp
+  __imp__sub_82370010              ppc_recomp.46.cpp
+  __imp__sub_823700A8              ppc_recomp.46.cpp
+  __imp__sub_8237017C              ppc_recomp.46.cpp
+  __imp__sub_82370180              ppc_recomp.46.cpp
+  __imp__sub_82370254              ppc_recomp.46.cpp
+  __imp__sub_82370258              ppc_recomp.46.cpp
+  __imp__sub_8237032C              ppc_recomp.46.cpp
+  __imp__sub_82370330              ppc_recomp.46.cpp
+  __imp__sub_823703D0              ppc_recomp.46.cpp
+  __imp__sub_82370488              ppc_recomp.46.cpp
+  __imp__sub_823704D4              ppc_recomp.46.cpp
+  __imp__sub_823704D8              ppc_recomp.46.cpp
+  __imp__sub_82370518              ppc_recomp.46.cpp
+  __imp__sub_823705FC              ppc_recomp.46.cpp
+  __imp__sub_82370600              ppc_recomp.46.cpp
+  __imp__sub_82370704              ppc_recomp.46.cpp
+  __imp__sub_82370708              ppc_recomp.46.cpp
+  __imp__sub_82370734              ppc_recomp.46.cpp
+  __imp__sub_82370738              ppc_recomp.46.cpp
+  __imp__sub_8237082C              ppc_recomp.47.cpp
+  __imp__sub_82370830              ppc_recomp.47.cpp
+  __imp__sub_82370924              ppc_recomp.47.cpp
+  __imp__sub_82370928              ppc_recomp.47.cpp
+  __imp__sub_82370968              ppc_recomp.47.cpp
+  __imp__sub_82370A28              ppc_recomp.47.cpp
+  __imp__sub_82370AA0              ppc_recomp.47.cpp
+  __imp__sub_82370B28              ppc_recomp.47.cpp
+  __imp__sub_82370C10              ppc_recomp.47.cpp
+  __imp__sub_82370C24              ppc_recomp.47.cpp
+  __imp__sub_82370C28              ppc_recomp.47.cpp
+  __imp__sub_82370C3C              ppc_recomp.47.cpp
+  __imp__sub_82370C40              ppc_recomp.47.cpp
+  __imp__sub_82370C54              ppc_recomp.47.cpp
+  __imp__sub_82370C58              ppc_recomp.47.cpp
+  __imp__sub_82370C6C              ppc_recomp.47.cpp
+  __imp__sub_82370C70              ppc_recomp.47.cpp
+  __imp__sub_82370C84              ppc_recomp.47.cpp
+  __imp__sub_82370C88              ppc_recomp.47.cpp
+  __imp__sub_82370CBC              ppc_recomp.47.cpp
+  __imp__sub_82370CC0              ppc_recomp.47.cpp
+  __imp__sub_82370CF4              ppc_recomp.47.cpp
+  __imp__sub_82370CF8              ppc_recomp.47.cpp
+  __imp__sub_82370DB4              ppc_recomp.47.cpp
+  __imp__sub_82370DB8              ppc_recomp.47.cpp
+  __imp__sub_82370DF8              ppc_recomp.47.cpp
+  __imp__sub_82370EA0              ppc_recomp.47.cpp
+  __imp__sub_82370F60              ppc_recomp.47.cpp
+  __imp__sub_823712FC              ppc_recomp.47.cpp
+  __imp__sub_82371300              ppc_recomp.47.cpp
+  __imp__sub_82371478              ppc_recomp.47.cpp
+  __imp__sub_823714E0              ppc_recomp.47.cpp
+  __imp__sub_82371554              ppc_recomp.47.cpp
+  __imp__sub_82371558              ppc_recomp.47.cpp
+  __imp__sub_82371710              ppc_recomp.47.cpp
+  __imp__sub_823718C8              ppc_recomp.47.cpp
+  __imp__sub_823719B8              ppc_recomp.47.cpp
+  __imp__sub_82371CDC              ppc_recomp.47.cpp
+  __imp__sub_82371CE0              ppc_recomp.47.cpp
+  __imp__sub_82371F60              ppc_recomp.47.cpp
+  __imp__sub_823721F8              ppc_recomp.47.cpp
+  __imp__sub_823722A0              ppc_recomp.47.cpp
+  __imp__sub_823723C4              ppc_recomp.47.cpp
+  __imp__sub_823723C8              ppc_recomp.47.cpp
+  __imp__sub_8237249C              ppc_recomp.47.cpp
+  __imp__sub_823724A0              ppc_recomp.47.cpp
+  __imp__sub_8237259C              ppc_recomp.47.cpp
+  __imp__sub_823725A0              ppc_recomp.47.cpp
+  __imp__sub_82372638              ppc_recomp.47.cpp
+  __imp__sub_823728EC              ppc_recomp.47.cpp
+  __imp__sub_823728F0              ppc_recomp.47.cpp
+  __imp__sub_823729E4              ppc_recomp.47.cpp
+  __imp__sub_823729E8              ppc_recomp.47.cpp
+  __imp__sub_82372D08              ppc_recomp.47.cpp
+  __imp__sub_82372E30              ppc_recomp.47.cpp
+  __imp__sub_82372F58              ppc_recomp.47.cpp
+  __imp__sub_8237307C              ppc_recomp.47.cpp
+  __imp__sub_82373080              ppc_recomp.47.cpp
+  __imp__sub_823732C8              ppc_recomp.47.cpp
+  __imp__sub_823733E0              ppc_recomp.47.cpp
+  __imp__sub_82373448              ppc_recomp.47.cpp
+  __imp__sub_82373494              ppc_recomp.47.cpp
+  __imp__sub_82373498              ppc_recomp.47.cpp
+  __imp__sub_82373620              ppc_recomp.47.cpp
+  __imp__sub_823736DC              ppc_recomp.47.cpp
+  __imp__sub_823736E0              ppc_recomp.47.cpp
+  __imp__sub_82373B00              ppc_recomp.47.cpp
+  __imp__sub_82373C0C              ppc_recomp.47.cpp
+  __imp__sub_82373C10              ppc_recomp.47.cpp
+  __imp__sub_82373CF8              ppc_recomp.47.cpp
+  __imp__sub_82373EF0              ppc_recomp.47.cpp
+  __imp__sub_8237410C              ppc_recomp.47.cpp
+  __imp__sub_82374110              ppc_recomp.47.cpp
+  __imp__sub_823742E0              ppc_recomp.47.cpp
+  __imp__sub_8237470C              ppc_recomp.47.cpp
+  __imp__sub_82374710              ppc_recomp.47.cpp
+  __imp__sub_82374C50              ppc_recomp.47.cpp
+  __imp__sub_82374D28              ppc_recomp.47.cpp
+  __imp__sub_82374FB4              ppc_recomp.47.cpp
+  __imp__sub_82374FB8              ppc_recomp.47.cpp
+  __imp__sub_82374FD4              ppc_recomp.47.cpp
+  __imp__sub_82374FD8              ppc_recomp.47.cpp
+  __imp__sub_823750A0              ppc_recomp.47.cpp
+  __imp__sub_823751A4              ppc_recomp.47.cpp
+  __imp__sub_823751A8              ppc_recomp.47.cpp
+  __imp__sub_82375C80              ppc_recomp.47.cpp
+  __imp__sub_82375CFC              ppc_recomp.47.cpp
+  __imp__sub_82375D00              ppc_recomp.47.cpp
+  __imp__sub_82375D5C              ppc_recomp.47.cpp
+  __imp__sub_82375D60              ppc_recomp.47.cpp
+  __imp__sub_82376520              ppc_recomp.47.cpp
+  __imp__sub_8237653C              ppc_recomp.47.cpp
+  __imp__sub_82376540              ppc_recomp.47.cpp
+  __imp__sub_82376A20              ppc_recomp.47.cpp
+  __imp__sub_82376AA0              ppc_recomp.47.cpp
+  __imp__sub_82376B34              ppc_recomp.47.cpp
+  __imp__sub_82376B38              ppc_recomp.47.cpp
+  __imp__sub_82376CA4              ppc_recomp.47.cpp
+  __imp__sub_82376CA8              ppc_recomp.47.cpp
+  __imp__sub_82376CBC              ppc_recomp.47.cpp
+  __imp__sub_82376CC0              ppc_recomp.47.cpp
+  __imp__sub_82377298              ppc_recomp.47.cpp
+  __imp__sub_823777B0              ppc_recomp.47.cpp
+  __imp__sub_82377894              ppc_recomp.47.cpp
+  __imp__sub_82377898              ppc_recomp.47.cpp
+  __imp__sub_82377A70              ppc_recomp.47.cpp
+  __imp__sub_82377AA0              ppc_recomp.47.cpp
+  __imp__sub_82377C00              ppc_recomp.47.cpp
+  __imp__sub_82377C74              ppc_recomp.47.cpp
+  __imp__sub_82377C78              ppc_recomp.47.cpp
+  __imp__sub_82377D64              ppc_recomp.47.cpp
+  __imp__sub_82377D68              ppc_recomp.47.cpp
+  __imp__sub_82377FC0              ppc_recomp.47.cpp
+  __imp__sub_823780EC              ppc_recomp.47.cpp
+  __imp__sub_823780F0              ppc_recomp.47.cpp
+  __imp__sub_823786B0              ppc_recomp.47.cpp
+  __imp__sub_82378968              ppc_recomp.47.cpp
+  __imp__sub_82378DF0              ppc_recomp.47.cpp
+  __imp__sub_82378E7C              ppc_recomp.47.cpp
+  __imp__sub_82378E80              ppc_recomp.47.cpp
+  __imp__sub_82378F04              ppc_recomp.47.cpp
+  __imp__sub_82378F08              ppc_recomp.47.cpp
+  __imp__sub_82378F54              ppc_recomp.47.cpp
+  __imp__sub_82378F58              ppc_recomp.47.cpp
+  __imp__sub_82379244              ppc_recomp.47.cpp
+  __imp__sub_82379248              ppc_recomp.47.cpp
+  __imp__sub_82379344              ppc_recomp.47.cpp
+  __imp__sub_82379348              ppc_recomp.47.cpp
+  __imp__sub_823794A8              ppc_recomp.47.cpp
+  __imp__sub_82379728              ppc_recomp.47.cpp
+  __imp__sub_823799F4              ppc_recomp.47.cpp
+  __imp__sub_823799F8              ppc_recomp.47.cpp
+  __imp__sub_82379A04              ppc_recomp.47.cpp
+  __imp__sub_82379A08              ppc_recomp.47.cpp
+  __imp__sub_82379A10              ppc_recomp.47.cpp
+  __imp__sub_82379F58              ppc_recomp.47.cpp
+  __imp__sub_8237A088              ppc_recomp.47.cpp
+  __imp__sub_8237A1D0              ppc_recomp.47.cpp
+  __imp__sub_8237A318              ppc_recomp.47.cpp
+  __imp__sub_8237A370              ppc_recomp.47.cpp
+  __imp__sub_8237A3C8              ppc_recomp.47.cpp
+  __imp__sub_8237A418              ppc_recomp.47.cpp
+  __imp__sub_8237A468              ppc_recomp.47.cpp
+  __imp__sub_8237A51C              ppc_recomp.47.cpp
+  __imp__sub_8237A520              ppc_recomp.47.cpp
+  __imp__sub_8237A5D4              ppc_recomp.47.cpp
+  __imp__sub_8237A5D8              ppc_recomp.47.cpp
+  __imp__sub_8237A720              ppc_recomp.47.cpp
+  __imp__sub_8237A7EC              ppc_recomp.47.cpp
+  __imp__sub_8237A7F0              ppc_recomp.47.cpp
+  __imp__sub_8237A948              ppc_recomp.47.cpp
+  __imp__sub_8237A9B0              ppc_recomp.47.cpp
+  __imp__sub_8237AA6C              ppc_recomp.47.cpp
+  __imp__sub_8237AA70              ppc_recomp.47.cpp
+  __imp__sub_8237AAB0              ppc_recomp.47.cpp
+  __imp__sub_8237AB5C              ppc_recomp.47.cpp
+  __imp__sub_8237AB60              ppc_recomp.47.cpp
+  __imp__sub_8237AC50              ppc_recomp.47.cpp
+  __imp__sub_8237AD28              ppc_recomp.47.cpp
+  __imp__sub_8237ADA4              ppc_recomp.47.cpp
+  __imp__sub_8237ADA8              ppc_recomp.47.cpp
+  __imp__sub_8237ADE8              ppc_recomp.47.cpp
+  __imp__sub_8237B068              ppc_recomp.47.cpp
+  __imp__sub_8237B090              ppc_recomp.47.cpp
+  __imp__sub_8237B09C              ppc_recomp.47.cpp
+  __imp__sub_8237B0A0              ppc_recomp.47.cpp
+  __imp__sub_8237B0C8              ppc_recomp.47.cpp
+  __imp__sub_8237B0D4              ppc_recomp.47.cpp
+  __imp__sub_8237B0D8              ppc_recomp.47.cpp
+  __imp__sub_8237B10C              ppc_recomp.47.cpp
+  __imp__sub_8237B110              ppc_recomp.47.cpp
+  __imp__sub_8237B11C              ppc_recomp.47.cpp
+  __imp__sub_8237B120              ppc_recomp.47.cpp
+  __imp__sub_8237B1AC              ppc_recomp.47.cpp
+  __imp__sub_8237B1B0              ppc_recomp.47.cpp
+  __imp__sub_8237B1BC              ppc_recomp.47.cpp
+  __imp__sub_8237B1C0              ppc_recomp.47.cpp
+  __imp__sub_8237B248              ppc_recomp.47.cpp
+  __imp__sub_8237B254              ppc_recomp.47.cpp
+  __imp__sub_8237B258              ppc_recomp.47.cpp
+  __imp__sub_8237B2E0              ppc_recomp.47.cpp
+  __imp__sub_8237B2EC              ppc_recomp.47.cpp
+  __imp__sub_8237B2F0              ppc_recomp.47.cpp
+  __imp__sub_8237B378              ppc_recomp.47.cpp
+  __imp__sub_8237B384              ppc_recomp.47.cpp
+  __imp__sub_8237B388              ppc_recomp.47.cpp
+  __imp__sub_8237B3F0              ppc_recomp.47.cpp
+  __imp__sub_8237B3FC              ppc_recomp.47.cpp
+  __imp__sub_8237B400              ppc_recomp.47.cpp
+  __imp__sub_8237B468              ppc_recomp.47.cpp
+  __imp__sub_8237B474              ppc_recomp.47.cpp
+  __imp__sub_8237B478              ppc_recomp.47.cpp
+  __imp__sub_8237B4E0              ppc_recomp.47.cpp
+  __imp__sub_8237B4EC              ppc_recomp.47.cpp
+  __imp__sub_8237B4F0              ppc_recomp.47.cpp
+  __imp__sub_8237B580              ppc_recomp.47.cpp
+  __imp__sub_8237B58C              ppc_recomp.47.cpp
+  __imp__sub_8237B590              ppc_recomp.47.cpp
+  __imp__sub_8237B5D0              ppc_recomp.47.cpp
+  __imp__sub_8237B5FC              ppc_recomp.47.cpp
+  __imp__sub_8237B600              ppc_recomp.47.cpp
+  __imp__sub_8237B628              ppc_recomp.47.cpp
+  __imp__sub_8237B634              ppc_recomp.47.cpp
+  __imp__sub_8237B638              ppc_recomp.47.cpp
+  __imp__sub_8237B6D8              ppc_recomp.47.cpp
+  __imp__sub_8237B758              ppc_recomp.47.cpp
+  __imp__sub_8237B7A0              ppc_recomp.47.cpp
+  __imp__sub_8237B7A8              ppc_recomp.47.cpp
+  __imp__sub_8237B7D0              ppc_recomp.47.cpp
+  __imp__sub_8237B7DC              ppc_recomp.47.cpp
+  __imp__sub_8237B7E0              ppc_recomp.47.cpp
+  __imp__sub_8237B814              ppc_recomp.47.cpp
+  __imp__sub_8237B818              ppc_recomp.47.cpp
+  __imp__sub_8237B824              ppc_recomp.47.cpp
+  __imp__sub_8237B828              ppc_recomp.47.cpp
+  __imp__sub_8237B870              ppc_recomp.47.cpp
+  __imp__sub_8237B878              ppc_recomp.47.cpp
+  __imp__sub_8237B8AC              ppc_recomp.47.cpp
+  __imp__sub_8237B8B0              ppc_recomp.47.cpp
+  __imp__sub_8237B8BC              ppc_recomp.47.cpp
+  __imp__sub_8237B8C0              ppc_recomp.47.cpp
+  __imp__sub_8237B8E8              ppc_recomp.47.cpp
+  __imp__sub_8237B8F4              ppc_recomp.47.cpp
+  __imp__sub_8237B8F8              ppc_recomp.47.cpp
+  __imp__sub_8237B92C              ppc_recomp.47.cpp
+  __imp__sub_8237B930              ppc_recomp.47.cpp
+  __imp__sub_8237B93C              ppc_recomp.47.cpp
+  __imp__sub_8237B940              ppc_recomp.47.cpp
+  __imp__sub_8237B974              ppc_recomp.47.cpp
+  __imp__sub_8237B978              ppc_recomp.47.cpp
+  __imp__sub_8237B984              ppc_recomp.47.cpp
+  __imp__sub_8237B988              ppc_recomp.47.cpp
+  __imp__sub_8237B9B0              ppc_recomp.47.cpp
+  __imp__sub_8237B9BC              ppc_recomp.47.cpp
+  __imp__sub_8237B9C0              ppc_recomp.47.cpp
+  __imp__sub_8237B9E8              ppc_recomp.47.cpp
+  __imp__sub_8237B9F4              ppc_recomp.47.cpp
+  __imp__sub_8237B9F8              ppc_recomp.47.cpp
+  __imp__sub_8237BA2C              ppc_recomp.47.cpp
+  __imp__sub_8237BA30              ppc_recomp.47.cpp
+  __imp__sub_8237BA3C              ppc_recomp.47.cpp
+  __imp__sub_8237BA40              ppc_recomp.47.cpp
+  __imp__sub_8237BA74              ppc_recomp.47.cpp
+  __imp__sub_8237BA78              ppc_recomp.47.cpp
+  __imp__sub_8237BA84              ppc_recomp.47.cpp
+  __imp__sub_8237BA88              ppc_recomp.47.cpp
+  __imp__sub_8237BAB0              ppc_recomp.47.cpp
+  __imp__sub_8237BABC              ppc_recomp.47.cpp
+  __imp__sub_8237BAC0              ppc_recomp.47.cpp
+  __imp__sub_8237BAE0              ppc_recomp.47.cpp
+  __imp__sub_8237BAE8              ppc_recomp.47.cpp
+  __imp__sub_8237BB08              ppc_recomp.47.cpp
+  __imp__sub_8237BB10              ppc_recomp.47.cpp
+  __imp__sub_8237BB30              ppc_recomp.47.cpp
+  __imp__sub_8237BB38              ppc_recomp.47.cpp
+  __imp__sub_8237BB58              ppc_recomp.47.cpp
+  __imp__sub_8237BB60              ppc_recomp.48.cpp
+  __imp__sub_8237BB80              ppc_recomp.48.cpp
+  __imp__sub_8237BB88              ppc_recomp.48.cpp
+  __imp__sub_8237BBA8              ppc_recomp.48.cpp
+  __imp__sub_8237BBB0              ppc_recomp.48.cpp
+  __imp__sub_8237BBDC              ppc_recomp.48.cpp
+  __imp__sub_8237BBE0              ppc_recomp.48.cpp
+  __imp__sub_8237BBEC              ppc_recomp.48.cpp
+  __imp__sub_8237BBF0              ppc_recomp.48.cpp
+  __imp__sub_8237BBF8              ppc_recomp.48.cpp
+  __imp__sub_8237BC98              ppc_recomp.48.cpp
+  __imp__sub_8237BCB4              ppc_recomp.48.cpp
+  __imp__sub_8237BCB8              ppc_recomp.48.cpp
+  __imp__sub_8237BD4C              ppc_recomp.48.cpp
+  __imp__sub_8237BD50              ppc_recomp.48.cpp
+  __imp__sub_8237BD60              ppc_recomp.48.cpp
+  __imp__sub_8237BD88              ppc_recomp.48.cpp
+  __imp__sub_8237BD94              ppc_recomp.48.cpp
+  __imp__sub_8237BD98              ppc_recomp.48.cpp
+  __imp__sub_8237BDBC              ppc_recomp.48.cpp
+  __imp__sub_8237BDC0              ppc_recomp.48.cpp
+  __imp__sub_8237BDC8              ppc_recomp.48.cpp
+  __imp__sub_8237BE04              ppc_recomp.48.cpp
+  __imp__sub_8237BE08              ppc_recomp.48.cpp
+  __imp__sub_8237BE10              ppc_recomp.48.cpp
+  __imp__sub_8237BE4C              ppc_recomp.48.cpp
+  __imp__sub_8237BE50              ppc_recomp.48.cpp
+  __imp__sub_8237BE58              ppc_recomp.48.cpp
+  __imp__sub_8237BE94              ppc_recomp.48.cpp
+  __imp__sub_8237BE98              ppc_recomp.48.cpp
+  __imp__sub_8237BEA0              ppc_recomp.48.cpp
+  __imp__sub_8237BEDC              ppc_recomp.48.cpp
+  __imp__sub_8237BEE0              ppc_recomp.48.cpp
+  __imp__sub_8237BEE8              ppc_recomp.48.cpp
+  __imp__sub_8237BEF0              ppc_recomp.48.cpp
+  __imp__sub_8237BEF8              ppc_recomp.48.cpp
+  __imp__sub_8237BF40              ppc_recomp.48.cpp
+  __imp__sub_8237BF50              ppc_recomp.48.cpp
+  __imp__sub_8237BF90              ppc_recomp.48.cpp
+  __imp__sub_8237BFA0              ppc_recomp.48.cpp
+  __imp__sub_8237BFE0              ppc_recomp.48.cpp
+  __imp__sub_8237BFF0              ppc_recomp.48.cpp
+  __imp__sub_8237C01C              ppc_recomp.48.cpp
+  __imp__sub_8237C020              ppc_recomp.48.cpp
+  __imp__sub_8237C050              ppc_recomp.48.cpp
+  __imp__sub_8237C080              ppc_recomp.48.cpp
+  __imp__sub_8237C0B0              ppc_recomp.48.cpp
+  __imp__sub_8237C0E0              ppc_recomp.48.cpp
+  __imp__sub_8237C110              ppc_recomp.48.cpp
+  __imp__sub_8237C140              ppc_recomp.48.cpp
+  __imp__sub_8237C168              ppc_recomp.48.cpp
+  __imp__sub_8237C194              ppc_recomp.48.cpp
+  __imp__sub_8237C198              ppc_recomp.48.cpp
+  __imp__sub_8237C1C8              ppc_recomp.48.cpp
+  __imp__sub_8237C1F8              ppc_recomp.48.cpp
+  __imp__sub_8237C228              ppc_recomp.48.cpp
+  __imp__sub_8237C258              ppc_recomp.48.cpp
+  __imp__sub_8237C288              ppc_recomp.48.cpp
+  __imp__sub_8237C2B8              ppc_recomp.48.cpp
+  __imp__sub_8237C2E0              ppc_recomp.48.cpp
+  __imp__sub_8237C2EC              ppc_recomp.48.cpp
+  __imp__sub_8237C2F0              ppc_recomp.48.cpp
+  __imp__sub_8237C2FC              ppc_recomp.48.cpp
+  __imp__sub_8237C300              ppc_recomp.48.cpp
+  __imp__sub_8237C30C              ppc_recomp.48.cpp
+  __imp__sub_8237C310              ppc_recomp.48.cpp
+  __imp__sub_8237C31C              ppc_recomp.48.cpp
+  __imp__sub_8237C320              ppc_recomp.48.cpp
+  __imp__sub_8237C32C              ppc_recomp.48.cpp
+  __imp__sub_8237C330              ppc_recomp.48.cpp
+  __imp__sub_8237C33C              ppc_recomp.48.cpp
+  __imp__sub_8237C340              ppc_recomp.48.cpp
+  __imp__sub_8237C34C              ppc_recomp.48.cpp
+  __imp__sub_8237C350              ppc_recomp.48.cpp
+  __imp__sub_8237C35C              ppc_recomp.48.cpp
+  __imp__sub_8237C360              ppc_recomp.48.cpp
+  __imp__sub_8237C36C              ppc_recomp.48.cpp
+  __imp__sub_8237C370              ppc_recomp.48.cpp
+  __imp__sub_8237C37C              ppc_recomp.48.cpp
+  __imp__sub_8237C380              ppc_recomp.48.cpp
+  __imp__sub_8237C394              ppc_recomp.48.cpp
+  __imp__sub_8237C398              ppc_recomp.48.cpp
+  __imp__sub_8237C3A0              ppc_recomp.48.cpp
+  __imp__sub_8237C3F0              ppc_recomp.48.cpp
+  __imp__sub_8237C3FC              ppc_recomp.48.cpp
+  __imp__sub_8237C400              ppc_recomp.48.cpp
+  __imp__sub_8237C4AC              ppc_recomp.48.cpp
+  __imp__sub_8237C4B0              ppc_recomp.48.cpp
+  __imp__sub_8237C4B8              ppc_recomp.48.cpp
+  __imp__sub_8237C564              ppc_recomp.48.cpp
+  __imp__sub_8237C568              ppc_recomp.48.cpp
+  __imp__sub_8237C570              ppc_recomp.48.cpp
+  __imp__sub_8237C61C              ppc_recomp.48.cpp
+  __imp__sub_8237C620              ppc_recomp.48.cpp
+  __imp__sub_8237C628              ppc_recomp.48.cpp
+  __imp__sub_8237C6D4              ppc_recomp.48.cpp
+  __imp__sub_8237C6D8              ppc_recomp.48.cpp
+  __imp__sub_8237C6E0              ppc_recomp.48.cpp
+  __imp__sub_8237C700              ppc_recomp.48.cpp
+  __imp__sub_8237C710              ppc_recomp.48.cpp
+  __imp__sub_8237C730              ppc_recomp.48.cpp
+  __imp__sub_8237C740              ppc_recomp.48.cpp
+  __imp__sub_8237C760              ppc_recomp.48.cpp
+  __imp__sub_8237C76C              ppc_recomp.48.cpp
+  __imp__sub_8237C770              ppc_recomp.48.cpp
+  __imp__sub_8237C798              ppc_recomp.48.cpp
+  __imp__sub_8237C7A4              ppc_recomp.48.cpp
+  __imp__sub_8237C7A8              ppc_recomp.48.cpp
+  __imp__sub_8237C7D0              ppc_recomp.48.cpp
+  __imp__sub_8237C7DC              ppc_recomp.48.cpp
+  __imp__sub_8237C7E0              ppc_recomp.48.cpp
+  __imp__sub_8237C800              ppc_recomp.48.cpp
+  __imp__sub_8237C808              ppc_recomp.48.cpp
+  __imp__sub_8237C830              ppc_recomp.48.cpp
+  __imp__sub_8237C83C              ppc_recomp.48.cpp
+  __imp__sub_8237C840              ppc_recomp.48.cpp
+  __imp__sub_8237C868              ppc_recomp.48.cpp
+  __imp__sub_8237C87C              ppc_recomp.48.cpp
+  __imp__sub_8237C880              ppc_recomp.48.cpp
+  __imp__sub_8237C8A8              ppc_recomp.48.cpp
+  __imp__sub_8237C8B0              ppc_recomp.48.cpp
+  __imp__sub_8237C8D8              ppc_recomp.48.cpp
+  __imp__sub_8237C8E0              ppc_recomp.48.cpp
+  __imp__sub_8237C908              ppc_recomp.48.cpp
+  __imp__sub_8237C910              ppc_recomp.48.cpp
+  __imp__sub_8237C938              ppc_recomp.48.cpp
+  __imp__sub_8237C940              ppc_recomp.48.cpp
+  __imp__sub_8237C968              ppc_recomp.48.cpp
+  __imp__sub_8237C974              ppc_recomp.48.cpp
+  __imp__sub_8237C978              ppc_recomp.48.cpp
+  __imp__sub_8237C9A0              ppc_recomp.48.cpp
+  __imp__sub_8237C9AC              ppc_recomp.48.cpp
+  __imp__sub_8237C9B0              ppc_recomp.48.cpp
+  __imp__sub_8237C9D8              ppc_recomp.48.cpp
+  __imp__sub_8237C9E4              ppc_recomp.48.cpp
+  __imp__sub_8237C9E8              ppc_recomp.48.cpp
+  __imp__sub_8237CA08              ppc_recomp.48.cpp
+  __imp__sub_8237CA10              ppc_recomp.48.cpp
+  __imp__sub_8237CA18              ppc_recomp.48.cpp
+  __imp__sub_8237CA20              ppc_recomp.48.cpp
+  __imp__sub_8237CA30              ppc_recomp.48.cpp
+  __imp__sub_8237CA3C              ppc_recomp.48.cpp
+  __imp__sub_8237CA40              ppc_recomp.48.cpp
+  __imp__sub_8237CB00              ppc_recomp.48.cpp
+  __imp__sub_8237CB34              ppc_recomp.48.cpp
+  __imp__sub_8237CB38              ppc_recomp.48.cpp
+  __imp__sub_8237CBC0              ppc_recomp.48.cpp
+  __imp__sub_8237CBD0              ppc_recomp.48.cpp
+  __imp__sub_8237CC90              ppc_recomp.48.cpp
+  __imp__sub_8237CCC4              ppc_recomp.48.cpp
+  __imp__sub_8237CCC8              ppc_recomp.48.cpp
+  __imp__sub_8237CD4C              ppc_recomp.48.cpp
+  __imp__sub_8237CD50              ppc_recomp.48.cpp
+  __imp__sub_8237CD60              ppc_recomp.48.cpp
+  __imp__sub_8237CD9C              ppc_recomp.48.cpp
+  __imp__sub_8237CDA0              ppc_recomp.48.cpp
+  __imp__sub_8237CDB4              ppc_recomp.48.cpp
+  __imp__sub_8237CDB8              ppc_recomp.48.cpp
+  __imp__sub_8237CE40              ppc_recomp.48.cpp
+  __imp__sub_8237CE50              ppc_recomp.48.cpp
+  __imp__sub_8237CEB8              ppc_recomp.48.cpp
+  __imp__sub_8237CEC4              ppc_recomp.48.cpp
+  __imp__sub_8237CEC8              ppc_recomp.48.cpp
+  __imp__sub_8237CF28              ppc_recomp.48.cpp
+  __imp__sub_8237CF6C              ppc_recomp.48.cpp
+  __imp__sub_8237CF70              ppc_recomp.48.cpp
+  __imp__sub_8237CFD0              ppc_recomp.48.cpp
+  __imp__sub_8237D010              ppc_recomp.48.cpp
+  __imp__sub_8237D080              ppc_recomp.48.cpp
+  __imp__sub_8237D090              ppc_recomp.48.cpp
+  __imp__sub_8237D100              ppc_recomp.48.cpp
+  __imp__sub_8237D110              ppc_recomp.48.cpp
+  __imp__sub_8237D160              ppc_recomp.48.cpp
+  __imp__sub_8237D180              ppc_recomp.48.cpp
+  __imp__sub_8237D1B8              ppc_recomp.48.cpp
+  __imp__sub_8237D1D0              ppc_recomp.48.cpp
+  __imp__sub_8237D208              ppc_recomp.48.cpp
+  __imp__sub_8237D220              ppc_recomp.48.cpp
+  __imp__sub_8237D258              ppc_recomp.48.cpp
+  __imp__sub_8237D270              ppc_recomp.48.cpp
+  __imp__sub_8237D2C8              ppc_recomp.48.cpp
+  __imp__sub_8237D320              ppc_recomp.48.cpp
+  __imp__sub_8237D378              ppc_recomp.48.cpp
+  __imp__sub_8237D3D0              ppc_recomp.48.cpp
+  __imp__sub_8237D430              ppc_recomp.48.cpp
+  __imp__sub_8237D520              ppc_recomp.48.cpp
+  __imp__sub_8237D998              ppc_recomp.48.cpp
+  __imp__sub_8237DA28              ppc_recomp.48.cpp
+  __imp__sub_8237DAB8              ppc_recomp.48.cpp
+  __imp__sub_8237DBE8              ppc_recomp.48.cpp
+  __imp__sub_8237DCF8              ppc_recomp.48.cpp
+  __imp__sub_8237DDC0              ppc_recomp.48.cpp
+  __imp__sub_8237DDD0              ppc_recomp.48.cpp
+  __imp__sub_8237E138              ppc_recomp.48.cpp
+  __imp__sub_8237E3E8              ppc_recomp.48.cpp
+  __imp__sub_8237E458              ppc_recomp.48.cpp
+  __imp__sub_8237E578              ppc_recomp.48.cpp
+  __imp__sub_8237E600              ppc_recomp.48.cpp
+  __imp__sub_8237E710              ppc_recomp.48.cpp
+  __imp__sub_8237F968              ppc_recomp.49.cpp
+  __imp__sub_8237FE78              ppc_recomp.49.cpp
+  __imp__sub_8237FF98              ppc_recomp.49.cpp
+  __imp__sub_82380388              ppc_recomp.49.cpp
+  __imp__sub_82380CE8              ppc_recomp.49.cpp
+  __imp__sub_82381920              ppc_recomp.49.cpp
+  __imp__sub_823819D0              ppc_recomp.49.cpp
+  __imp__sub_82381A98              ppc_recomp.49.cpp
+  __imp__sub_82381B70              ppc_recomp.49.cpp
+  __imp__sub_82381CE0              ppc_recomp.49.cpp
+  __imp__sub_82381D38              ppc_recomp.49.cpp
+  __imp__sub_82381DC8              ppc_recomp.49.cpp
+  __imp__sub_82381E68              ppc_recomp.49.cpp
+  __imp__sub_82381F30              ppc_recomp.49.cpp
+  __imp__sub_82382138              ppc_recomp.49.cpp
+  __imp__sub_82382200              ppc_recomp.49.cpp
+  __imp__sub_823823E0              ppc_recomp.49.cpp
+  __imp__sub_82382578              ppc_recomp.49.cpp
+  __imp__sub_82382650              ppc_recomp.49.cpp
+  __imp__sub_82382710              ppc_recomp.49.cpp
+  __imp__sub_82382798              ppc_recomp.49.cpp
+  __imp__sub_82382880              ppc_recomp.49.cpp
+  __imp__sub_823829A0              ppc_recomp.49.cpp
+  __imp__sub_82382AB8              ppc_recomp.49.cpp
+  __imp__sub_82382BC8              ppc_recomp.49.cpp
+  __imp__sub_82382D00              ppc_recomp.49.cpp
+  __imp__sub_82382E40              ppc_recomp.49.cpp
+  __imp__sub_82382FC0              ppc_recomp.49.cpp
+  __imp__sub_82383028              ppc_recomp.49.cpp
+  __imp__sub_82383090              ppc_recomp.49.cpp
+  __imp__sub_82383160              ppc_recomp.49.cpp
+  __imp__sub_82383F80              ppc_recomp.49.cpp
+  __imp__sub_823843E8              ppc_recomp.49.cpp
+  __imp__sub_82385218              ppc_recomp.49.cpp
+  __imp__sub_82385288              ppc_recomp.49.cpp
+  __imp__sub_82385298              ppc_recomp.49.cpp
+  __imp__sub_82385390              ppc_recomp.49.cpp
+  __imp__sub_82385428              ppc_recomp.49.cpp
+  __imp__sub_82385A48              ppc_recomp.49.cpp
+  __imp__sub_82387080              ppc_recomp.49.cpp
+  __imp__sub_82387810              ppc_recomp.49.cpp
+  __imp__sub_82388708              ppc_recomp.49.cpp
+  __imp__sub_823887B0              ppc_recomp.49.cpp
+  __imp__sub_82388838              ppc_recomp.49.cpp
+  __imp__sub_823889E8              ppc_recomp.49.cpp
+  __imp__sub_82388B58              ppc_recomp.49.cpp
+  __imp__sub_82389278              ppc_recomp.49.cpp
+  __imp__sub_82389318              ppc_recomp.49.cpp
+  __imp__sub_82389368              ppc_recomp.49.cpp
+  __imp__sub_82389420              ppc_recomp.49.cpp
+  __imp__sub_823894D0              ppc_recomp.49.cpp
+  __imp__sub_82389638              ppc_recomp.49.cpp
+  __imp__sub_82389780              ppc_recomp.49.cpp
+  __imp__sub_82389860              ppc_recomp.49.cpp
+  __imp__sub_82389950              ppc_recomp.49.cpp
+  __imp__sub_823899A0              ppc_recomp.49.cpp
+  __imp__sub_82389A08              ppc_recomp.49.cpp
+  __imp__sub_82389AE8              ppc_recomp.49.cpp
+  __imp__sub_82389C20              ppc_recomp.49.cpp
+  __imp__sub_82389C70              ppc_recomp.49.cpp
+  __imp__sub_8238A1B0              ppc_recomp.49.cpp
+  __imp__sub_8238A268              ppc_recomp.49.cpp
+  __imp__sub_8238AF30              ppc_recomp.49.cpp
+  __imp__sub_8238BA50              ppc_recomp.49.cpp
+  __imp__sub_8238C040              ppc_recomp.49.cpp
+  __imp__sub_8238C0B0              ppc_recomp.49.cpp
+  __imp__sub_8238C4B0              ppc_recomp.49.cpp
+  __imp__sub_8238C5A8              ppc_recomp.49.cpp
+  __imp__sub_8238C638              ppc_recomp.49.cpp
+  __imp__sub_8238C8D8              ppc_recomp.49.cpp
+  __imp__sub_8238C960              ppc_recomp.49.cpp
+  __imp__sub_8238C9E0              ppc_recomp.49.cpp
+  __imp__sub_8238CA98              ppc_recomp.49.cpp
+  __imp__sub_8238CC08              ppc_recomp.49.cpp
+  __imp__sub_8238CD08              ppc_recomp.49.cpp
+  __imp__sub_8238CD28              ppc_recomp.49.cpp
+  __imp__sub_8238CE70              ppc_recomp.50.cpp
+  __imp__sub_8238CEE8              ppc_recomp.50.cpp
+  __imp__sub_8238CF38              ppc_recomp.50.cpp
+  __imp__sub_8238D088              ppc_recomp.50.cpp
+  __imp__sub_8238D240              ppc_recomp.50.cpp
+  __imp__sub_8238D2D8              ppc_recomp.50.cpp
+  __imp__sub_8238D330              ppc_recomp.50.cpp
+  __imp__sub_8238D410              ppc_recomp.50.cpp
+  __imp__sub_8238D628              ppc_recomp.50.cpp
+  __imp__sub_8238D898              ppc_recomp.50.cpp
+  __imp__sub_8238D8F0              ppc_recomp.50.cpp
+  __imp__sub_8238D9B0              ppc_recomp.50.cpp
+  __imp__sub_8238DA90              ppc_recomp.50.cpp
+  __imp__sub_8238DB18              ppc_recomp.50.cpp
+  __imp__sub_8238DC60              ppc_recomp.50.cpp
+  __imp__sub_8238DCF0              ppc_recomp.50.cpp
+  __imp__sub_8238DF38              ppc_recomp.50.cpp
+  __imp__sub_8238E168              ppc_recomp.50.cpp
+  __imp__sub_8238E590              ppc_recomp.50.cpp
+  __imp__sub_8238E738              ppc_recomp.50.cpp
+  __imp__sub_8238E910              ppc_recomp.50.cpp
+  __imp__sub_8238E9F8              ppc_recomp.50.cpp
+  __imp__sub_8238EB30              ppc_recomp.50.cpp
+  __imp__sub_8238EBA8              ppc_recomp.50.cpp
+  __imp__sub_8238EC18              ppc_recomp.50.cpp
+  __imp__sub_8238ECB0              ppc_recomp.50.cpp
+  __imp__sub_8238EDB0              ppc_recomp.50.cpp
+  __imp__sub_8238EFD8              ppc_recomp.50.cpp
+  __imp__sub_8238F060              ppc_recomp.50.cpp
+  __imp__sub_8238F4B8              ppc_recomp.50.cpp
+  __imp__sub_8238F630              ppc_recomp.50.cpp
+  __imp__sub_8238F698              ppc_recomp.50.cpp
+  __imp__sub_8238F6F0              ppc_recomp.50.cpp
+  __imp__sub_8238F7F0              ppc_recomp.50.cpp
+  __imp__sub_8238F8F0              ppc_recomp.50.cpp
+  __imp__sub_8238FD58              ppc_recomp.50.cpp
+  __imp__sub_82390048              ppc_recomp.50.cpp
+  __imp__sub_823905C8              ppc_recomp.50.cpp
+  __imp__sub_82390838              ppc_recomp.50.cpp
+  __imp__sub_823908B0              ppc_recomp.50.cpp
+  __imp__sub_82390938              ppc_recomp.50.cpp
+  __imp__sub_82391498              ppc_recomp.50.cpp
+  __imp__sub_823BF500              ppc_recomp.52.cpp
+  __imp__sub_823BFAD0              ppc_recomp.52.cpp
+  __imp__sub_823EE808              ppc_recomp.55.cpp
+  __imp__sub_823FCD70              ppc_recomp.55.cpp
+  __imp__sub_823FCD88              ppc_recomp.55.cpp
+  __imp__sub_823FCDC8              ppc_recomp.55.cpp
+  __imp__sub_823FCF68              ppc_recomp.55.cpp
+  __imp__sub_823FCFD0              ppc_recomp.55.cpp
+  __imp__sub_823FD0D8              ppc_recomp.55.cpp
+  __imp__sub_823FD358              ppc_recomp.56.cpp
+  __imp__sub_823FD620              ppc_recomp.56.cpp
+  __imp__sub_823FD8E8              ppc_recomp.56.cpp
+  __imp__sub_823FDA70              ppc_recomp.56.cpp
+  __imp__sub_823FDB88              ppc_recomp.56.cpp
+  __imp__sub_823FDF00              ppc_recomp.56.cpp
+  __imp__sub_823FE110              ppc_recomp.56.cpp
+  __imp__sub_823FF370              ppc_recomp.56.cpp
+  __imp__sub_823FF7A8              ppc_recomp.56.cpp
+  __imp__sub_823FF990              ppc_recomp.56.cpp
+  __imp__sub_823FFA18              ppc_recomp.56.cpp
+  __imp__sub_823FFB88              ppc_recomp.56.cpp
+  __imp__sub_823FFD60              ppc_recomp.56.cpp
+  __imp__sub_823FFF60              ppc_recomp.56.cpp
+  __imp__sub_82400510              ppc_recomp.56.cpp
+  __imp__sub_82400E20              ppc_recomp.56.cpp
+  __imp__sub_82400E88              ppc_recomp.56.cpp
+  __imp__sub_82401968              ppc_recomp.56.cpp
+  __imp__sub_82401DC8              ppc_recomp.56.cpp
+  __imp__sub_824020E8              ppc_recomp.56.cpp
+  __imp__sub_82402360              ppc_recomp.56.cpp
+  __imp__sub_824023B8              ppc_recomp.56.cpp
+  __imp__sub_82402FB8              ppc_recomp.56.cpp
+  __imp__sub_82402FF8              ppc_recomp.56.cpp
+  __imp__sub_824030D0              ppc_recomp.56.cpp
+  __imp__sub_82403228              ppc_recomp.56.cpp
+  __imp__sub_82403428              ppc_recomp.56.cpp
+  __imp__sub_82403520              ppc_recomp.56.cpp
+  __imp__sub_824037A0              ppc_recomp.56.cpp
+  __imp__sub_824037F0              ppc_recomp.56.cpp
+  __imp__sub_82403840              ppc_recomp.56.cpp
+  __imp__sub_82403A90              ppc_recomp.56.cpp
+  __imp__sub_82403C00              ppc_recomp.56.cpp
+  __imp__sub_82403C98              ppc_recomp.56.cpp
+  __imp__sub_82403D78              ppc_recomp.56.cpp
+  __imp__sub_82403DE0              ppc_recomp.56.cpp
+  __imp__sub_82404168              ppc_recomp.56.cpp
+  __imp__sub_824041D8              ppc_recomp.56.cpp
+  __imp__sub_82404528              ppc_recomp.56.cpp
+  __imp__sub_82404710              ppc_recomp.56.cpp
+  __imp__sub_824047F0              ppc_recomp.56.cpp
+  __imp__sub_82404940              ppc_recomp.56.cpp
+  __imp__sub_82404AD0              ppc_recomp.56.cpp
+  __imp__sub_824051B8              ppc_recomp.56.cpp
+  __imp__sub_824052B0              ppc_recomp.56.cpp
+  __imp__sub_82405B80              ppc_recomp.56.cpp
+  __imp__sub_82405CB0              ppc_recomp.56.cpp
+  __imp__sub_82405ED0              ppc_recomp.56.cpp
+  __imp__sub_82405FE0              ppc_recomp.56.cpp
+  __imp__sub_824061E8              ppc_recomp.56.cpp
+  __imp__sub_824065F0              ppc_recomp.56.cpp
+  __imp__sub_824085B0              ppc_recomp.56.cpp
+  __imp__sub_82408640              ppc_recomp.56.cpp
+  __imp__sub_824088A8              ppc_recomp.56.cpp
+  __imp__sub_82408910              ppc_recomp.56.cpp
+  __imp__sub_82408C58              ppc_recomp.56.cpp
+  __imp__sub_82408D38              ppc_recomp.56.cpp
+  __imp__sub_82408DA8              ppc_recomp.56.cpp
+  __imp__sub_82408DC0              ppc_recomp.56.cpp
+  __imp__sub_82408E88              ppc_recomp.56.cpp
+  __imp__sub_82409108              ppc_recomp.56.cpp
+  __imp__sub_82409760              ppc_recomp.56.cpp
+  __imp__sub_82409808              ppc_recomp.56.cpp
+  __imp__sub_82409BE8              ppc_recomp.56.cpp
+  __imp__sub_82409D30              ppc_recomp.56.cpp
+  __imp__sub_82409E00              ppc_recomp.56.cpp
+  __imp__sub_82409ED0              ppc_recomp.56.cpp
+  __imp__sub_82409FA0              ppc_recomp.56.cpp
+  __imp__sub_8240A080              ppc_recomp.56.cpp
+  __imp__sub_8240A668              ppc_recomp.56.cpp
+  __imp__sub_8240A8F0              ppc_recomp.56.cpp
+  __imp__sub_8240AFD0              ppc_recomp.56.cpp
+  __imp__sub_8240C5D8              ppc_recomp.57.cpp
+  __imp__sub_8240C6B8              ppc_recomp.57.cpp
+  __imp__sub_8240C738              ppc_recomp.57.cpp
+  __imp__sub_8240C890              ppc_recomp.57.cpp
+  __imp__sub_8240C908              ppc_recomp.57.cpp
+  __imp__sub_8240CA78              ppc_recomp.57.cpp
+  __imp__sub_8240CC28              ppc_recomp.57.cpp
+  __imp__sub_8240CE30              ppc_recomp.57.cpp
+  __imp__sub_8240CEE0              ppc_recomp.57.cpp
+  __imp__sub_8240D290              ppc_recomp.57.cpp
+  __imp__sub_8240D320              ppc_recomp.57.cpp
+  __imp__sub_8240D398              ppc_recomp.57.cpp
+  __imp__sub_8240DB88              ppc_recomp.57.cpp
+  __imp__sub_8240DDC0              ppc_recomp.57.cpp
+  __imp__sub_8240DF38              ppc_recomp.57.cpp
+  __imp__sub_8240E0F0              ppc_recomp.57.cpp
+  __imp__sub_8240E1B8              ppc_recomp.57.cpp
+  __imp__sub_8240E220              ppc_recomp.57.cpp
+  __imp__sub_8240E260              ppc_recomp.57.cpp
+  __imp__sub_8240E2E0              ppc_recomp.57.cpp
+  __imp__sub_8240E350              ppc_recomp.57.cpp
+  __imp__sub_8240E778              ppc_recomp.57.cpp
+  __imp__sub_8240E8C0              ppc_recomp.57.cpp
+  __imp__sub_8240E918              ppc_recomp.57.cpp
+  __imp__sub_8240E9F8              ppc_recomp.57.cpp
+  __imp__sub_8240EB80              ppc_recomp.57.cpp
+  __imp__sub_8240EC70              ppc_recomp.57.cpp
+  __imp__sub_8240ED98              ppc_recomp.57.cpp
+  __imp__sub_8240EF78              ppc_recomp.57.cpp
+  __imp__sub_8240F0D8              ppc_recomp.57.cpp
+  __imp__sub_8240F1D8              ppc_recomp.57.cpp
+  __imp__sub_8240F450              ppc_recomp.57.cpp
+  __imp__sub_8240F5E8              ppc_recomp.57.cpp
+  __imp__sub_8240F650              ppc_recomp.57.cpp
+  __imp__sub_82410620              ppc_recomp.57.cpp
+  __imp__sub_824106D8              ppc_recomp.57.cpp
+  __imp__sub_82410838              ppc_recomp.57.cpp
+  __imp__sub_82410998              ppc_recomp.57.cpp
+  __imp__sub_82410A70              ppc_recomp.57.cpp
+  __imp__sub_82410AA8              ppc_recomp.57.cpp
+  __imp__sub_82410C38              ppc_recomp.57.cpp
+  __imp__sub_82410C98              ppc_recomp.57.cpp
+  __imp__sub_82410CF8              ppc_recomp.57.cpp
+  __imp__sub_82410E10              ppc_recomp.57.cpp
+  __imp__sub_82410E90              ppc_recomp.57.cpp
+  __imp__sub_82410EA8              ppc_recomp.57.cpp
+  __imp__sub_82410F50              ppc_recomp.57.cpp
+  __imp__sub_82410F88              ppc_recomp.57.cpp
+  __imp__sub_82410F90              ppc_recomp.57.cpp
+  __imp__sub_82410F98              ppc_recomp.57.cpp
+  __imp__sub_82410FD0              ppc_recomp.57.cpp
+  __imp__sub_82410FF8              ppc_recomp.57.cpp
+  __imp__sub_82411028              ppc_recomp.57.cpp
+  __imp__sub_82411058              ppc_recomp.57.cpp
+  __imp__sub_824111B0              ppc_recomp.57.cpp
+  __imp__sub_824111B8              ppc_recomp.57.cpp
+  __imp__sub_824111F8              ppc_recomp.57.cpp
+  __imp__sub_824112A0              ppc_recomp.57.cpp
+  __imp__sub_82411580              ppc_recomp.57.cpp
+  __imp__sub_82411598              ppc_recomp.57.cpp
+  __imp__sub_824115C0              ppc_recomp.57.cpp
+  __imp__sub_824115D8              ppc_recomp.57.cpp
+  __imp__sub_82411600              ppc_recomp.57.cpp
+  __imp__sub_82412260              ppc_recomp.57.cpp
+  __imp__sub_82414870              ppc_recomp.57.cpp
+  __imp__sub_82414988              ppc_recomp.57.cpp
+  __imp__sub_824149F8              ppc_recomp.57.cpp
+  __imp__sub_82414A58              ppc_recomp.57.cpp
+  __imp__sub_82414AC8              ppc_recomp.57.cpp
+  __imp__sub_82414B70              ppc_recomp.57.cpp
+  __imp__sub_82414BE0              ppc_recomp.57.cpp
+  __imp__sub_82414C28              ppc_recomp.57.cpp
+  __imp__sub_82414C90              ppc_recomp.57.cpp
+  __imp__sub_82414D08              ppc_recomp.57.cpp
+  __imp__sub_82414D38              ppc_recomp.57.cpp
+  __imp__sub_82414D60              ppc_recomp.57.cpp
+  __imp__sub_82414E00              ppc_recomp.57.cpp
+  __imp__sub_82414EB0              ppc_recomp.57.cpp
+  __imp__sub_82414F78              ppc_recomp.57.cpp
+  __imp__sub_82415000              ppc_recomp.57.cpp
+  __imp__sub_824150B0              ppc_recomp.57.cpp
+  __imp__sub_82415178              ppc_recomp.57.cpp
+  __imp__sub_824158C8              ppc_recomp.57.cpp
+  __imp__sub_82415A38              ppc_recomp.57.cpp
+  __imp__sub_82415AA8              ppc_recomp.57.cpp
+  __imp__sub_82415E48              ppc_recomp.57.cpp
+  __imp__sub_82415F10              ppc_recomp.57.cpp
+  __imp__sub_82415F88              ppc_recomp.57.cpp
+  __imp__sub_82416098              ppc_recomp.57.cpp
+  __imp__sub_82416688              ppc_recomp.57.cpp
+  __imp__sub_82416780              ppc_recomp.57.cpp
+  __imp__sub_82416868              ppc_recomp.57.cpp
+  __imp__sub_82416940              ppc_recomp.57.cpp
+  __imp__sub_824169D0              ppc_recomp.57.cpp
+  __imp__sub_82416A80              ppc_recomp.57.cpp
+  __imp__sub_82416BF8              ppc_recomp.57.cpp
+  __imp__sub_82416E78              ppc_recomp.57.cpp
+  __imp__sub_82416FC8              ppc_recomp.57.cpp
+  __imp__sub_824171D0              ppc_recomp.57.cpp
+  __imp__sub_824173B8              ppc_recomp.57.cpp
+  __imp__sub_824174E0              ppc_recomp.58.cpp
+  __imp__sub_824175B0              ppc_recomp.58.cpp
+  __imp__sub_82417800              ppc_recomp.58.cpp
+  __imp__sub_82417858              ppc_recomp.58.cpp
+  __imp__sub_824178C8              ppc_recomp.58.cpp
+  __imp__sub_82418428              ppc_recomp.58.cpp
+  __imp__sub_82418818              ppc_recomp.58.cpp
+  __imp__sub_82418820              ppc_recomp.58.cpp
+  __imp__sub_82418850              ppc_recomp.58.cpp
+  __imp__sub_82418878              ppc_recomp.58.cpp
+  __imp__sub_82418940              ppc_recomp.58.cpp
+  __imp__sub_824189F8              ppc_recomp.58.cpp
+  __imp__sub_82418AF0              ppc_recomp.58.cpp
+  __imp__sub_82418DF8              ppc_recomp.58.cpp
+  __imp__sub_82418F48              ppc_recomp.58.cpp
+  __imp__sub_82418FB8              ppc_recomp.58.cpp
+  __imp__sub_82419018              ppc_recomp.58.cpp
+  __imp__sub_824191A8              ppc_recomp.58.cpp
+  __imp__sub_82419210              ppc_recomp.58.cpp
+  __imp__sub_82419230              ppc_recomp.58.cpp
+  __imp__sub_82419290              ppc_recomp.58.cpp
+  __imp__sub_824197E8              ppc_recomp.58.cpp
+  __imp__sub_82419948              ppc_recomp.58.cpp
+  __imp__sub_82419A70              ppc_recomp.58.cpp
+  __imp__sub_82419AE0              ppc_recomp.58.cpp
+  __imp__sub_82419C10              ppc_recomp.58.cpp
+  __imp__sub_82419C78              ppc_recomp.58.cpp
+  __imp__sub_82419D28              ppc_recomp.58.cpp
+  __imp__sub_82419D90              ppc_recomp.58.cpp
+  __imp__sub_8241A138              ppc_recomp.58.cpp
+  __imp__sub_8241A258              ppc_recomp.58.cpp
+  __imp__sub_8241A280              ppc_recomp.58.cpp
+  __imp__sub_8241A328              ppc_recomp.58.cpp
+  __imp__sub_8241A658              ppc_recomp.58.cpp
+  __imp__sub_8241A750              ppc_recomp.58.cpp
+  __imp__sub_8241A8F0              ppc_recomp.58.cpp
+  __imp__sub_8241A950              ppc_recomp.58.cpp
+  __imp__sub_8241A990              ppc_recomp.58.cpp
+  __imp__sub_8241A9E0              ppc_recomp.58.cpp
+  __imp__sub_8241AAB0              ppc_recomp.58.cpp
+  __imp__sub_8241AB30              ppc_recomp.58.cpp
+  __imp__sub_8241AC78              ppc_recomp.58.cpp
+  __imp__sub_8241AD10              ppc_recomp.58.cpp
+  __imp__sub_8241AE90              ppc_recomp.58.cpp
+  __imp__sub_8241AEF0              ppc_recomp.58.cpp
+  __imp__sub_8241AF80              ppc_recomp.58.cpp
+  __imp__sub_8241B028              ppc_recomp.58.cpp
+  __imp__sub_8241B138              ppc_recomp.58.cpp
+  __imp__sub_8241B278              ppc_recomp.58.cpp
+  __imp__sub_8241B398              ppc_recomp.58.cpp
+  __imp__sub_8241B3A8              ppc_recomp.58.cpp
+  __imp__sub_8241B448              ppc_recomp.58.cpp
+  __imp__sub_8241B4E8              ppc_recomp.58.cpp
+  __imp__sub_8241C6D0              ppc_recomp.58.cpp
+  __imp__sub_8241C728              ppc_recomp.58.cpp
+  __imp__sub_8241C868              ppc_recomp.58.cpp
+  __imp__sub_8241C920              ppc_recomp.58.cpp
+  __imp__sub_8241CAA8              ppc_recomp.58.cpp
+  __imp__sub_8241CC88              ppc_recomp.58.cpp
+  __imp__sub_8241CDD0              ppc_recomp.58.cpp
+  __imp__sub_8241CE78              ppc_recomp.58.cpp
+  __imp__sub_8241CF28              ppc_recomp.58.cpp
+  __imp__sub_8241DD10              ppc_recomp.58.cpp
+  __imp__sub_8241DD58              ppc_recomp.58.cpp
+  __imp__sub_8241DD90              ppc_recomp.58.cpp
+  __imp__sub_8241DE28              ppc_recomp.58.cpp
+  __imp__sub_8241E048              ppc_recomp.58.cpp
+  __imp__sub_8241E750              ppc_recomp.58.cpp
+  __imp__sub_8241E810              ppc_recomp.58.cpp
+  __imp__sub_8241E938              ppc_recomp.58.cpp
+  __imp__sub_8241E9C8              ppc_recomp.58.cpp
+  __imp__sub_8241EA28              ppc_recomp.58.cpp
+  __imp__sub_8241EAA0              ppc_recomp.58.cpp
+  __imp__sub_8241EAE8              ppc_recomp.58.cpp
+  __imp__sub_8241EBB0              ppc_recomp.58.cpp
+  __imp__sub_8241EBE0              ppc_recomp.58.cpp
+  __imp__sub_8241EBF8              ppc_recomp.58.cpp
+  __imp__sub_8241EC78              ppc_recomp.58.cpp
+  __imp__sub_8241EC90              ppc_recomp.58.cpp
+  __imp__sub_8241ED88              ppc_recomp.58.cpp
+  __imp__sub_8241EE10              ppc_recomp.58.cpp
+  __imp__sub_8241EF98              ppc_recomp.58.cpp
+  __imp__sub_8241EFE8              ppc_recomp.58.cpp
+  __imp__sub_8241F038              ppc_recomp.58.cpp
+  __imp__sub_8241F090              ppc_recomp.58.cpp
+  __imp__sub_8241F0F8              ppc_recomp.58.cpp
+  __imp__sub_8241F1E0              ppc_recomp.58.cpp
+  __imp__sub_8241F350              ppc_recomp.58.cpp
+  __imp__sub_8241F3C0              ppc_recomp.58.cpp
+  __imp__sub_8241F648              ppc_recomp.58.cpp
+  __imp__sub_8241F698              ppc_recomp.58.cpp
+  __imp__sub_8241F790              ppc_recomp.58.cpp
+  __imp__sub_8241F8F0              ppc_recomp.58.cpp
+  __imp__sub_8241FB20              ppc_recomp.58.cpp
+  __imp__sub_8241FF58              ppc_recomp.58.cpp
+  __imp__sub_8241FF98              ppc_recomp.58.cpp
+  __imp__sub_82420080              ppc_recomp.58.cpp
+  __imp__sub_82420088              ppc_recomp.58.cpp
+  __imp__sub_82420178              ppc_recomp.58.cpp
+  __imp__sub_82420308              ppc_recomp.58.cpp
+  __imp__sub_82420438              ppc_recomp.58.cpp
+  __imp__sub_82420740              ppc_recomp.58.cpp
+  __imp__sub_82420998              ppc_recomp.58.cpp
+  __imp__sub_824209B0              ppc_recomp.58.cpp
+  __imp__sub_824209C0              ppc_recomp.58.cpp
+  __imp__sub_824209D0              ppc_recomp.58.cpp
+  __imp__sub_824209E8              ppc_recomp.58.cpp
+  __imp__sub_82420A08              ppc_recomp.58.cpp
+  __imp__sub_82420A20              ppc_recomp.58.cpp
+  __imp__sub_82420A50              ppc_recomp.58.cpp
+  __imp__sub_82420A78              ppc_recomp.58.cpp
+  __imp__sub_82420A90              ppc_recomp.58.cpp
+  __imp__sub_82420AD0              ppc_recomp.58.cpp
+  __imp__sub_82420B10              ppc_recomp.58.cpp
+  __imp__sub_82420B80              ppc_recomp.58.cpp
+  __imp__sub_82420B98              ppc_recomp.58.cpp
+  __imp__sub_82420BB8              ppc_recomp.58.cpp
+  __imp__sub_82420BC0              ppc_recomp.58.cpp
+  __imp__sub_82420BC8              ppc_recomp.58.cpp
+  __imp__sub_82420BD0              ppc_recomp.58.cpp
+  __imp__sub_82420C00              ppc_recomp.58.cpp
+  __imp__sub_82420C10              ppc_recomp.59.cpp
+  __imp__sub_82420C48              ppc_recomp.59.cpp
+  __imp__sub_82420C58              ppc_recomp.59.cpp
+  __imp__sub_82420C68              ppc_recomp.59.cpp
+  __imp__sub_82420C80              ppc_recomp.59.cpp
+  __imp__sub_82420C90              ppc_recomp.59.cpp
+  __imp__sub_82420CF8              ppc_recomp.59.cpp
+  __imp__sub_82420D10              ppc_recomp.59.cpp
+  __imp__sub_82420D20              ppc_recomp.59.cpp
+  __imp__sub_82420D30              ppc_recomp.59.cpp
+  __imp__sub_82420DD0              ppc_recomp.59.cpp
+  __imp__sub_82420E48              ppc_recomp.59.cpp
+  __imp__sub_82420EC0              ppc_recomp.59.cpp
+  __imp__sub_82420F60              ppc_recomp.59.cpp
+  __imp__sub_82421048              ppc_recomp.59.cpp
+  __imp__sub_82421120              ppc_recomp.59.cpp
+  __imp__sub_824212B0              ppc_recomp.59.cpp
+  __imp__sub_82421350              ppc_recomp.59.cpp
+  __imp__sub_82421400              ppc_recomp.59.cpp
+  __imp__sub_824214A8              ppc_recomp.59.cpp
+  __imp__sub_82421550              ppc_recomp.59.cpp
+  __imp__sub_824215F8              ppc_recomp.59.cpp
+  __imp__sub_824216D0              ppc_recomp.59.cpp
+  __imp__sub_82421768              ppc_recomp.59.cpp
+  __imp__sub_82421818              ppc_recomp.59.cpp
+  __imp__sub_82421908              ppc_recomp.59.cpp
+  __imp__sub_824219C8              ppc_recomp.59.cpp
+  __imp__sub_82421A18              ppc_recomp.59.cpp
+  __imp__sub_82421A48              ppc_recomp.59.cpp
+  __imp__sub_82421AA0              ppc_recomp.59.cpp
+  __imp__sub_82421AD0              ppc_recomp.59.cpp
+  __imp__sub_82421B20              ppc_recomp.59.cpp
+  __imp__sub_82421E60              ppc_recomp.59.cpp
+  __imp__sub_82421EB8              ppc_recomp.59.cpp
+  __imp__sub_82421FC0              ppc_recomp.59.cpp
+  __imp__sub_82422038              ppc_recomp.59.cpp
+  __imp__sub_824220F8              ppc_recomp.59.cpp
+  __imp__sub_824221C0              ppc_recomp.59.cpp
+  __imp__sub_82422248              ppc_recomp.59.cpp
+  __imp__sub_82422A10              ppc_recomp.59.cpp
+  __imp__sub_82422A40              ppc_recomp.59.cpp
+  __imp__sub_82422A60              ppc_recomp.59.cpp
+  __imp__sub_82422A88              ppc_recomp.59.cpp
+  __imp__sub_82422AD8              ppc_recomp.59.cpp
+  __imp__sub_82422BB8              ppc_recomp.59.cpp
+  __imp__sub_82422C30              ppc_recomp.59.cpp
+  __imp__sub_82422CB0              ppc_recomp.59.cpp
+  __imp__sub_82422D38              ppc_recomp.59.cpp
+  __imp__sub_82422DE0              ppc_recomp.59.cpp
+  __imp__sub_82422E18              ppc_recomp.59.cpp
+  __imp__sub_82422E70              ppc_recomp.59.cpp
+  __imp__sub_82422EA0              ppc_recomp.59.cpp
+  __imp__sub_82422EF0              ppc_recomp.59.cpp
+  __imp__sub_82422EF8              ppc_recomp.59.cpp
+  __imp__sub_82422F78              ppc_recomp.59.cpp
+  __imp__sub_82422FC8              ppc_recomp.59.cpp
+  __imp__sub_82423028              ppc_recomp.59.cpp
+  __imp__sub_82423140              ppc_recomp.59.cpp
+  __imp__sub_82423230              ppc_recomp.59.cpp
+  __imp__sub_824AFEC8              ppc_recomp.70.cpp
+  __imp__sub_825866B8              ppc_recomp.77.cpp
+  __imp__sub_82586790              ppc_recomp.77.cpp
+  __imp__sub_825874A0              ppc_recomp.77.cpp
+  __imp__sub_82587570              ppc_recomp.77.cpp
+  __imp__sub_82587578              ppc_recomp.77.cpp
+  __imp__sub_82587790              ppc_recomp.77.cpp
+  __imp__sub_82587C18              ppc_recomp.77.cpp
+  __imp__sub_82587DB0              ppc_recomp.77.cpp
+  __imp__sub_82587F28              ppc_recomp.77.cpp
+  __imp__sub_825885F8              ppc_recomp.77.cpp
+  __imp__sub_82588658              ppc_recomp.77.cpp
+  __imp__sub_825886B8              ppc_recomp.77.cpp
+  __imp__sub_82588718              ppc_recomp.77.cpp
+  __imp__sub_82588808              ppc_recomp.77.cpp
+  __imp__sub_82588848              ppc_recomp.77.cpp
+  __imp__sub_82588940              ppc_recomp.77.cpp
+  __imp__sub_82588CD8              ppc_recomp.77.cpp
+  __imp__sub_82588D98              ppc_recomp.77.cpp
+  __imp__sub_82588E00              ppc_recomp.77.cpp
+  __imp__sub_82588ED8              ppc_recomp.77.cpp
+  __imp__sub_825892E0              ppc_recomp.78.cpp
+  __imp__sub_82589578              ppc_recomp.78.cpp
+  __imp__sub_82589708              ppc_recomp.78.cpp
+  __imp__sub_825897F0              ppc_recomp.78.cpp
+  __imp__sub_82589930              ppc_recomp.78.cpp
+  __imp__sub_82589AD8              ppc_recomp.78.cpp
+  __imp__sub_8258A560              ppc_recomp.78.cpp
+  __imp__sub_8258A598              ppc_recomp.78.cpp
+  __imp__sub_8259BC08              ppc_recomp.80.cpp
+  __imp__sub_8259BDF0              ppc_recomp.80.cpp
+  __imp__sub_8259C4D8              ppc_recomp.80.cpp
+  __imp__sub_8259C548              ppc_recomp.80.cpp
+  __imp__sub_8259C6D0              ppc_recomp.80.cpp
+  __imp__sub_8259CCE0              ppc_recomp.80.cpp
+  __imp__sub_8259D1B0              ppc_recomp.80.cpp
+  __imp__sub_8259D2A0              ppc_recomp.80.cpp
+  __imp__sub_8259D300              ppc_recomp.80.cpp
+  __imp__sub_8259D3A0              ppc_recomp.80.cpp
+  __imp__sub_8259D7C0              ppc_recomp.80.cpp
+  __imp__sub_8259D9B8              ppc_recomp.80.cpp
+  __imp__sub_8259DA78              ppc_recomp.80.cpp
+  __imp__sub_8259DBD0              ppc_recomp.80.cpp
+  __imp__sub_8259DD00              ppc_recomp.80.cpp
+  __imp__sub_8259DE20              ppc_recomp.80.cpp
+  __imp__sub_8259DE50              ppc_recomp.80.cpp
+  __imp__sub_8259E158              ppc_recomp.80.cpp
+  __imp__sub_8259E240              ppc_recomp.80.cpp
+  __imp__sub_8259E8F0              ppc_recomp.81.cpp
+  __imp__sub_8259E910              ppc_recomp.81.cpp
+  __imp__sub_8259ECC0              ppc_recomp.81.cpp
+  __imp__sub_8259EF10              ppc_recomp.81.cpp
+  __imp__sub_8259EFD8              ppc_recomp.81.cpp
+  __imp__sub_8259F130              ppc_recomp.81.cpp
+  __imp__sub_8259F908              ppc_recomp.81.cpp
+  __imp__sub_8259F9E8              ppc_recomp.81.cpp
+  __imp__sub_8259FCE0              ppc_recomp.81.cpp
+  __imp__sub_8259FF08              ppc_recomp.81.cpp
+  __imp__sub_825A0CD0              ppc_recomp.81.cpp
+  __imp__sub_825A0FC8              ppc_recomp.81.cpp
+  __imp__sub_825A1008              ppc_recomp.81.cpp
+  __imp__sub_825A1088              ppc_recomp.81.cpp
+  __imp__sub_825A14B8              ppc_recomp.81.cpp
+  __imp__sub_825A1518              ppc_recomp.81.cpp
+  __imp__sub_825A24E0              ppc_recomp.81.cpp
+  __imp__sub_825A2510              ppc_recomp.81.cpp
+  __imp__sub_825A2544              ppc_recomp.81.cpp
+  __imp__sub_825A2588              ppc_recomp.81.cpp
+  __imp__sub_825A2990              ppc_recomp.81.cpp
+  __imp__sub_825A2BE8              ppc_recomp.81.cpp
+  __imp__sub_825A2C30              ppc_recomp.81.cpp
+  __imp__sub_825A2C78              ppc_recomp.81.cpp
+  __imp__sub_825A2D80              ppc_recomp.81.cpp
+  __imp__sub_825A2E08              ppc_recomp.81.cpp
+  __imp__sub_825A2E88              ppc_recomp.81.cpp
+  __imp__sub_825A2F60              ppc_recomp.81.cpp
+  __imp__sub_825A3050              ppc_recomp.81.cpp
+  __imp__sub_825A3078              ppc_recomp.81.cpp
+  __imp__sub_825A3090              ppc_recomp.81.cpp
+  __imp__sub_825A30C8              ppc_recomp.81.cpp
+  __imp__sub_825A3150              ppc_recomp.81.cpp
+  __imp__sub_825A3238              ppc_recomp.81.cpp
+  __imp__sub_825A3270              ppc_recomp.81.cpp
+  __imp__sub_825A3418              ppc_recomp.81.cpp
+  __imp__sub_825A3468              ppc_recomp.81.cpp
+  __imp__sub_825A34B0              ppc_recomp.81.cpp
+  __imp__sub_825A3598              ppc_recomp.81.cpp
+  __imp__sub_825A3600              ppc_recomp.81.cpp
+  __imp__sub_825A3638              ppc_recomp.81.cpp
+  __imp__sub_825A3670              ppc_recomp.81.cpp
+  __imp__sub_825A36E8              ppc_recomp.81.cpp
+  __imp__sub_825A38C0              ppc_recomp.81.cpp
+  __imp__sub_825A3958              ppc_recomp.81.cpp
+  __imp__sub_825A39F0              ppc_recomp.81.cpp
+  __imp__sub_825A5170              ppc_recomp.81.cpp
+  __imp__sub_825A54E8              ppc_recomp.82.cpp
+  __imp__sub_825A54F0              ppc_recomp.82.cpp
+  __imp__sub_825A57F0              ppc_recomp.82.cpp
+  __imp__sub_825A6240              ppc_recomp.82.cpp
+  __imp__sub_825A6288              ppc_recomp.82.cpp
+  __imp__sub_825A7890              ppc_recomp.82.cpp
+  __imp__sub_825A83D8              ppc_recomp.82.cpp
+  __imp__sub_825A8430              ppc_recomp.82.cpp
+  __imp__sub_825A84F0              ppc_recomp.82.cpp
+  __imp__sub_825A864C              ppc_recomp.82.cpp
+  __imp__sub_825A8BB0              ppc_recomp.82.cpp
+  __imp__sub_825A8E10              ppc_recomp.82.cpp
+  __imp__sub_825A8F6C              ppc_recomp.82.cpp
+  __imp__sub_825A9888              ppc_recomp.82.cpp
+  __imp__sub_825A98A8              ppc_recomp.82.cpp
+  __imp__sub_825A99B8              ppc_recomp.82.cpp
+  __imp__sub_825A99E8              ppc_recomp.82.cpp
+  __imp__sub_825AAAC8              ppc_recomp.82.cpp
+  __imp__sub_825AAC00              ppc_recomp.82.cpp
+  __imp__sub_825AAC90              ppc_recomp.82.cpp
+  __imp__sub_825AADB8              ppc_recomp.82.cpp
+  __imp__sub_825AADC0              ppc_recomp.82.cpp
+  __imp__sub_825AC8D0              ppc_recomp.82.cpp
+  __imp__sub_825ACAB8              ppc_recomp.82.cpp
+  __imp__sub_825ACB90              ppc_recomp.82.cpp
+  __imp__sub_825ACC58              ppc_recomp.82.cpp
+  __imp__sub_825ACC90              ppc_recomp.82.cpp
+  __imp__sub_825AD0D8              ppc_recomp.82.cpp
+  __imp__sub_825AE598              ppc_recomp.82.cpp
+  __imp__sub_825AE948              ppc_recomp.82.cpp
+  __imp__sub_825AE968              ppc_recomp.82.cpp
+  __imp__sub_825AEA88              ppc_recomp.82.cpp
+  __imp__sub_825AEB40              ppc_recomp.82.cpp
+  __imp__sub_825AEB48              ppc_recomp.82.cpp
+  __imp__sub_825AECE0              ppc_recomp.82.cpp
+  __imp__sub_825AED30              ppc_recomp.82.cpp
+  __imp__sub_825AEE40              ppc_recomp.82.cpp
+  __imp__sub_825AEEC0              ppc_recomp.82.cpp
+  __imp__sub_825AF158              ppc_recomp.83.cpp
+  __imp__sub_825AF1C8              ppc_recomp.83.cpp
+  __imp__sub_825AF2F0              ppc_recomp.83.cpp
+  __imp__sub_825AF6C0              ppc_recomp.83.cpp
+  __imp__sub_825AF710              ppc_recomp.83.cpp
+  __imp__sub_825AF798              ppc_recomp.83.cpp
+  __imp__sub_825AF7A0              ppc_recomp.83.cpp
+  __imp__sub_825AF7B8              ppc_recomp.83.cpp
+  __imp__sub_825AF888              ppc_recomp.83.cpp
+  __imp__sub_825AF8E8              ppc_recomp.83.cpp
+  __imp__sub_825AF920              ppc_recomp.83.cpp
+  __imp__sub_825AF9B8              ppc_recomp.83.cpp
+  __imp__sub_825AF9D8              ppc_recomp.83.cpp
+  __imp__sub_825AF9E8              ppc_recomp.83.cpp
+  __imp__sub_825AF9F8              ppc_recomp.83.cpp
+  __imp__sub_825AFBB0              ppc_recomp.83.cpp
+  __imp__sub_825AFBB8              ppc_recomp.83.cpp
+  __imp__sub_825AFD08              ppc_recomp.83.cpp
+  __imp__sub_825AFD70              ppc_recomp.83.cpp
+  __imp__sub_825AFEB8              ppc_recomp.83.cpp
+  __imp__sub_825AFFD0              ppc_recomp.83.cpp
+  __imp__sub_825B00D0              ppc_recomp.83.cpp
+  __imp__sub_825B06F0              ppc_recomp.83.cpp
+  __imp__sub_825B0778              ppc_recomp.83.cpp
+  __imp__sub_825B0888              ppc_recomp.83.cpp
+  __imp__sub_825B0A48              ppc_recomp.83.cpp
+  __imp__sub_825B0B68              ppc_recomp.83.cpp
+  __imp__sub_825B0DF8              ppc_recomp.83.cpp
+  __imp__sub_825B1200              ppc_recomp.83.cpp
+  __imp__sub_825B18A8              ppc_recomp.83.cpp
+  __imp__sub_825B1950              ppc_recomp.83.cpp
+  __imp__sub_825B1AB8              ppc_recomp.83.cpp
+  __imp__sub_825B1CF8              ppc_recomp.83.cpp
+  __imp__sub_825B2060              ppc_recomp.83.cpp
+  __imp__sub_825B2608              ppc_recomp.83.cpp
+  __imp__sub_825B2EA8              ppc_recomp.83.cpp
+  __imp__sub_825B2EF8              ppc_recomp.83.cpp
+  __imp__sub_825B318C              ppc_recomp.83.cpp
+  __imp__sub_825B3A98              ppc_recomp.83.cpp
+  __imp__sub_825B3AA8              ppc_recomp.83.cpp
+  __imp__sub_825B3C00              ppc_recomp.83.cpp
+  __imp__sub_825B3C08              ppc_recomp.83.cpp
+  __imp__sub_825B3C80              ppc_recomp.83.cpp
+  __imp__sub_825B3C98              ppc_recomp.83.cpp
+  __imp__sub_825B3CD0              ppc_recomp.83.cpp
+  __imp__sub_825B3CF0              ppc_recomp.83.cpp
+  __imp__sub_825B3D38              ppc_recomp.83.cpp
+  __imp__sub_825B3D70              ppc_recomp.83.cpp
+  __imp__sub_825B42B8              ppc_recomp.83.cpp
+  __imp__sub_825B4340              ppc_recomp.83.cpp
+  __imp__sub_825B43B0              ppc_recomp.83.cpp
+  __imp__sub_825B43B8              ppc_recomp.83.cpp
+  __imp__sub_825B4650              ppc_recomp.83.cpp
+  __imp__sub_825B48D0              ppc_recomp.83.cpp
+  __imp__sub_825B4990              ppc_recomp.83.cpp
+  __imp__sub_825B4A58              ppc_recomp.83.cpp
+  __imp__sub_825B4AB0              ppc_recomp.83.cpp
+  __imp__sub_825B4AB8              ppc_recomp.83.cpp
+  __imp__sub_825B4B58              ppc_recomp.83.cpp
+  __imp__sub_825B4D40              ppc_recomp.83.cpp
+  __imp__sub_825B4E70              ppc_recomp.83.cpp
+  __imp__sub_825B50D8              ppc_recomp.83.cpp
+  __imp__sub_825B5160              ppc_recomp.83.cpp
+  __imp__sub_825B55D8              ppc_recomp.83.cpp
+  __imp__sub_825B5830              ppc_recomp.83.cpp
+  __imp__sub_825B5AA0              ppc_recomp.83.cpp
+  __imp__sub_825B9CF8              ppc_recomp.84.cpp
+  __imp__sub_825BA368              ppc_recomp.84.cpp
+  __imp__sub_825BACB0              ppc_recomp.84.cpp
+  __imp__sub_825BAE58              ppc_recomp.84.cpp
+  __imp__sub_825BB6C0              ppc_recomp.84.cpp
+  __imp__sub_825BB9F8              ppc_recomp.84.cpp
+  __imp__sub_825BEF50              ppc_recomp.84.cpp
+
+Aliases selecionados:
+  __restfpr_21                     -> __imp____restfpr_21
+  __restfpr_24                     -> __imp____restfpr_24
+  __restfpr_28                     -> __imp____restfpr_28
+  __restgprlr_14                   -> __imp____restgprlr_14
+  __restgprlr_17                   -> __imp____restgprlr_17
+  __restgprlr_18                   -> __imp____restgprlr_18
+  __restgprlr_19                   -> __imp____restgprlr_19
+  __restgprlr_20                   -> __imp____restgprlr_20
+  __restgprlr_21                   -> __imp____restgprlr_21
+  __restgprlr_22                   -> __imp____restgprlr_22
+  __restgprlr_23                   -> __imp____restgprlr_23
+  __restgprlr_24                   -> __imp____restgprlr_24
+  __restgprlr_25                   -> __imp____restgprlr_25
+  __restgprlr_26                   -> __imp____restgprlr_26
+  __restgprlr_27                   -> __imp____restgprlr_27
+  __restgprlr_28                   -> __imp____restgprlr_28
+  __restgprlr_29                   -> __imp____restgprlr_29
+  __savefpr_21                     -> __imp____savefpr_21
+  __savefpr_24                     -> __imp____savefpr_24
+  __savefpr_28                     -> __imp____savefpr_28
+  __savegprlr_14                   -> __imp____savegprlr_14
+  __savegprlr_17                   -> __imp____savegprlr_17
+  __savegprlr_18                   -> __imp____savegprlr_18
+  __savegprlr_19                   -> __imp____savegprlr_19
+  __savegprlr_20                   -> __imp____savegprlr_20
+  __savegprlr_21                   -> __imp____savegprlr_21
+  __savegprlr_22                   -> __imp____savegprlr_22
+  __savegprlr_23                   -> __imp____savegprlr_23
+  __savegprlr_24                   -> __imp____savegprlr_24
+  __savegprlr_25                   -> __imp____savegprlr_25
+  __savegprlr_26                   -> __imp____savegprlr_26
+  __savegprlr_27                   -> __imp____savegprlr_27
+  __savegprlr_28                   -> __imp____savegprlr_28
+  __savegprlr_29                   -> __imp____savegprlr_29
+  sub_8209FEF8                     -> __imp__sub_8209FEF8
+  sub_820A0150                     -> __imp__sub_820A0150
+  sub_820A03A8                     -> __imp__sub_820A03A8
+  sub_820A03C0                     -> __imp__sub_820A03C0
+  sub_820A0898                     -> __imp__sub_820A0898
+  sub_820A08B0                     -> __imp__sub_820A08B0
+  sub_820A08C8                     -> __imp__sub_820A08C8
+  sub_820A08E0                     -> __imp__sub_820A08E0
+  sub_820A0C68                     -> __imp__sub_820A0C68
+  sub_820A0C80                     -> __imp__sub_820A0C80
+  sub_820A0C98                     -> __imp__sub_820A0C98
+  sub_820A0CB0                     -> __imp__sub_820A0CB0
+  sub_820A0CC8                     -> __imp__sub_820A0CC8
+  sub_820A0CE0                     -> __imp__sub_820A0CE0
+  sub_820A1998                     -> __imp__sub_820A1998
+  sub_820A19B0                     -> __imp__sub_820A19B0
+  sub_820A19C8                     -> __imp__sub_820A19C8
+  sub_820A19E0                     -> __imp__sub_820A19E0
+  sub_820A19F8                     -> __imp__sub_820A19F8
+  sub_820A1A10                     -> __imp__sub_820A1A10
+  sub_820A2208                     -> __imp__sub_820A2208
+  sub_820A2220                     -> __imp__sub_820A2220
+  sub_820A24E8                     -> __imp__sub_820A24E8
+  sub_820A2500                     -> __imp__sub_820A2500
+  sub_820A2518                     -> __imp__sub_820A2518
+  sub_820A2530                     -> __imp__sub_820A2530
+  sub_820A2BE8                     -> __imp__sub_820A2BE8
+  sub_820A2C00                     -> __imp__sub_820A2C00
+  sub_820A2C18                     -> __imp__sub_820A2C18
+  sub_820A2C30                     -> __imp__sub_820A2C30
+  sub_820A3588                     -> __imp__sub_820A3588
+  sub_820A3798                     -> __imp__sub_820A3798
+  sub_82106C90                     -> __imp__sub_82106C90
+  sub_82108398                     -> __imp__sub_82108398
+  sub_82108764                     -> __imp__sub_82108764
+  sub_8210B298                     -> __imp__sub_8210B298
+  sub_8210CF48                     -> __imp__sub_8210CF48
+  sub_8210D228                     -> __imp__sub_8210D228
+  sub_8210D3F0                     -> __imp__sub_8210D3F0
+  sub_8210D520                     -> __imp__sub_8210D520
+  sub_82144C28                     -> __imp__sub_82144C28
+  sub_82150520                     -> __imp__sub_82150520
+  sub_82150748                     -> __imp__sub_82150748
+  sub_82151410                     -> __imp__sub_82151410
+  sub_821514D8                     -> __imp__sub_821514D8
+  sub_82151C18                     -> __imp__sub_82151C18
+  sub_8215AD08                     -> __imp__sub_8215AD08
+  sub_8215B068                     -> __imp__sub_8215B068
+  sub_8215B298                     -> __imp__sub_8215B298
+  sub_8215B408                     -> __imp__sub_8215B408
+  sub_8215B480                     -> __imp__sub_8215B480
+  sub_8215B4F8                     -> __imp__sub_8215B4F8
+  sub_8215B570                     -> __imp__sub_8215B570
+  sub_8215C250                     -> __imp__sub_8215C250
+  sub_8216B788                     -> __imp__sub_8216B788
+  sub_821732C0                     -> __imp__sub_821732C0
+  sub_82173590                     -> __imp__sub_82173590
+  sub_82174B70                     -> __imp__sub_82174B70
+  sub_8217CC40                     -> __imp__sub_8217CC40
+  sub_8217E958                     -> __imp__sub_8217E958
+  sub_821F8968                     -> __imp__sub_821F8968
+  sub_821F8B50                     -> __imp__sub_821F8B50
+  sub_821FE818                     -> __imp__sub_821FE818
+  sub_82219930                     -> __imp__sub_82219930
+  sub_822199A8                     -> __imp__sub_822199A8
+  sub_822D4DC0                     -> __imp__sub_822D4DC0
+  sub_823471C8                     -> __imp__sub_823471C8
+  sub_82347808                     -> __imp__sub_82347808
+  sub_823478D8                     -> __imp__sub_823478D8
+  sub_823478E8                     -> __imp__sub_823478E8
+  sub_82347900                     -> __imp__sub_82347900
+  sub_8234A610                     -> __imp__sub_8234A610
+  sub_8234A758                     -> __imp__sub_8234A758
+  sub_8234A7E8                     -> __imp__sub_8234A7E8
+  sub_8234A850                     -> __imp__sub_8234A850
+  sub_8234A8A8                     -> __imp__sub_8234A8A8
+  sub_8234A9A0                     -> __imp__sub_8234A9A0
+  sub_8234AAC0                     -> __imp__sub_8234AAC0
+  sub_8234AB00                     -> __imp__sub_8234AB00
+  sub_8234ABC0                     -> __imp__sub_8234ABC0
+  sub_8234ABF8                     -> __imp__sub_8234ABF8
+  sub_8234AC50                     -> __imp__sub_8234AC50
+  sub_8234ACA8                     -> __imp__sub_8234ACA8
+  sub_8234ACB0                     -> __imp__sub_8234ACB0
+  sub_8234ACC0                     -> __imp__sub_8234ACC0
+  sub_8234B5F8                     -> __imp__sub_8234B5F8
+  sub_8234B678                     -> __imp__sub_8234B678
+  sub_8234D6B0                     -> __imp__sub_8234D6B0
+  sub_82351938                     -> __imp__sub_82351938
+  sub_82351970                     -> __imp__sub_82351970
+  sub_82353A10                     -> __imp__sub_82353A10
+  sub_82353B80                     -> __imp__sub_82353B80
+  sub_82353BA8                     -> __imp__sub_82353BA8
+  sub_82353C30                     -> __imp__sub_82353C30
+  sub_82353C38                     -> __imp__sub_82353C38
+  sub_82355D30                     -> __imp__sub_82355D30
+  sub_82356300                     -> __imp__sub_82356300
+  sub_8235A818                     -> __imp__sub_8235A818
+  sub_8235FEB8                     -> __imp__sub_8235FEB8
+  sub_82360128                     -> __imp__sub_82360128
+  sub_82362368                     -> __imp__sub_82362368
+  sub_82362430                     -> __imp__sub_82362430
+  sub_82362500                     -> __imp__sub_82362500
+  sub_82362680                     -> __imp__sub_82362680
+  sub_82363CE8                     -> __imp__sub_82363CE8
+  sub_82364708                     -> __imp__sub_82364708
+  sub_82364768                     -> __imp__sub_82364768
+  sub_823647D0                     -> __imp__sub_823647D0
+  sub_82364A18                     -> __imp__sub_82364A18
+  sub_82364AC0                     -> __imp__sub_82364AC0
+  sub_823656F8                     -> __imp__sub_823656F8
+  sub_82365768                     -> __imp__sub_82365768
+  sub_82365A40                     -> __imp__sub_82365A40
+  sub_82365C40                     -> __imp__sub_82365C40
+  sub_823665A0                     -> __imp__sub_823665A0
+  sub_82366600                     -> __imp__sub_82366600
+  sub_82366620                     -> __imp__sub_82366620
+  sub_82366680                     -> __imp__sub_82366680
+  sub_82366AC0                     -> __imp__sub_82366AC0
+  sub_82366BF8                     -> __imp__sub_82366BF8
+  sub_82366CF8                     -> __imp__sub_82366CF8
+  sub_82366E08                     -> __imp__sub_82366E08
+  sub_82366EA8                     -> __imp__sub_82366EA8
+  sub_82366F78                     -> __imp__sub_82366F78
+  sub_82367F90                     -> __imp__sub_82367F90
+  sub_82368710                     -> __imp__sub_82368710
+  sub_82369448                     -> __imp__sub_82369448
+  sub_823695F8                     -> __imp__sub_823695F8
+  sub_8236A5C8                     -> __imp__sub_8236A5C8
+  sub_8236B190                     -> __imp__sub_8236B190
+  sub_8236B5D8                     -> __imp__sub_8236B5D8
+  sub_8236BE50                     -> __imp__sub_8236BE50
+  sub_8236C008                     -> __imp__sub_8236C008
+  sub_8236C278                     -> __imp__sub_8236C278
+  sub_8236C450                     -> __imp__sub_8236C450
+  sub_8236C500                     -> __imp__sub_8236C500
+  sub_8236C5B0                     -> __imp__sub_8236C5B0
+  sub_8236CB00                     -> __imp__sub_8236CB00
+  sub_8236CBC0                     -> __imp__sub_8236CBC0
+  sub_8236CD08                     -> __imp__sub_8236CD08
+  sub_8236D030                     -> __imp__sub_8236D030
+  sub_8236D108                     -> __imp__sub_8236D108
+  sub_8236D1D0                     -> __imp__sub_8236D1D0
+  sub_8236D2D8                     -> __imp__sub_8236D2D8
+  sub_82370010                     -> __imp__sub_82370010
+  sub_823700A8                     -> __imp__sub_823700A8
+  sub_8237017C                     -> __imp__sub_8237017C
+  sub_82370180                     -> __imp__sub_82370180
+  sub_82370254                     -> __imp__sub_82370254
+  sub_82370258                     -> __imp__sub_82370258
+  sub_8237032C                     -> __imp__sub_8237032C
+  sub_82370330                     -> __imp__sub_82370330
+  sub_823703D0                     -> __imp__sub_823703D0
+  sub_82370488                     -> __imp__sub_82370488
+  sub_823704D4                     -> __imp__sub_823704D4
+  sub_823704D8                     -> __imp__sub_823704D8
+  sub_82370518                     -> __imp__sub_82370518
+  sub_823705FC                     -> __imp__sub_823705FC
+  sub_82370600                     -> __imp__sub_82370600
+  sub_82370704                     -> __imp__sub_82370704
+  sub_82370708                     -> __imp__sub_82370708
+  sub_82370734                     -> __imp__sub_82370734
+  sub_82370738                     -> __imp__sub_82370738
+  sub_8237082C                     -> __imp__sub_8237082C
+  sub_82370830                     -> __imp__sub_82370830
+  sub_82370924                     -> __imp__sub_82370924
+  sub_82370928                     -> __imp__sub_82370928
+  sub_82370968                     -> __imp__sub_82370968
+  sub_82370A28                     -> __imp__sub_82370A28
+  sub_82370AA0                     -> __imp__sub_82370AA0
+  sub_82370B28                     -> __imp__sub_82370B28
+  sub_82370C10                     -> __imp__sub_82370C10
+  sub_82370C24                     -> __imp__sub_82370C24
+  sub_82370C28                     -> __imp__sub_82370C28
+  sub_82370C3C                     -> __imp__sub_82370C3C
+  sub_82370C40                     -> __imp__sub_82370C40
+  sub_82370C54                     -> __imp__sub_82370C54
+  sub_82370C58                     -> __imp__sub_82370C58
+  sub_82370C6C                     -> __imp__sub_82370C6C
+  sub_82370C70                     -> __imp__sub_82370C70
+  sub_82370C84                     -> __imp__sub_82370C84
+  sub_82370C88                     -> __imp__sub_82370C88
+  sub_82370CBC                     -> __imp__sub_82370CBC
+  sub_82370CC0                     -> __imp__sub_82370CC0
+  sub_82370CF4                     -> __imp__sub_82370CF4
+  sub_82370CF8                     -> __imp__sub_82370CF8
+  sub_82370DB4                     -> __imp__sub_82370DB4
+  sub_82370DB8                     -> __imp__sub_82370DB8
+  sub_82370DF8                     -> __imp__sub_82370DF8
+  sub_82370EA0                     -> __imp__sub_82370EA0
+  sub_82370F60                     -> __imp__sub_82370F60
+  sub_823712FC                     -> __imp__sub_823712FC
+  sub_82371300                     -> __imp__sub_82371300
+  sub_82371478                     -> __imp__sub_82371478
+  sub_823714E0                     -> __imp__sub_823714E0
+  sub_82371554                     -> __imp__sub_82371554
+  sub_82371558                     -> __imp__sub_82371558
+  sub_82371710                     -> __imp__sub_82371710
+  sub_823718C8                     -> __imp__sub_823718C8
+  sub_823719B8                     -> __imp__sub_823719B8
+  sub_82371CDC                     -> __imp__sub_82371CDC
+  sub_82371CE0                     -> __imp__sub_82371CE0
+  sub_82371F60                     -> __imp__sub_82371F60
+  sub_823721F8                     -> __imp__sub_823721F8
+  sub_823722A0                     -> __imp__sub_823722A0
+  sub_823723C4                     -> __imp__sub_823723C4
+  sub_823723C8                     -> __imp__sub_823723C8
+  sub_8237249C                     -> __imp__sub_8237249C
+  sub_823724A0                     -> __imp__sub_823724A0
+  sub_8237259C                     -> __imp__sub_8237259C
+  sub_823725A0                     -> __imp__sub_823725A0
+  sub_82372638                     -> __imp__sub_82372638
+  sub_823728EC                     -> __imp__sub_823728EC
+  sub_823728F0                     -> __imp__sub_823728F0
+  sub_823729E4                     -> __imp__sub_823729E4
+  sub_823729E8                     -> __imp__sub_823729E8
+  sub_82372D08                     -> __imp__sub_82372D08
+  sub_82372E30                     -> __imp__sub_82372E30
+  sub_82372F58                     -> __imp__sub_82372F58
+  sub_8237307C                     -> __imp__sub_8237307C
+  sub_82373080                     -> __imp__sub_82373080
+  sub_823732C8                     -> __imp__sub_823732C8
+  sub_823733E0                     -> __imp__sub_823733E0
+  sub_82373448                     -> __imp__sub_82373448
+  sub_82373494                     -> __imp__sub_82373494
+  sub_82373498                     -> __imp__sub_82373498
+  sub_82373620                     -> __imp__sub_82373620
+  sub_823736DC                     -> __imp__sub_823736DC
+  sub_823736E0                     -> __imp__sub_823736E0
+  sub_82373B00                     -> __imp__sub_82373B00
+  sub_82373C0C                     -> __imp__sub_82373C0C
+  sub_82373C10                     -> __imp__sub_82373C10
+  sub_82373CF8                     -> __imp__sub_82373CF8
+  sub_82373EF0                     -> __imp__sub_82373EF0
+  sub_8237410C                     -> __imp__sub_8237410C
+  sub_82374110                     -> __imp__sub_82374110
+  sub_823742E0                     -> __imp__sub_823742E0
+  sub_8237470C                     -> __imp__sub_8237470C
+  sub_82374710                     -> __imp__sub_82374710
+  sub_82374C50                     -> __imp__sub_82374C50
+  sub_82374D28                     -> __imp__sub_82374D28
+  sub_82374FB4                     -> __imp__sub_82374FB4
+  sub_82374FB8                     -> __imp__sub_82374FB8
+  sub_82374FD4                     -> __imp__sub_82374FD4
+  sub_82374FD8                     -> __imp__sub_82374FD8
+  sub_823750A0                     -> __imp__sub_823750A0
+  sub_823751A4                     -> __imp__sub_823751A4
+  sub_823751A8                     -> __imp__sub_823751A8
+  sub_82375C80                     -> __imp__sub_82375C80
+  sub_82375CFC                     -> __imp__sub_82375CFC
+  sub_82375D00                     -> __imp__sub_82375D00
+  sub_82375D5C                     -> __imp__sub_82375D5C
+  sub_82375D60                     -> __imp__sub_82375D60
+  sub_82376520                     -> __imp__sub_82376520
+  sub_8237653C                     -> __imp__sub_8237653C
+  sub_82376540                     -> __imp__sub_82376540
+  sub_82376A20                     -> __imp__sub_82376A20
+  sub_82376AA0                     -> __imp__sub_82376AA0
+  sub_82376B34                     -> __imp__sub_82376B34
+  sub_82376B38                     -> __imp__sub_82376B38
+  sub_82376CA4                     -> __imp__sub_82376CA4
+  sub_82376CA8                     -> __imp__sub_82376CA8
+  sub_82376CBC                     -> __imp__sub_82376CBC
+  sub_82376CC0                     -> __imp__sub_82376CC0
+  sub_82377298                     -> __imp__sub_82377298
+  sub_823777B0                     -> __imp__sub_823777B0
+  sub_82377894                     -> __imp__sub_82377894
+  sub_82377898                     -> __imp__sub_82377898
+  sub_82377A70                     -> __imp__sub_82377A70
+  sub_82377AA0                     -> __imp__sub_82377AA0
+  sub_82377C00                     -> __imp__sub_82377C00
+  sub_82377C74                     -> __imp__sub_82377C74
+  sub_82377C78                     -> __imp__sub_82377C78
+  sub_82377D64                     -> __imp__sub_82377D64
+  sub_82377D68                     -> __imp__sub_82377D68
+  sub_82377FC0                     -> __imp__sub_82377FC0
+  sub_823780EC                     -> __imp__sub_823780EC
+  sub_823780F0                     -> __imp__sub_823780F0
+  sub_823786B0                     -> __imp__sub_823786B0
+  sub_82378968                     -> __imp__sub_82378968
+  sub_82378DF0                     -> __imp__sub_82378DF0
+  sub_82378E7C                     -> __imp__sub_82378E7C
+  sub_82378E80                     -> __imp__sub_82378E80
+  sub_82378F04                     -> __imp__sub_82378F04
+  sub_82378F08                     -> __imp__sub_82378F08
+  sub_82378F54                     -> __imp__sub_82378F54
+  sub_82378F58                     -> __imp__sub_82378F58
+  sub_82379244                     -> __imp__sub_82379244
+  sub_82379248                     -> __imp__sub_82379248
+  sub_82379344                     -> __imp__sub_82379344
+  sub_82379348                     -> __imp__sub_82379348
+  sub_823794A8                     -> __imp__sub_823794A8
+  sub_82379728                     -> __imp__sub_82379728
+  sub_823799F4                     -> __imp__sub_823799F4
+  sub_823799F8                     -> __imp__sub_823799F8
+  sub_82379A04                     -> __imp__sub_82379A04
+  sub_82379A08                     -> __imp__sub_82379A08
+  sub_82379A10                     -> __imp__sub_82379A10
+  sub_82379F58                     -> __imp__sub_82379F58
+  sub_8237A088                     -> __imp__sub_8237A088
+  sub_8237A1D0                     -> __imp__sub_8237A1D0
+  sub_8237A318                     -> __imp__sub_8237A318
+  sub_8237A370                     -> __imp__sub_8237A370
+  sub_8237A3C8                     -> __imp__sub_8237A3C8
+  sub_8237A418                     -> __imp__sub_8237A418
+  sub_8237A468                     -> __imp__sub_8237A468
+  sub_8237A51C                     -> __imp__sub_8237A51C
+  sub_8237A520                     -> __imp__sub_8237A520
+  sub_8237A5D4                     -> __imp__sub_8237A5D4
+  sub_8237A5D8                     -> __imp__sub_8237A5D8
+  sub_8237A720                     -> __imp__sub_8237A720
+  sub_8237A7EC                     -> __imp__sub_8237A7EC
+  sub_8237A7F0                     -> __imp__sub_8237A7F0
+  sub_8237A948                     -> __imp__sub_8237A948
+  sub_8237A9B0                     -> __imp__sub_8237A9B0
+  sub_8237AA6C                     -> __imp__sub_8237AA6C
+  sub_8237AA70                     -> __imp__sub_8237AA70
+  sub_8237AAB0                     -> __imp__sub_8237AAB0
+  sub_8237AB5C                     -> __imp__sub_8237AB5C
+  sub_8237AB60                     -> __imp__sub_8237AB60
+  sub_8237AC50                     -> __imp__sub_8237AC50
+  sub_8237AD28                     -> __imp__sub_8237AD28
+  sub_8237ADA4                     -> __imp__sub_8237ADA4
+  sub_8237ADA8                     -> __imp__sub_8237ADA8
+  sub_8237ADE8                     -> __imp__sub_8237ADE8
+  sub_8237B068                     -> __imp__sub_8237B068
+  sub_8237B090                     -> __imp__sub_8237B090
+  sub_8237B09C                     -> __imp__sub_8237B09C
+  sub_8237B0A0                     -> __imp__sub_8237B0A0
+  sub_8237B0C8                     -> __imp__sub_8237B0C8
+  sub_8237B0D4                     -> __imp__sub_8237B0D4
+  sub_8237B0D8                     -> __imp__sub_8237B0D8
+  sub_8237B10C                     -> __imp__sub_8237B10C
+  sub_8237B110                     -> __imp__sub_8237B110
+  sub_8237B11C                     -> __imp__sub_8237B11C
+  sub_8237B120                     -> __imp__sub_8237B120
+  sub_8237B1AC                     -> __imp__sub_8237B1AC
+  sub_8237B1B0                     -> __imp__sub_8237B1B0
+  sub_8237B1BC                     -> __imp__sub_8237B1BC
+  sub_8237B1C0                     -> __imp__sub_8237B1C0
+  sub_8237B248                     -> __imp__sub_8237B248
+  sub_8237B254                     -> __imp__sub_8237B254
+  sub_8237B258                     -> __imp__sub_8237B258
+  sub_8237B2E0                     -> __imp__sub_8237B2E0
+  sub_8237B2EC                     -> __imp__sub_8237B2EC
+  sub_8237B2F0                     -> __imp__sub_8237B2F0
+  sub_8237B378                     -> __imp__sub_8237B378
+  sub_8237B384                     -> __imp__sub_8237B384
+  sub_8237B388                     -> __imp__sub_8237B388
+  sub_8237B3F0                     -> __imp__sub_8237B3F0
+  sub_8237B3FC                     -> __imp__sub_8237B3FC
+  sub_8237B400                     -> __imp__sub_8237B400
+  sub_8237B468                     -> __imp__sub_8237B468
+  sub_8237B474                     -> __imp__sub_8237B474
+  sub_8237B478                     -> __imp__sub_8237B478
+  sub_8237B4E0                     -> __imp__sub_8237B4E0
+  sub_8237B4EC                     -> __imp__sub_8237B4EC
+  sub_8237B4F0                     -> __imp__sub_8237B4F0
+  sub_8237B580                     -> __imp__sub_8237B580
+  sub_8237B58C                     -> __imp__sub_8237B58C
+  sub_8237B590                     -> __imp__sub_8237B590
+  sub_8237B5D0                     -> __imp__sub_8237B5D0
+  sub_8237B5FC                     -> __imp__sub_8237B5FC
+  sub_8237B600                     -> __imp__sub_8237B600
+  sub_8237B628                     -> __imp__sub_8237B628
+  sub_8237B634                     -> __imp__sub_8237B634
+  sub_8237B638                     -> __imp__sub_8237B638
+  sub_8237B6D8                     -> __imp__sub_8237B6D8
+  sub_8237B758                     -> __imp__sub_8237B758
+  sub_8237B7A0                     -> __imp__sub_8237B7A0
+  sub_8237B7A8                     -> __imp__sub_8237B7A8
+  sub_8237B7D0                     -> __imp__sub_8237B7D0
+  sub_8237B7DC                     -> __imp__sub_8237B7DC
+  sub_8237B7E0                     -> __imp__sub_8237B7E0
+  sub_8237B814                     -> __imp__sub_8237B814
+  sub_8237B818                     -> __imp__sub_8237B818
+  sub_8237B824                     -> __imp__sub_8237B824
+  sub_8237B828                     -> __imp__sub_8237B828
+  sub_8237B870                     -> __imp__sub_8237B870
+  sub_8237B878                     -> __imp__sub_8237B878
+  sub_8237B8AC                     -> __imp__sub_8237B8AC
+  sub_8237B8B0                     -> __imp__sub_8237B8B0
+  sub_8237B8BC                     -> __imp__sub_8237B8BC
+  sub_8237B8C0                     -> __imp__sub_8237B8C0
+  sub_8237B8E8                     -> __imp__sub_8237B8E8
+  sub_8237B8F4                     -> __imp__sub_8237B8F4
+  sub_8237B8F8                     -> __imp__sub_8237B8F8
+  sub_8237B92C                     -> __imp__sub_8237B92C
+  sub_8237B930                     -> __imp__sub_8237B930
+  sub_8237B93C                     -> __imp__sub_8237B93C
+  sub_8237B940                     -> __imp__sub_8237B940
+  sub_8237B974                     -> __imp__sub_8237B974
+  sub_8237B978                     -> __imp__sub_8237B978
+  sub_8237B984                     -> __imp__sub_8237B984
+  sub_8237B988                     -> __imp__sub_8237B988
+  sub_8237B9B0                     -> __imp__sub_8237B9B0
+  sub_8237B9BC                     -> __imp__sub_8237B9BC
+  sub_8237B9C0                     -> __imp__sub_8237B9C0
+  sub_8237B9E8                     -> __imp__sub_8237B9E8
+  sub_8237B9F4                     -> __imp__sub_8237B9F4
+  sub_8237B9F8                     -> __imp__sub_8237B9F8
+  sub_8237BA2C                     -> __imp__sub_8237BA2C
+  sub_8237BA30                     -> __imp__sub_8237BA30
+  sub_8237BA3C                     -> __imp__sub_8237BA3C
+  sub_8237BA40                     -> __imp__sub_8237BA40
+  sub_8237BA74                     -> __imp__sub_8237BA74
+  sub_8237BA78                     -> __imp__sub_8237BA78
+  sub_8237BA84                     -> __imp__sub_8237BA84
+  sub_8237BA88                     -> __imp__sub_8237BA88
+  sub_8237BAB0                     -> __imp__sub_8237BAB0
+  sub_8237BABC                     -> __imp__sub_8237BABC
+  sub_8237BAC0                     -> __imp__sub_8237BAC0
+  sub_8237BAE0                     -> __imp__sub_8237BAE0
+  sub_8237BAE8                     -> __imp__sub_8237BAE8
+  sub_8237BB08                     -> __imp__sub_8237BB08
+  sub_8237BB10                     -> __imp__sub_8237BB10
+  sub_8237BB30                     -> __imp__sub_8237BB30
+  sub_8237BB38                     -> __imp__sub_8237BB38
+  sub_8237BB58                     -> __imp__sub_8237BB58
+  sub_8237BB60                     -> __imp__sub_8237BB60
+  sub_8237BB80                     -> __imp__sub_8237BB80
+  sub_8237BB88                     -> __imp__sub_8237BB88
+  sub_8237BBA8                     -> __imp__sub_8237BBA8
+  sub_8237BBB0                     -> __imp__sub_8237BBB0
+  sub_8237BBDC                     -> __imp__sub_8237BBDC
+  sub_8237BBE0                     -> __imp__sub_8237BBE0
+  sub_8237BBEC                     -> __imp__sub_8237BBEC
+  sub_8237BBF0                     -> __imp__sub_8237BBF0
+  sub_8237BBF8                     -> __imp__sub_8237BBF8
+  sub_8237BC98                     -> __imp__sub_8237BC98
+  sub_8237BCB4                     -> __imp__sub_8237BCB4
+  sub_8237BCB8                     -> __imp__sub_8237BCB8
+  sub_8237BD4C                     -> __imp__sub_8237BD4C
+  sub_8237BD50                     -> __imp__sub_8237BD50
+  sub_8237BD60                     -> __imp__sub_8237BD60
+  sub_8237BD88                     -> __imp__sub_8237BD88
+  sub_8237BD94                     -> __imp__sub_8237BD94
+  sub_8237BD98                     -> __imp__sub_8237BD98
+  sub_8237BDBC                     -> __imp__sub_8237BDBC
+  sub_8237BDC0                     -> __imp__sub_8237BDC0
+  sub_8237BDC8                     -> __imp__sub_8237BDC8
+  sub_8237BE04                     -> __imp__sub_8237BE04
+  sub_8237BE08                     -> __imp__sub_8237BE08
+  sub_8237BE10                     -> __imp__sub_8237BE10
+  sub_8237BE4C                     -> __imp__sub_8237BE4C
+  sub_8237BE50                     -> __imp__sub_8237BE50
+  sub_8237BE58                     -> __imp__sub_8237BE58
+  sub_8237BE94                     -> __imp__sub_8237BE94
+  sub_8237BE98                     -> __imp__sub_8237BE98
+  sub_8237BEA0                     -> __imp__sub_8237BEA0
+  sub_8237BEDC                     -> __imp__sub_8237BEDC
+  sub_8237BEE0                     -> __imp__sub_8237BEE0
+  sub_8237BEE8                     -> __imp__sub_8237BEE8
+  sub_8237BEF0                     -> __imp__sub_8237BEF0
+  sub_8237BEF8                     -> __imp__sub_8237BEF8
+  sub_8237BF40                     -> __imp__sub_8237BF40
+  sub_8237BF50                     -> __imp__sub_8237BF50
+  sub_8237BF90                     -> __imp__sub_8237BF90
+  sub_8237BFA0                     -> __imp__sub_8237BFA0
+  sub_8237BFE0                     -> __imp__sub_8237BFE0
+  sub_8237BFF0                     -> __imp__sub_8237BFF0
+  sub_8237C01C                     -> __imp__sub_8237C01C
+  sub_8237C020                     -> __imp__sub_8237C020
+  sub_8237C050                     -> __imp__sub_8237C050
+  sub_8237C080                     -> __imp__sub_8237C080
+  sub_8237C0B0                     -> __imp__sub_8237C0B0
+  sub_8237C0E0                     -> __imp__sub_8237C0E0
+  sub_8237C110                     -> __imp__sub_8237C110
+  sub_8237C140                     -> __imp__sub_8237C140
+  sub_8237C168                     -> __imp__sub_8237C168
+  sub_8237C194                     -> __imp__sub_8237C194
+  sub_8237C198                     -> __imp__sub_8237C198
+  sub_8237C1C8                     -> __imp__sub_8237C1C8
+  sub_8237C1F8                     -> __imp__sub_8237C1F8
+  sub_8237C228                     -> __imp__sub_8237C228
+  sub_8237C258                     -> __imp__sub_8237C258
+  sub_8237C288                     -> __imp__sub_8237C288
+  sub_8237C2B8                     -> __imp__sub_8237C2B8
+  sub_8237C2E0                     -> __imp__sub_8237C2E0
+  sub_8237C2EC                     -> __imp__sub_8237C2EC
+  sub_8237C2F0                     -> __imp__sub_8237C2F0
+  sub_8237C2FC                     -> __imp__sub_8237C2FC
+  sub_8237C300                     -> __imp__sub_8237C300
+  sub_8237C30C                     -> __imp__sub_8237C30C
+  sub_8237C310                     -> __imp__sub_8237C310
+  sub_8237C31C                     -> __imp__sub_8237C31C
+  sub_8237C320                     -> __imp__sub_8237C320
+  sub_8237C32C                     -> __imp__sub_8237C32C
+  sub_8237C330                     -> __imp__sub_8237C330
+  sub_8237C33C                     -> __imp__sub_8237C33C
+  sub_8237C340                     -> __imp__sub_8237C340
+  sub_8237C34C                     -> __imp__sub_8237C34C
+  sub_8237C350                     -> __imp__sub_8237C350
+  sub_8237C35C                     -> __imp__sub_8237C35C
+  sub_8237C360                     -> __imp__sub_8237C360
+  sub_8237C36C                     -> __imp__sub_8237C36C
+  sub_8237C370                     -> __imp__sub_8237C370
+  sub_8237C37C                     -> __imp__sub_8237C37C
+  sub_8237C380                     -> __imp__sub_8237C380
+  sub_8237C394                     -> __imp__sub_8237C394
+  sub_8237C398                     -> __imp__sub_8237C398
+  sub_8237C3A0                     -> __imp__sub_8237C3A0
+  sub_8237C3F0                     -> __imp__sub_8237C3F0
+  sub_8237C3FC                     -> __imp__sub_8237C3FC
+  sub_8237C400                     -> __imp__sub_8237C400
+  sub_8237C4AC                     -> __imp__sub_8237C4AC
+  sub_8237C4B0                     -> __imp__sub_8237C4B0
+  sub_8237C4B8                     -> __imp__sub_8237C4B8
+  sub_8237C564                     -> __imp__sub_8237C564
+  sub_8237C568                     -> __imp__sub_8237C568
+  sub_8237C570                     -> __imp__sub_8237C570
+  sub_8237C61C                     -> __imp__sub_8237C61C
+  sub_8237C620                     -> __imp__sub_8237C620
+  sub_8237C628                     -> __imp__sub_8237C628
+  sub_8237C6D4                     -> __imp__sub_8237C6D4
+  sub_8237C6D8                     -> __imp__sub_8237C6D8
+  sub_8237C6E0                     -> __imp__sub_8237C6E0
+  sub_8237C700                     -> __imp__sub_8237C700
+  sub_8237C710                     -> __imp__sub_8237C710
+  sub_8237C730                     -> __imp__sub_8237C730
+  sub_8237C740                     -> __imp__sub_8237C740
+  sub_8237C760                     -> __imp__sub_8237C760
+  sub_8237C76C                     -> __imp__sub_8237C76C
+  sub_8237C770                     -> __imp__sub_8237C770
+  sub_8237C798                     -> __imp__sub_8237C798
+  sub_8237C7A4                     -> __imp__sub_8237C7A4
+  sub_8237C7A8                     -> __imp__sub_8237C7A8
+  sub_8237C7D0                     -> __imp__sub_8237C7D0
+  sub_8237C7DC                     -> __imp__sub_8237C7DC
+  sub_8237C7E0                     -> __imp__sub_8237C7E0
+  sub_8237C800                     -> __imp__sub_8237C800
+  sub_8237C808                     -> __imp__sub_8237C808
+  sub_8237C830                     -> __imp__sub_8237C830
+  sub_8237C83C                     -> __imp__sub_8237C83C
+  sub_8237C840                     -> __imp__sub_8237C840
+  sub_8237C868                     -> __imp__sub_8237C868
+  sub_8237C87C                     -> __imp__sub_8237C87C
+  sub_8237C880                     -> __imp__sub_8237C880
+  sub_8237C8A8                     -> __imp__sub_8237C8A8
+  sub_8237C8B0                     -> __imp__sub_8237C8B0
+  sub_8237C8D8                     -> __imp__sub_8237C8D8
+  sub_8237C8E0                     -> __imp__sub_8237C8E0
+  sub_8237C908                     -> __imp__sub_8237C908
+  sub_8237C910                     -> __imp__sub_8237C910
+  sub_8237C938                     -> __imp__sub_8237C938
+  sub_8237C940                     -> __imp__sub_8237C940
+  sub_8237C968                     -> __imp__sub_8237C968
+  sub_8237C974                     -> __imp__sub_8237C974
+  sub_8237C978                     -> __imp__sub_8237C978
+  sub_8237C9A0                     -> __imp__sub_8237C9A0
+  sub_8237C9AC                     -> __imp__sub_8237C9AC
+  sub_8237C9B0                     -> __imp__sub_8237C9B0
+  sub_8237C9D8                     -> __imp__sub_8237C9D8
+  sub_8237C9E4                     -> __imp__sub_8237C9E4
+  sub_8237C9E8                     -> __imp__sub_8237C9E8
+  sub_8237CA08                     -> __imp__sub_8237CA08
+  sub_8237CA10                     -> __imp__sub_8237CA10
+  sub_8237CA18                     -> __imp__sub_8237CA18
+  sub_8237CA20                     -> __imp__sub_8237CA20
+  sub_8237CA30                     -> __imp__sub_8237CA30
+  sub_8237CA3C                     -> __imp__sub_8237CA3C
+  sub_8237CA40                     -> __imp__sub_8237CA40
+  sub_8237CB00                     -> __imp__sub_8237CB00
+  sub_8237CB34                     -> __imp__sub_8237CB34
+  sub_8237CB38                     -> __imp__sub_8237CB38
+  sub_8237CBC0                     -> __imp__sub_8237CBC0
+  sub_8237CBD0                     -> __imp__sub_8237CBD0
+  sub_8237CC90                     -> __imp__sub_8237CC90
+  sub_8237CCC4                     -> __imp__sub_8237CCC4
+  sub_8237CCC8                     -> __imp__sub_8237CCC8
+  sub_8237CD4C                     -> __imp__sub_8237CD4C
+  sub_8237CD50                     -> __imp__sub_8237CD50
+  sub_8237CD60                     -> __imp__sub_8237CD60
+  sub_8237CD9C                     -> __imp__sub_8237CD9C
+  sub_8237CDA0                     -> __imp__sub_8237CDA0
+  sub_8237CDB4                     -> __imp__sub_8237CDB4
+  sub_8237CDB8                     -> __imp__sub_8237CDB8
+  sub_8237CE40                     -> __imp__sub_8237CE40
+  sub_8237CE50                     -> __imp__sub_8237CE50
+  sub_8237CEB8                     -> __imp__sub_8237CEB8
+  sub_8237CEC4                     -> __imp__sub_8237CEC4
+  sub_8237CEC8                     -> __imp__sub_8237CEC8
+  sub_8237CF28                     -> __imp__sub_8237CF28
+  sub_8237CF6C                     -> __imp__sub_8237CF6C
+  sub_8237CF70                     -> __imp__sub_8237CF70
+  sub_8237CFD0                     -> __imp__sub_8237CFD0
+  sub_8237D010                     -> __imp__sub_8237D010
+  sub_8237D080                     -> __imp__sub_8237D080
+  sub_8237D090                     -> __imp__sub_8237D090
+  sub_8237D100                     -> __imp__sub_8237D100
+  sub_8237D110                     -> __imp__sub_8237D110
+  sub_8237D160                     -> __imp__sub_8237D160
+  sub_8237D180                     -> __imp__sub_8237D180
+  sub_8237D1B8                     -> __imp__sub_8237D1B8
+  sub_8237D1D0                     -> __imp__sub_8237D1D0
+  sub_8237D208                     -> __imp__sub_8237D208
+  sub_8237D220                     -> __imp__sub_8237D220
+  sub_8237D258                     -> __imp__sub_8237D258
+  sub_8237D270                     -> __imp__sub_8237D270
+  sub_8237D2C8                     -> __imp__sub_8237D2C8
+  sub_8237D320                     -> __imp__sub_8237D320
+  sub_8237D378                     -> __imp__sub_8237D378
+  sub_8237D3D0                     -> __imp__sub_8237D3D0
+  sub_8237D430                     -> __imp__sub_8237D430
+  sub_8237D520                     -> __imp__sub_8237D520
+  sub_8237D998                     -> __imp__sub_8237D998
+  sub_8237DA28                     -> __imp__sub_8237DA28
+  sub_8237DAB8                     -> __imp__sub_8237DAB8
+  sub_8237DBE8                     -> __imp__sub_8237DBE8
+  sub_8237DCF8                     -> __imp__sub_8237DCF8
+  sub_8237DDC0                     -> __imp__sub_8237DDC0
+  sub_8237DDD0                     -> __imp__sub_8237DDD0
+  sub_8237E138                     -> __imp__sub_8237E138
+  sub_8237E3E8                     -> __imp__sub_8237E3E8
+  sub_8237E458                     -> __imp__sub_8237E458
+  sub_8237E578                     -> __imp__sub_8237E578
+  sub_8237E600                     -> __imp__sub_8237E600
+  sub_8237E710                     -> __imp__sub_8237E710
+  sub_8237F968                     -> __imp__sub_8237F968
+  sub_8237FE78                     -> __imp__sub_8237FE78
+  sub_8237FF98                     -> __imp__sub_8237FF98
+  sub_82380388                     -> __imp__sub_82380388
+  sub_82380CE8                     -> __imp__sub_82380CE8
+  sub_82381920                     -> __imp__sub_82381920
+  sub_823819D0                     -> __imp__sub_823819D0
+  sub_82381A98                     -> __imp__sub_82381A98
+  sub_82381B70                     -> __imp__sub_82381B70
+  sub_82381CE0                     -> __imp__sub_82381CE0
+  sub_82381D38                     -> __imp__sub_82381D38
+  sub_82381DC8                     -> __imp__sub_82381DC8
+  sub_82381E68                     -> __imp__sub_82381E68
+  sub_82381F30                     -> __imp__sub_82381F30
+  sub_82382138                     -> __imp__sub_82382138
+  sub_82382200                     -> __imp__sub_82382200
+  sub_823823E0                     -> __imp__sub_823823E0
+  sub_82382578                     -> __imp__sub_82382578
+  sub_82382650                     -> __imp__sub_82382650
+  sub_82382710                     -> __imp__sub_82382710
+  sub_82382798                     -> __imp__sub_82382798
+  sub_82382880                     -> __imp__sub_82382880
+  sub_823829A0                     -> __imp__sub_823829A0
+  sub_82382AB8                     -> __imp__sub_82382AB8
+  sub_82382BC8                     -> __imp__sub_82382BC8
+  sub_82382D00                     -> __imp__sub_82382D00
+  sub_82382E40                     -> __imp__sub_82382E40
+  sub_82382FC0                     -> __imp__sub_82382FC0
+  sub_82383028                     -> __imp__sub_82383028
+  sub_82383090                     -> __imp__sub_82383090
+  sub_82383160                     -> __imp__sub_82383160
+  sub_82383F80                     -> __imp__sub_82383F80
+  sub_823843E8                     -> __imp__sub_823843E8
+  sub_82385218                     -> __imp__sub_82385218
+  sub_82385288                     -> __imp__sub_82385288
+  sub_82385298                     -> __imp__sub_82385298
+  sub_82385390                     -> __imp__sub_82385390
+  sub_82385428                     -> __imp__sub_82385428
+  sub_82385A48                     -> __imp__sub_82385A48
+  sub_82387080                     -> __imp__sub_82387080
+  sub_82387810                     -> __imp__sub_82387810
+  sub_82388708                     -> __imp__sub_82388708
+  sub_823887B0                     -> __imp__sub_823887B0
+  sub_82388838                     -> __imp__sub_82388838
+  sub_823889E8                     -> __imp__sub_823889E8
+  sub_82388B58                     -> __imp__sub_82388B58
+  sub_82389278                     -> __imp__sub_82389278
+  sub_82389318                     -> __imp__sub_82389318
+  sub_82389368                     -> __imp__sub_82389368
+  sub_82389420                     -> __imp__sub_82389420
+  sub_823894D0                     -> __imp__sub_823894D0
+  sub_82389638                     -> __imp__sub_82389638
+  sub_82389780                     -> __imp__sub_82389780
+  sub_82389860                     -> __imp__sub_82389860
+  sub_82389950                     -> __imp__sub_82389950
+  sub_823899A0                     -> __imp__sub_823899A0
+  sub_82389A08                     -> __imp__sub_82389A08
+  sub_82389AE8                     -> __imp__sub_82389AE8
+  sub_82389C20                     -> __imp__sub_82389C20
+  sub_82389C70                     -> __imp__sub_82389C70
+  sub_8238A1B0                     -> __imp__sub_8238A1B0
+  sub_8238A268                     -> __imp__sub_8238A268
+  sub_8238AF30                     -> __imp__sub_8238AF30
+  sub_8238BA50                     -> __imp__sub_8238BA50
+  sub_8238C040                     -> __imp__sub_8238C040
+  sub_8238C0B0                     -> __imp__sub_8238C0B0
+  sub_8238C4B0                     -> __imp__sub_8238C4B0
+  sub_8238C5A8                     -> __imp__sub_8238C5A8
+  sub_8238C638                     -> __imp__sub_8238C638
+  sub_8238C8D8                     -> __imp__sub_8238C8D8
+  sub_8238C960                     -> __imp__sub_8238C960
+  sub_8238C9E0                     -> __imp__sub_8238C9E0
+  sub_8238CA98                     -> __imp__sub_8238CA98
+  sub_8238CC08                     -> __imp__sub_8238CC08
+  sub_8238CD08                     -> __imp__sub_8238CD08
+  sub_8238CD28                     -> __imp__sub_8238CD28
+  sub_8238CE70                     -> __imp__sub_8238CE70
+  sub_8238CEE8                     -> __imp__sub_8238CEE8
+  sub_8238CF38                     -> __imp__sub_8238CF38
+  sub_8238D088                     -> __imp__sub_8238D088
+  sub_8238D240                     -> __imp__sub_8238D240
+  sub_8238D2D8                     -> __imp__sub_8238D2D8
+  sub_8238D330                     -> __imp__sub_8238D330
+  sub_8238D410                     -> __imp__sub_8238D410
+  sub_8238D628                     -> __imp__sub_8238D628
+  sub_8238D898                     -> __imp__sub_8238D898
+  sub_8238D8F0                     -> __imp__sub_8238D8F0
+  sub_8238D9B0                     -> __imp__sub_8238D9B0
+  sub_8238DA90                     -> __imp__sub_8238DA90
+  sub_8238DB18                     -> __imp__sub_8238DB18
+  sub_8238DC60                     -> __imp__sub_8238DC60
+  sub_8238DCF0                     -> __imp__sub_8238DCF0
+  sub_8238DF38                     -> __imp__sub_8238DF38
+  sub_8238E168                     -> __imp__sub_8238E168
+  sub_8238E590                     -> __imp__sub_8238E590
+  sub_8238E738                     -> __imp__sub_8238E738
+  sub_8238E910                     -> __imp__sub_8238E910
+  sub_8238E9F8                     -> __imp__sub_8238E9F8
+  sub_8238EB30                     -> __imp__sub_8238EB30
+  sub_8238EBA8                     -> __imp__sub_8238EBA8
+  sub_8238EC18                     -> __imp__sub_8238EC18
+  sub_8238ECB0                     -> __imp__sub_8238ECB0
+  sub_8238EDB0                     -> __imp__sub_8238EDB0
+  sub_8238EFD8                     -> __imp__sub_8238EFD8
+  sub_8238F060                     -> __imp__sub_8238F060
+  sub_8238F4B8                     -> __imp__sub_8238F4B8
+  sub_8238F630                     -> __imp__sub_8238F630
+  sub_8238F698                     -> __imp__sub_8238F698
+  sub_8238F6F0                     -> __imp__sub_8238F6F0
+  sub_8238F7F0                     -> __imp__sub_8238F7F0
+  sub_8238F8F0                     -> __imp__sub_8238F8F0
+  sub_8238FD58                     -> __imp__sub_8238FD58
+  sub_82390048                     -> __imp__sub_82390048
+  sub_823905C8                     -> __imp__sub_823905C8
+  sub_82390838                     -> __imp__sub_82390838
+  sub_823908B0                     -> __imp__sub_823908B0
+  sub_82390938                     -> __imp__sub_82390938
+  sub_82391498                     -> __imp__sub_82391498
+  sub_823BF500                     -> __imp__sub_823BF500
+  sub_823BFAD0                     -> __imp__sub_823BFAD0
+  sub_823EE808                     -> __imp__sub_823EE808
+  sub_823FCD70                     -> __imp__sub_823FCD70
+  sub_823FCD88                     -> __imp__sub_823FCD88
+  sub_823FCDC8                     -> __imp__sub_823FCDC8
+  sub_823FCF68                     -> __imp__sub_823FCF68
+  sub_823FCFD0                     -> __imp__sub_823FCFD0
+  sub_823FD0D8                     -> __imp__sub_823FD0D8
+  sub_823FD358                     -> __imp__sub_823FD358
+  sub_823FD620                     -> __imp__sub_823FD620
+  sub_823FD8E8                     -> __imp__sub_823FD8E8
+  sub_823FDA70                     -> __imp__sub_823FDA70
+  sub_823FDB88                     -> __imp__sub_823FDB88
+  sub_823FDF00                     -> __imp__sub_823FDF00
+  sub_823FE110                     -> __imp__sub_823FE110
+  sub_823FF370                     -> __imp__sub_823FF370
+  sub_823FF7A8                     -> __imp__sub_823FF7A8
+  sub_823FF990                     -> __imp__sub_823FF990
+  sub_823FFA18                     -> __imp__sub_823FFA18
+  sub_823FFB88                     -> __imp__sub_823FFB88
+  sub_823FFD60                     -> __imp__sub_823FFD60
+  sub_823FFF60                     -> __imp__sub_823FFF60
+  sub_82400510                     -> __imp__sub_82400510
+  sub_82400E20                     -> __imp__sub_82400E20
+  sub_82400E88                     -> __imp__sub_82400E88
+  sub_82401968                     -> __imp__sub_82401968
+  sub_82401DC8                     -> __imp__sub_82401DC8
+  sub_824020E8                     -> __imp__sub_824020E8
+  sub_82402360                     -> __imp__sub_82402360
+  sub_824023B8                     -> __imp__sub_824023B8
+  sub_82402FB8                     -> __imp__sub_82402FB8
+  sub_82402FF8                     -> __imp__sub_82402FF8
+  sub_824030D0                     -> __imp__sub_824030D0
+  sub_82403228                     -> __imp__sub_82403228
+  sub_82403428                     -> __imp__sub_82403428
+  sub_82403520                     -> __imp__sub_82403520
+  sub_824037A0                     -> __imp__sub_824037A0
+  sub_824037F0                     -> __imp__sub_824037F0
+  sub_82403840                     -> __imp__sub_82403840
+  sub_82403A90                     -> __imp__sub_82403A90
+  sub_82403C00                     -> __imp__sub_82403C00
+  sub_82403C98                     -> __imp__sub_82403C98
+  sub_82403D78                     -> __imp__sub_82403D78
+  sub_82403DE0                     -> __imp__sub_82403DE0
+  sub_82404168                     -> __imp__sub_82404168
+  sub_824041D8                     -> __imp__sub_824041D8
+  sub_82404528                     -> __imp__sub_82404528
+  sub_82404710                     -> __imp__sub_82404710
+  sub_824047F0                     -> __imp__sub_824047F0
+  sub_82404940                     -> __imp__sub_82404940
+  sub_82404AD0                     -> __imp__sub_82404AD0
+  sub_824051B8                     -> __imp__sub_824051B8
+  sub_824052B0                     -> __imp__sub_824052B0
+  sub_82405B80                     -> __imp__sub_82405B80
+  sub_82405CB0                     -> __imp__sub_82405CB0
+  sub_82405ED0                     -> __imp__sub_82405ED0
+  sub_82405FE0                     -> __imp__sub_82405FE0
+  sub_824061E8                     -> __imp__sub_824061E8
+  sub_824065F0                     -> __imp__sub_824065F0
+  sub_824085B0                     -> __imp__sub_824085B0
+  sub_82408640                     -> __imp__sub_82408640
+  sub_824088A8                     -> __imp__sub_824088A8
+  sub_82408910                     -> __imp__sub_82408910
+  sub_82408C58                     -> __imp__sub_82408C58
+  sub_82408D38                     -> __imp__sub_82408D38
+  sub_82408DA8                     -> __imp__sub_82408DA8
+  sub_82408DC0                     -> __imp__sub_82408DC0
+  sub_82408E88                     -> __imp__sub_82408E88
+  sub_82409108                     -> __imp__sub_82409108
+  sub_82409760                     -> __imp__sub_82409760
+  sub_82409808                     -> __imp__sub_82409808
+  sub_82409BE8                     -> __imp__sub_82409BE8
+  sub_82409D30                     -> __imp__sub_82409D30
+  sub_82409E00                     -> __imp__sub_82409E00
+  sub_82409ED0                     -> __imp__sub_82409ED0
+  sub_82409FA0                     -> __imp__sub_82409FA0
+  sub_8240A080                     -> __imp__sub_8240A080
+  sub_8240A668                     -> __imp__sub_8240A668
+  sub_8240A8F0                     -> __imp__sub_8240A8F0
+  sub_8240AFD0                     -> __imp__sub_8240AFD0
+  sub_8240C5D8                     -> __imp__sub_8240C5D8
+  sub_8240C6B8                     -> __imp__sub_8240C6B8
+  sub_8240C738                     -> __imp__sub_8240C738
+  sub_8240C890                     -> __imp__sub_8240C890
+  sub_8240C908                     -> __imp__sub_8240C908
+  sub_8240CA78                     -> __imp__sub_8240CA78
+  sub_8240CC28                     -> __imp__sub_8240CC28
+  sub_8240CE30                     -> __imp__sub_8240CE30
+  sub_8240CEE0                     -> __imp__sub_8240CEE0
+  sub_8240D290                     -> __imp__sub_8240D290
+  sub_8240D320                     -> __imp__sub_8240D320
+  sub_8240D398                     -> __imp__sub_8240D398
+  sub_8240DB88                     -> __imp__sub_8240DB88
+  sub_8240DDC0                     -> __imp__sub_8240DDC0
+  sub_8240DF38                     -> __imp__sub_8240DF38
+  sub_8240E0F0                     -> __imp__sub_8240E0F0
+  sub_8240E1B8                     -> __imp__sub_8240E1B8
+  sub_8240E220                     -> __imp__sub_8240E220
+  sub_8240E260                     -> __imp__sub_8240E260
+  sub_8240E2E0                     -> __imp__sub_8240E2E0
+  sub_8240E350                     -> __imp__sub_8240E350
+  sub_8240E778                     -> __imp__sub_8240E778
+  sub_8240E8C0                     -> __imp__sub_8240E8C0
+  sub_8240E918                     -> __imp__sub_8240E918
+  sub_8240E9F8                     -> __imp__sub_8240E9F8
+  sub_8240EB80                     -> __imp__sub_8240EB80
+  sub_8240EC70                     -> __imp__sub_8240EC70
+  sub_8240ED98                     -> __imp__sub_8240ED98
+  sub_8240EF78                     -> __imp__sub_8240EF78
+  sub_8240F0D8                     -> __imp__sub_8240F0D8
+  sub_8240F1D8                     -> __imp__sub_8240F1D8
+  sub_8240F450                     -> __imp__sub_8240F450
+  sub_8240F5E8                     -> __imp__sub_8240F5E8
+  sub_8240F650                     -> __imp__sub_8240F650
+  sub_82410620                     -> __imp__sub_82410620
+  sub_824106D8                     -> __imp__sub_824106D8
+  sub_82410838                     -> __imp__sub_82410838
+  sub_82410998                     -> __imp__sub_82410998
+  sub_82410A70                     -> __imp__sub_82410A70
+  sub_82410AA8                     -> __imp__sub_82410AA8
+  sub_82410C38                     -> __imp__sub_82410C38
+  sub_82410C98                     -> __imp__sub_82410C98
+  sub_82410CF8                     -> __imp__sub_82410CF8
+  sub_82410E10                     -> __imp__sub_82410E10
+  sub_82410E90                     -> __imp__sub_82410E90
+  sub_82410EA8                     -> __imp__sub_82410EA8
+  sub_82410F50                     -> __imp__sub_82410F50
+  sub_82410F88                     -> __imp__sub_82410F88
+  sub_82410F90                     -> __imp__sub_82410F90
+  sub_82410F98                     -> __imp__sub_82410F98
+  sub_82410FD0                     -> __imp__sub_82410FD0
+  sub_82410FF8                     -> __imp__sub_82410FF8
+  sub_82411028                     -> __imp__sub_82411028
+  sub_82411058                     -> __imp__sub_82411058
+  sub_824111B0                     -> __imp__sub_824111B0
+  sub_824111B8                     -> __imp__sub_824111B8
+  sub_824111F8                     -> __imp__sub_824111F8
+  sub_824112A0                     -> __imp__sub_824112A0
+  sub_82411580                     -> __imp__sub_82411580
+  sub_82411598                     -> __imp__sub_82411598
+  sub_824115C0                     -> __imp__sub_824115C0
+  sub_824115D8                     -> __imp__sub_824115D8
+  sub_82411600                     -> __imp__sub_82411600
+  sub_82412260                     -> __imp__sub_82412260
+  sub_82414870                     -> __imp__sub_82414870
+  sub_82414988                     -> __imp__sub_82414988
+  sub_824149F8                     -> __imp__sub_824149F8
+  sub_82414A58                     -> __imp__sub_82414A58
+  sub_82414AC8                     -> __imp__sub_82414AC8
+  sub_82414B70                     -> __imp__sub_82414B70
+  sub_82414BE0                     -> __imp__sub_82414BE0
+  sub_82414C28                     -> __imp__sub_82414C28
+  sub_82414C90                     -> __imp__sub_82414C90
+  sub_82414D08                     -> __imp__sub_82414D08
+  sub_82414D38                     -> __imp__sub_82414D38
+  sub_82414D60                     -> __imp__sub_82414D60
+  sub_82414E00                     -> __imp__sub_82414E00
+  sub_82414EB0                     -> __imp__sub_82414EB0
+  sub_82414F78                     -> __imp__sub_82414F78
+  sub_82415000                     -> __imp__sub_82415000
+  sub_824150B0                     -> __imp__sub_824150B0
+  sub_82415178                     -> __imp__sub_82415178
+  sub_824158C8                     -> __imp__sub_824158C8
+  sub_82415A38                     -> __imp__sub_82415A38
+  sub_82415AA8                     -> __imp__sub_82415AA8
+  sub_82415E48                     -> __imp__sub_82415E48
+  sub_82415F10                     -> __imp__sub_82415F10
+  sub_82415F88                     -> __imp__sub_82415F88
+  sub_82416098                     -> __imp__sub_82416098
+  sub_82416688                     -> __imp__sub_82416688
+  sub_82416780                     -> __imp__sub_82416780
+  sub_82416868                     -> __imp__sub_82416868
+  sub_82416940                     -> __imp__sub_82416940
+  sub_824169D0                     -> __imp__sub_824169D0
+  sub_82416A80                     -> __imp__sub_82416A80
+  sub_82416BF8                     -> __imp__sub_82416BF8
+  sub_82416E78                     -> __imp__sub_82416E78
+  sub_82416FC8                     -> __imp__sub_82416FC8
+  sub_824171D0                     -> __imp__sub_824171D0
+  sub_824173B8                     -> __imp__sub_824173B8
+  sub_824174E0                     -> __imp__sub_824174E0
+  sub_824175B0                     -> __imp__sub_824175B0
+  sub_82417800                     -> __imp__sub_82417800
+  sub_82417858                     -> __imp__sub_82417858
+  sub_824178C8                     -> __imp__sub_824178C8
+  sub_82418428                     -> __imp__sub_82418428
+  sub_82418818                     -> __imp__sub_82418818
+  sub_82418820                     -> __imp__sub_82418820
+  sub_82418850                     -> __imp__sub_82418850
+  sub_82418878                     -> __imp__sub_82418878
+  sub_82418940                     -> __imp__sub_82418940
+  sub_824189F8                     -> __imp__sub_824189F8
+  sub_82418AF0                     -> __imp__sub_82418AF0
+  sub_82418DF8                     -> __imp__sub_82418DF8
+  sub_82418F48                     -> __imp__sub_82418F48
+  sub_82418FB8                     -> __imp__sub_82418FB8
+  sub_82419018                     -> __imp__sub_82419018
+  sub_824191A8                     -> __imp__sub_824191A8
+  sub_82419210                     -> __imp__sub_82419210
+  sub_82419230                     -> __imp__sub_82419230
+  sub_82419290                     -> __imp__sub_82419290
+  sub_824197E8                     -> __imp__sub_824197E8
+  sub_82419948                     -> __imp__sub_82419948
+  sub_82419A70                     -> __imp__sub_82419A70
+  sub_82419AE0                     -> __imp__sub_82419AE0
+  sub_82419C10                     -> __imp__sub_82419C10
+  sub_82419C78                     -> __imp__sub_82419C78
+  sub_82419D28                     -> __imp__sub_82419D28
+  sub_82419D90                     -> __imp__sub_82419D90
+  sub_8241A138                     -> __imp__sub_8241A138
+  sub_8241A258                     -> __imp__sub_8241A258
+  sub_8241A280                     -> __imp__sub_8241A280
+  sub_8241A328                     -> __imp__sub_8241A328
+  sub_8241A658                     -> __imp__sub_8241A658
+  sub_8241A750                     -> __imp__sub_8241A750
+  sub_8241A8F0                     -> __imp__sub_8241A8F0
+  sub_8241A950                     -> __imp__sub_8241A950
+  sub_8241A990                     -> __imp__sub_8241A990
+  sub_8241A9E0                     -> __imp__sub_8241A9E0
+  sub_8241AAB0                     -> __imp__sub_8241AAB0
+  sub_8241AB30                     -> __imp__sub_8241AB30
+  sub_8241AC78                     -> __imp__sub_8241AC78
+  sub_8241AD10                     -> __imp__sub_8241AD10
+  sub_8241AE90                     -> __imp__sub_8241AE90
+  sub_8241AEF0                     -> __imp__sub_8241AEF0
+  sub_8241AF80                     -> __imp__sub_8241AF80
+  sub_8241B028                     -> __imp__sub_8241B028
+  sub_8241B138                     -> __imp__sub_8241B138
+  sub_8241B278                     -> __imp__sub_8241B278
+  sub_8241B398                     -> __imp__sub_8241B398
+  sub_8241B3A8                     -> __imp__sub_8241B3A8
+  sub_8241B448                     -> __imp__sub_8241B448
+  sub_8241B4E8                     -> __imp__sub_8241B4E8
+  sub_8241C6D0                     -> __imp__sub_8241C6D0
+  sub_8241C728                     -> __imp__sub_8241C728
+  sub_8241C868                     -> __imp__sub_8241C868
+  sub_8241C920                     -> __imp__sub_8241C920
+  sub_8241CAA8                     -> __imp__sub_8241CAA8
+  sub_8241CC88                     -> __imp__sub_8241CC88
+  sub_8241CDD0                     -> __imp__sub_8241CDD0
+  sub_8241CE78                     -> __imp__sub_8241CE78
+  sub_8241CF28                     -> __imp__sub_8241CF28
+  sub_8241DD10                     -> __imp__sub_8241DD10
+  sub_8241DD58                     -> __imp__sub_8241DD58
+  sub_8241DD90                     -> __imp__sub_8241DD90
+  sub_8241DE28                     -> __imp__sub_8241DE28
+  sub_8241E048                     -> __imp__sub_8241E048
+  sub_8241E750                     -> __imp__sub_8241E750
+  sub_8241E810                     -> __imp__sub_8241E810
+  sub_8241E938                     -> __imp__sub_8241E938
+  sub_8241E9C8                     -> __imp__sub_8241E9C8
+  sub_8241EA28                     -> __imp__sub_8241EA28
+  sub_8241EAA0                     -> __imp__sub_8241EAA0
+  sub_8241EAE8                     -> __imp__sub_8241EAE8
+  sub_8241EBB0                     -> __imp__sub_8241EBB0
+  sub_8241EBE0                     -> __imp__sub_8241EBE0
+  sub_8241EBF8                     -> __imp__sub_8241EBF8
+  sub_8241EC78                     -> __imp__sub_8241EC78
+  sub_8241EC90                     -> __imp__sub_8241EC90
+  sub_8241ED88                     -> __imp__sub_8241ED88
+  sub_8241EE10                     -> __imp__sub_8241EE10
+  sub_8241EF98                     -> __imp__sub_8241EF98
+  sub_8241EFE8                     -> __imp__sub_8241EFE8
+  sub_8241F038                     -> __imp__sub_8241F038
+  sub_8241F090                     -> __imp__sub_8241F090
+  sub_8241F0F8                     -> __imp__sub_8241F0F8
+  sub_8241F1E0                     -> __imp__sub_8241F1E0
+  sub_8241F350                     -> __imp__sub_8241F350
+  sub_8241F3C0                     -> __imp__sub_8241F3C0
+  sub_8241F648                     -> __imp__sub_8241F648
+  sub_8241F698                     -> __imp__sub_8241F698
+  sub_8241F790                     -> __imp__sub_8241F790
+  sub_8241F8F0                     -> __imp__sub_8241F8F0
+  sub_8241FB20                     -> __imp__sub_8241FB20
+  sub_8241FF58                     -> __imp__sub_8241FF58
+  sub_8241FF98                     -> __imp__sub_8241FF98
+  sub_82420080                     -> __imp__sub_82420080
+  sub_82420088                     -> __imp__sub_82420088
+  sub_82420178                     -> __imp__sub_82420178
+  sub_82420308                     -> __imp__sub_82420308
+  sub_82420438                     -> __imp__sub_82420438
+  sub_82420740                     -> __imp__sub_82420740
+  sub_82420998                     -> __imp__sub_82420998
+  sub_824209B0                     -> __imp__sub_824209B0
+  sub_824209C0                     -> __imp__sub_824209C0
+  sub_824209D0                     -> __imp__sub_824209D0
+  sub_824209E8                     -> __imp__sub_824209E8
+  sub_82420A08                     -> __imp__sub_82420A08
+  sub_82420A20                     -> __imp__sub_82420A20
+  sub_82420A50                     -> __imp__sub_82420A50
+  sub_82420A78                     -> __imp__sub_82420A78
+  sub_82420A90                     -> __imp__sub_82420A90
+  sub_82420AD0                     -> __imp__sub_82420AD0
+  sub_82420B10                     -> __imp__sub_82420B10
+  sub_82420B80                     -> __imp__sub_82420B80
+  sub_82420B98                     -> __imp__sub_82420B98
+  sub_82420BB8                     -> __imp__sub_82420BB8
+  sub_82420BC0                     -> __imp__sub_82420BC0
+  sub_82420BC8                     -> __imp__sub_82420BC8
+  sub_82420BD0                     -> __imp__sub_82420BD0
+  sub_82420C00                     -> __imp__sub_82420C00
+  sub_82420C10                     -> __imp__sub_82420C10
+  sub_82420C48                     -> __imp__sub_82420C48
+  sub_82420C58                     -> __imp__sub_82420C58
+  sub_82420C68                     -> __imp__sub_82420C68
+  sub_82420C80                     -> __imp__sub_82420C80
+  sub_82420C90                     -> __imp__sub_82420C90
+  sub_82420CF8                     -> __imp__sub_82420CF8
+  sub_82420D10                     -> __imp__sub_82420D10
+  sub_82420D20                     -> __imp__sub_82420D20
+  sub_82420D30                     -> __imp__sub_82420D30
+  sub_82420DD0                     -> __imp__sub_82420DD0
+  sub_82420E48                     -> __imp__sub_82420E48
+  sub_82420EC0                     -> __imp__sub_82420EC0
+  sub_82420F60                     -> __imp__sub_82420F60
+  sub_82421048                     -> __imp__sub_82421048
+  sub_82421120                     -> __imp__sub_82421120
+  sub_824212B0                     -> __imp__sub_824212B0
+  sub_82421350                     -> __imp__sub_82421350
+  sub_82421400                     -> __imp__sub_82421400
+  sub_824214A8                     -> __imp__sub_824214A8
+  sub_82421550                     -> __imp__sub_82421550
+  sub_824215F8                     -> __imp__sub_824215F8
+  sub_824216D0                     -> __imp__sub_824216D0
+  sub_82421768                     -> __imp__sub_82421768
+  sub_82421818                     -> __imp__sub_82421818
+  sub_82421908                     -> __imp__sub_82421908
+  sub_824219C8                     -> __imp__sub_824219C8
+  sub_82421A18                     -> __imp__sub_82421A18
+  sub_82421A48                     -> __imp__sub_82421A48
+  sub_82421AA0                     -> __imp__sub_82421AA0
+  sub_82421AD0                     -> __imp__sub_82421AD0
+  sub_82421B20                     -> __imp__sub_82421B20
+  sub_82421E60                     -> __imp__sub_82421E60
+  sub_82421EB8                     -> __imp__sub_82421EB8
+  sub_82421FC0                     -> __imp__sub_82421FC0
+  sub_82422038                     -> __imp__sub_82422038
+  sub_824220F8                     -> __imp__sub_824220F8
+  sub_824221C0                     -> __imp__sub_824221C0
+  sub_82422248                     -> __imp__sub_82422248
+  sub_82422A10                     -> __imp__sub_82422A10
+  sub_82422A40                     -> __imp__sub_82422A40
+  sub_82422A60                     -> __imp__sub_82422A60
+  sub_82422A88                     -> __imp__sub_82422A88
+  sub_82422AD8                     -> __imp__sub_82422AD8
+  sub_82422BB8                     -> __imp__sub_82422BB8
+  sub_82422C30                     -> __imp__sub_82422C30
+  sub_82422CB0                     -> __imp__sub_82422CB0
+  sub_82422D38                     -> __imp__sub_82422D38
+  sub_82422DE0                     -> __imp__sub_82422DE0
+  sub_82422E18                     -> __imp__sub_82422E18
+  sub_82422E70                     -> __imp__sub_82422E70
+  sub_82422EA0                     -> __imp__sub_82422EA0
+  sub_82422EF0                     -> __imp__sub_82422EF0
+  sub_82422EF8                     -> __imp__sub_82422EF8
+  sub_82422F78                     -> __imp__sub_82422F78
+  sub_82422FC8                     -> __imp__sub_82422FC8
+  sub_82423028                     -> __imp__sub_82423028
+  sub_82423140                     -> __imp__sub_82423140
+  sub_82423230                     -> __imp__sub_82423230
+  sub_824AFEC8                     -> __imp__sub_824AFEC8
+  sub_825866B8                     -> __imp__sub_825866B8
+  sub_82586790                     -> __imp__sub_82586790
+  sub_825874A0                     -> __imp__sub_825874A0
+  sub_82587570                     -> __imp__sub_82587570
+  sub_82587578                     -> __imp__sub_82587578
+  sub_82587790                     -> __imp__sub_82587790
+  sub_82587C18                     -> __imp__sub_82587C18
+  sub_82587DB0                     -> __imp__sub_82587DB0
+  sub_82587F28                     -> __imp__sub_82587F28
+  sub_825885F8                     -> __imp__sub_825885F8
+  sub_82588658                     -> __imp__sub_82588658
+  sub_825886B8                     -> __imp__sub_825886B8
+  sub_82588718                     -> __imp__sub_82588718
+  sub_82588808                     -> __imp__sub_82588808
+  sub_82588848                     -> __imp__sub_82588848
+  sub_82588940                     -> __imp__sub_82588940
+  sub_82588CD8                     -> __imp__sub_82588CD8
+  sub_82588D98                     -> __imp__sub_82588D98
+  sub_82588E00                     -> __imp__sub_82588E00
+  sub_82588ED8                     -> __imp__sub_82588ED8
+  sub_825892E0                     -> __imp__sub_825892E0
+  sub_82589578                     -> __imp__sub_82589578
+  sub_82589708                     -> __imp__sub_82589708
+  sub_825897F0                     -> __imp__sub_825897F0
+  sub_82589930                     -> __imp__sub_82589930
+  sub_82589AD8                     -> __imp__sub_82589AD8
+  sub_8258A560                     -> __imp__sub_8258A560
+  sub_8258A598                     -> __imp__sub_8258A598
+  sub_8259BC08                     -> __imp__sub_8259BC08
+  sub_8259BDF0                     -> __imp__sub_8259BDF0
+  sub_8259C4D8                     -> __imp__sub_8259C4D8
+  sub_8259C548                     -> __imp__sub_8259C548
+  sub_8259C6D0                     -> __imp__sub_8259C6D0
+  sub_8259CCE0                     -> __imp__sub_8259CCE0
+  sub_8259D1B0                     -> __imp__sub_8259D1B0
+  sub_8259D2A0                     -> __imp__sub_8259D2A0
+  sub_8259D300                     -> __imp__sub_8259D300
+  sub_8259D3A0                     -> __imp__sub_8259D3A0
+  sub_8259D7C0                     -> __imp__sub_8259D7C0
+  sub_8259D9B8                     -> __imp__sub_8259D9B8
+  sub_8259DA78                     -> __imp__sub_8259DA78
+  sub_8259DBD0                     -> __imp__sub_8259DBD0
+  sub_8259DD00                     -> __imp__sub_8259DD00
+  sub_8259DE20                     -> __imp__sub_8259DE20
+  sub_8259DE50                     -> __imp__sub_8259DE50
+  sub_8259E158                     -> __imp__sub_8259E158
+  sub_8259E240                     -> __imp__sub_8259E240
+  sub_8259E8F0                     -> __imp__sub_8259E8F0
+  sub_8259E910                     -> __imp__sub_8259E910
+  sub_8259ECC0                     -> __imp__sub_8259ECC0
+  sub_8259EF10                     -> __imp__sub_8259EF10
+  sub_8259EFD8                     -> __imp__sub_8259EFD8
+  sub_8259F130                     -> __imp__sub_8259F130
+  sub_8259F908                     -> __imp__sub_8259F908
+  sub_8259F9E8                     -> __imp__sub_8259F9E8
+  sub_8259FCE0                     -> __imp__sub_8259FCE0
+  sub_8259FF08                     -> __imp__sub_8259FF08
+  sub_825A0CD0                     -> __imp__sub_825A0CD0
+  sub_825A0FC8                     -> __imp__sub_825A0FC8
+  sub_825A1008                     -> __imp__sub_825A1008
+  sub_825A1088                     -> __imp__sub_825A1088
+  sub_825A14B8                     -> __imp__sub_825A14B8
+  sub_825A1518                     -> __imp__sub_825A1518
+  sub_825A24E0                     -> __imp__sub_825A24E0
+  sub_825A2510                     -> __imp__sub_825A2510
+  sub_825A2544                     -> __imp__sub_825A2544
+  sub_825A2588                     -> __imp__sub_825A2588
+  sub_825A2990                     -> __imp__sub_825A2990
+  sub_825A2BE8                     -> __imp__sub_825A2BE8
+  sub_825A2C30                     -> __imp__sub_825A2C30
+  sub_825A2C78                     -> __imp__sub_825A2C78
+  sub_825A2D80                     -> __imp__sub_825A2D80
+  sub_825A2E08                     -> __imp__sub_825A2E08
+  sub_825A2E88                     -> __imp__sub_825A2E88
+  sub_825A2F60                     -> __imp__sub_825A2F60
+  sub_825A3050                     -> __imp__sub_825A3050
+  sub_825A3078                     -> __imp__sub_825A3078
+  sub_825A3090                     -> __imp__sub_825A3090
+  sub_825A30C8                     -> __imp__sub_825A30C8
+  sub_825A3150                     -> __imp__sub_825A3150
+  sub_825A3238                     -> __imp__sub_825A3238
+  sub_825A3270                     -> __imp__sub_825A3270
+  sub_825A3418                     -> __imp__sub_825A3418
+  sub_825A3468                     -> __imp__sub_825A3468
+  sub_825A34B0                     -> __imp__sub_825A34B0
+  sub_825A3598                     -> __imp__sub_825A3598
+  sub_825A3600                     -> __imp__sub_825A3600
+  sub_825A3638                     -> __imp__sub_825A3638
+  sub_825A3670                     -> __imp__sub_825A3670
+  sub_825A36E8                     -> __imp__sub_825A36E8
+  sub_825A38C0                     -> __imp__sub_825A38C0
+  sub_825A3958                     -> __imp__sub_825A3958
+  sub_825A39F0                     -> __imp__sub_825A39F0
+  sub_825A5170                     -> __imp__sub_825A5170
+  sub_825A54E8                     -> __imp__sub_825A54E8
+  sub_825A54F0                     -> __imp__sub_825A54F0
+  sub_825A57F0                     -> __imp__sub_825A57F0
+  sub_825A6240                     -> __imp__sub_825A6240
+  sub_825A6288                     -> __imp__sub_825A6288
+  sub_825A7890                     -> __imp__sub_825A7890
+  sub_825A83D8                     -> __imp__sub_825A83D8
+  sub_825A8430                     -> __imp__sub_825A8430
+  sub_825A84F0                     -> __imp__sub_825A84F0
+  sub_825A864C                     -> __imp__sub_825A864C
+  sub_825A8BB0                     -> __imp__sub_825A8BB0
+  sub_825A8E10                     -> __imp__sub_825A8E10
+  sub_825A8F6C                     -> __imp__sub_825A8F6C
+  sub_825A9888                     -> __imp__sub_825A9888
+  sub_825A98A8                     -> __imp__sub_825A98A8
+  sub_825A99B8                     -> __imp__sub_825A99B8
+  sub_825A99E8                     -> __imp__sub_825A99E8
+  sub_825AAAC8                     -> __imp__sub_825AAAC8
+  sub_825AAC00                     -> __imp__sub_825AAC00
+  sub_825AAC90                     -> __imp__sub_825AAC90
+  sub_825AADB8                     -> __imp__sub_825AADB8
+  sub_825AADC0                     -> __imp__sub_825AADC0
+  sub_825AC8D0                     -> __imp__sub_825AC8D0
+  sub_825ACAB8                     -> __imp__sub_825ACAB8
+  sub_825ACB90                     -> __imp__sub_825ACB90
+  sub_825ACC58                     -> __imp__sub_825ACC58
+  sub_825ACC90                     -> __imp__sub_825ACC90
+  sub_825AD0D8                     -> __imp__sub_825AD0D8
+  sub_825AE598                     -> __imp__sub_825AE598
+  sub_825AE948                     -> __imp__sub_825AE948
+  sub_825AE968                     -> __imp__sub_825AE968
+  sub_825AEA88                     -> __imp__sub_825AEA88
+  sub_825AEB40                     -> __imp__sub_825AEB40
+  sub_825AEB48                     -> __imp__sub_825AEB48
+  sub_825AECE0                     -> __imp__sub_825AECE0
+  sub_825AED30                     -> __imp__sub_825AED30
+  sub_825AEE40                     -> __imp__sub_825AEE40
+  sub_825AEEC0                     -> __imp__sub_825AEEC0
+  sub_825AF158                     -> __imp__sub_825AF158
+  sub_825AF1C8                     -> __imp__sub_825AF1C8
+  sub_825AF2F0                     -> __imp__sub_825AF2F0
+  sub_825AF6C0                     -> __imp__sub_825AF6C0
+  sub_825AF710                     -> __imp__sub_825AF710
+  sub_825AF798                     -> __imp__sub_825AF798
+  sub_825AF7A0                     -> __imp__sub_825AF7A0
+  sub_825AF7B8                     -> __imp__sub_825AF7B8
+  sub_825AF888                     -> __imp__sub_825AF888
+  sub_825AF8E8                     -> __imp__sub_825AF8E8
+  sub_825AF920                     -> __imp__sub_825AF920
+  sub_825AF9B8                     -> __imp__sub_825AF9B8
+  sub_825AF9D8                     -> __imp__sub_825AF9D8
+  sub_825AF9E8                     -> __imp__sub_825AF9E8
+  sub_825AF9F8                     -> __imp__sub_825AF9F8
+  sub_825AFBB0                     -> __imp__sub_825AFBB0
+  sub_825AFBB8                     -> __imp__sub_825AFBB8
+  sub_825AFD08                     -> __imp__sub_825AFD08
+  sub_825AFD70                     -> __imp__sub_825AFD70
+  sub_825AFEB8                     -> __imp__sub_825AFEB8
+  sub_825AFFD0                     -> __imp__sub_825AFFD0
+  sub_825B00D0                     -> __imp__sub_825B00D0
+  sub_825B06F0                     -> __imp__sub_825B06F0
+  sub_825B0778                     -> __imp__sub_825B0778
+  sub_825B0888                     -> __imp__sub_825B0888
+  sub_825B0A48                     -> __imp__sub_825B0A48
+  sub_825B0B68                     -> __imp__sub_825B0B68
+  sub_825B0DF8                     -> __imp__sub_825B0DF8
+  sub_825B1200                     -> __imp__sub_825B1200
+  sub_825B18A8                     -> __imp__sub_825B18A8
+  sub_825B1950                     -> __imp__sub_825B1950
+  sub_825B1AB8                     -> __imp__sub_825B1AB8
+  sub_825B1CF8                     -> __imp__sub_825B1CF8
+  sub_825B2060                     -> __imp__sub_825B2060
+  sub_825B2608                     -> __imp__sub_825B2608
+  sub_825B2EA8                     -> __imp__sub_825B2EA8
+  sub_825B2EF8                     -> __imp__sub_825B2EF8
+  sub_825B318C                     -> __imp__sub_825B318C
+  sub_825B3A98                     -> __imp__sub_825B3A98
+  sub_825B3AA8                     -> __imp__sub_825B3AA8
+  sub_825B3C00                     -> __imp__sub_825B3C00
+  sub_825B3C08                     -> __imp__sub_825B3C08
+  sub_825B3C80                     -> __imp__sub_825B3C80
+  sub_825B3C98                     -> __imp__sub_825B3C98
+  sub_825B3CD0                     -> __imp__sub_825B3CD0
+  sub_825B3CF0                     -> __imp__sub_825B3CF0
+  sub_825B3D38                     -> __imp__sub_825B3D38
+  sub_825B3D70                     -> __imp__sub_825B3D70
+  sub_825B42B8                     -> __imp__sub_825B42B8
+  sub_825B4340                     -> __imp__sub_825B4340
+  sub_825B43B0                     -> __imp__sub_825B43B0
+  sub_825B43B8                     -> __imp__sub_825B43B8
+  sub_825B4650                     -> __imp__sub_825B4650
+  sub_825B48D0                     -> __imp__sub_825B48D0
+  sub_825B4990                     -> __imp__sub_825B4990
+  sub_825B4A58                     -> __imp__sub_825B4A58
+  sub_825B4AB0                     -> __imp__sub_825B4AB0
+  sub_825B4AB8                     -> __imp__sub_825B4AB8
+  sub_825B4B58                     -> __imp__sub_825B4B58
+  sub_825B4D40                     -> __imp__sub_825B4D40
+  sub_825B4E70                     -> __imp__sub_825B4E70
+  sub_825B50D8                     -> __imp__sub_825B50D8
+  sub_825B5160                     -> __imp__sub_825B5160
+  sub_825B55D8                     -> __imp__sub_825B55D8
+  sub_825B5830                     -> __imp__sub_825B5830
+  sub_825B5AA0                     -> __imp__sub_825B5AA0
+  sub_825B9CF8                     -> __imp__sub_825B9CF8
+  sub_825BA368                     -> __imp__sub_825BA368
+  sub_825BACB0                     -> __imp__sub_825BACB0
+  sub_825BAE58                     -> __imp__sub_825BAE58
+  sub_825BB6C0                     -> __imp__sub_825BB6C0
+  sub_825BB9F8                     -> __imp__sub_825BB9F8
+  sub_825BEF50                     -> __imp__sub_825BEF50
+
+Chamadas externas/nao encontradas:
+  __imp__DbgPrint
+  __imp__ExCreateThread
+  __imp__ExGetXConfigSetting
+  __imp__ExRegisterTitleTerminateNotification
+  __imp__KeBugCheck
+  __imp__KeBugCheckEx
+  __imp__KeDelayExecutionThread
+  __imp__KeEnterCriticalRegion
+  __imp__KeGetCurrentProcessType
+  __imp__KeLeaveCriticalRegion
+  __imp__KeLockL2
+  __imp__KeQueryBasePriorityThread
+  __imp__KeQueryPerformanceFrequency
+  __imp__KeQuerySystemTime
+  __imp__KeResetEvent
+  __imp__KeSetBasePriorityThread
+  __imp__KeSetEvent
+  __imp__KeUnlockL2
+  __imp__KeWaitForSingleObject
+  __imp__KfAcquireSpinLock
+  __imp__KfReleaseSpinLock
+  __imp__KiApcNormalRoutineNop
+  __imp__MmAllocatePhysicalMemoryEx
+  __imp__MmFreePhysicalMemory
+  __imp__MmGetPhysicalAddress
+  __imp__MmQueryAllocationSize
+  __imp__NetDll_WSACloseEvent
+  __imp__NetDll_WSACreateEvent
+  __imp__NetDll_WSAGetLastError
+  __imp__NetDll_WSASetEvent
+  __imp__NetDll_XNetConnect
+  __imp__NetDll_XNetCreateKey
+  __imp__NetDll_XNetDnsLookup
+  __imp__NetDll_XNetDnsRelease
+  __imp__NetDll_XNetGetConnectStatus
+  __imp__NetDll_XNetGetEthernetLinkStatus
+  __imp__NetDll_XNetGetTitleXnAddr
+  __imp__NetDll_XNetQosLookup
+  __imp__NetDll_XNetQosRelease
+  __imp__NetDll_XNetQosServiceLookup
+  __imp__NetDll_XNetRegisterKey
+  __imp__NetDll_accept
+  __imp__NetDll_closesocket
+  __imp__NetDll_connect
+  __imp__NetDll_getpeername
+  __imp__NetDll_getsockname
+  __imp__NetDll_ioctlsocket
+  __imp__NetDll_recv
+  __imp__NetDll_recvfrom
+  __imp__NetDll_select
+  __imp__NetDll_send
+  __imp__NetDll_sendto
+  __imp__NetDll_setsockopt
+  __imp__NetDll_shutdown
+  __imp__NetDll_socket
+  __imp__NtAllocateVirtualMemory
+  __imp__NtClearEvent
+  __imp__NtClose
+  __imp__NtCreateEvent
+  __imp__NtCreateFile
+  __imp__NtFreeVirtualMemory
+  __imp__NtQueryInformationFile
+  __imp__NtQueryVirtualMemory
+  __imp__NtSetEvent
+  __imp__NtSetInformationFile
+  __imp__NtWaitForSingleObjectEx
+  __imp__NtWriteFile
+  __imp__ObDereferenceObject
+  __imp__ObReferenceObjectByHandle
+  __imp__RtlCompareMemoryUlong
+  __imp__RtlEnterCriticalSection
+  __imp__RtlFillMemoryUlong
+  __imp__RtlImageXexHeaderField
+  __imp__RtlInitAnsiString
+  __imp__RtlInitializeCriticalSection
+  __imp__RtlLeaveCriticalSection
+  __imp__RtlNtStatusToDosError
+  __imp__RtlRaiseException
+  __imp__RtlTimeFieldsToTime
+  __imp__RtlTimeToTimeFields
+  __imp__RtlUnicodeToMultiByteN
+  __imp__VdCallGraphicsNotificationRoutines
+  __imp__VdEnableDisableClockGating
+  __imp__VdEnableRingBufferRPtrWriteBack
+  __imp__VdGetCurrentDisplayGamma
+  __imp__VdGetCurrentDisplayInformation
+  __imp__VdGetGraphicsAsicID
+  __imp__VdGetSystemCommandBuffer
+  __imp__VdInitializeEDRAM
+  __imp__VdInitializeEngines
+  __imp__VdInitializeRingBuffer
+  __imp__VdInitializeScalerCommandBuffer
+  __imp__VdIsHSIOTrainingSucceeded
+  __imp__VdPersistDisplay
+  __imp__VdQueryVideoFlags
+  __imp__VdQueryVideoMode
+  __imp__VdRetrainEDRAM
+  __imp__VdRetrainEDRAMWorker
+  __imp__VdSetDisplayMode
+  __imp__VdSetGraphicsInterruptCallback
+  __imp__VdSetSystemCommandBufferGpuIdentifierAddress
+  __imp__VdShutdownEngines
+  __imp__VdSwap
+  __imp__XGetVideoMode
+  __imp__XMsgInProcessCall
+  __imp__XMsgStartIORequest
+  __imp__XNetLogonGetMachineID
+  __imp__XNetLogonGetTitleID
+  __imp__XNotifyGetNext
+  __imp__XamAlloc
+  __imp__XamFree
+  __imp__XamNotifyCreateListener
+  __imp__XamSessionCreateHandle
+  __imp__XamSessionRefObjByHandle
+  __imp__XamUserGetName
+  __imp__XamUserGetSigninState
+  __imp__XamUserGetXUID
+  __imp___vsnprintf
+  __imp__sprintf

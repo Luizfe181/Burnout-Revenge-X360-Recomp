@@ -1,0 +1,6 @@
+Recovery 2026-09-16: No git repository exists here; recovery uses files, logs, hashes and checkpoints.
+Previous build-boot0.log ended BOOT BUILD OK. Executable successfully reached real _xstart.
+boot0: missing real callback 825AD0A8, called from LR825AD120. Manifest now includes it with provenance.
+boot1: callback runs successfully; next callback 825A5118 is TLS allocation wrapper.
+Current work: implement 64 TLS slots (XEX header 00000040 00000000 00000000 00000000), resolve indirect kernel import mappings. Build-boot2 pending.
+CP remains in place, unchanged by boot work. No visual produced yet.

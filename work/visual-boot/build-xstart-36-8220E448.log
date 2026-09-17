@@ -1,0 +1,6 @@
+Compile ppc_recomp.6.cpp
+Compile ppc_recomp.24.cpp
+Compile ppc_recomp.25.cpp
+Compile ppc_recomp.37.cpp
+Compile mapping.cpp
+BOOT BUILD OK

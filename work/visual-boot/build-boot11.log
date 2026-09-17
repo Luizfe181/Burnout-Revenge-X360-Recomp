@@ -1,0 +1,8 @@
+Compile xbox_kernel.cpp
+Compile import_probes.cpp
+C:\Users\luizf\Documents\Codex\2026-09-15\estou-fazendo-uma-recompila-o-est\work\ppc\xbox_kernel.cpp:271:97: warning: format specifies type 'unsigned int' but the argument has type 'DWORD' (aka 'unsigned long') [-Wformat]
+  271 |     std::printf("[NtWaitForSingleObjectEx] handle=%08X timeout_ms=%u alertable=%u\n",ctx.r3.u32,timeout,ctx.r5.u32);
+      |                                                                   ~~                            ^~~~~~~
+      |                                                                   %lu
+1 warning generated.
+BOOT BUILD OK
